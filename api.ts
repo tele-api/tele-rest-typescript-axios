@@ -2,14 +2,14 @@
 /* eslint-disable */
 /**
  * Telegram Bot API - REST API Client
- * Auto-generated OpenAPI schema
+ * The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram. To learn how to create and set up a bot, please consult our Introduction to Bots and Bot FAQ.
  * 
  * ## Metadata
  *   
  * - **Copyright**: Copyright (c) 2025 Qntx
  * - **Author**: ΣX <gitctrlx@gmail.com>
  * - **Version**: 9.0.0
- * - **Modified**: 2025-07-01T14:14:29.540805674Z[Etc/UTC]
+ * - **Modified**: 2025-07-01T14:36:23.816683278Z[Etc/UTC]
  * - **Generator Version**: 7.14.0
  *
  * <details>
@@ -440,48 +440,12 @@ export interface Audio {
     'thumbnail'?: PhotoSize;
 }
 /**
+ * @type BackgroundFill
  * This object describes the way a background is filled based on the selected colors. Currently, it can be one of  * [BackgroundFillSolid](https://core.telegram.org/bots/api/#backgroundfillsolid) * [BackgroundFillGradient](https://core.telegram.org/bots/api/#backgroundfillgradient) * [BackgroundFillFreeformGradient](https://core.telegram.org/bots/api/#backgroundfillfreeformgradient)
  * @export
- * @interface BackgroundFill
  */
-export interface BackgroundFill {
-    /**
-     * Type of the background fill, always “freeform\\_gradient”
-     * @type {string}
-     * @memberof BackgroundFill
-     */
-    'type': string;
-    /**
-     * The color of the background fill in the RGB24 format
-     * @type {number}
-     * @memberof BackgroundFill
-     */
-    'color': number;
-    /**
-     * Top color of the gradient in the RGB24 format
-     * @type {number}
-     * @memberof BackgroundFill
-     */
-    'top_color': number;
-    /**
-     * Bottom color of the gradient in the RGB24 format
-     * @type {number}
-     * @memberof BackgroundFill
-     */
-    'bottom_color': number;
-    /**
-     * Clockwise rotation angle of the background fill in degrees; 0-359
-     * @type {number}
-     * @memberof BackgroundFill
-     */
-    'rotation_angle': number;
-    /**
-     * A list of the 3 or 4 base colors that are used to generate the freeform gradient in the RGB24 format
-     * @type {Array<number>}
-     * @memberof BackgroundFill
-     */
-    'colors': Array<number>;
-}
+export type BackgroundFill = BackgroundFillFreeformGradient | BackgroundFillGradient | BackgroundFillSolid;
+
 /**
  * The background is a freeform gradient that rotates after every message in the chat.
  * @export
@@ -552,66 +516,12 @@ export interface BackgroundFillSolid {
     'color': number;
 }
 /**
+ * @type BackgroundType
  * This object describes the type of a background. Currently, it can be one of  * [BackgroundTypeFill](https://core.telegram.org/bots/api/#backgroundtypefill) * [BackgroundTypeWallpaper](https://core.telegram.org/bots/api/#backgroundtypewallpaper) * [BackgroundTypePattern](https://core.telegram.org/bots/api/#backgroundtypepattern) * [BackgroundTypeChatTheme](https://core.telegram.org/bots/api/#backgroundtypechattheme)
  * @export
- * @interface BackgroundType
  */
-export interface BackgroundType {
-    /**
-     * Type of the background, always “chat\\_theme”
-     * @type {string}
-     * @memberof BackgroundType
-     */
-    'type': string;
-    /**
-     * 
-     * @type {BackgroundFill}
-     * @memberof BackgroundType
-     */
-    'fill': BackgroundFill;
-    /**
-     * Dimming of the background in dark themes, as a percentage; 0-100
-     * @type {number}
-     * @memberof BackgroundType
-     */
-    'dark_theme_dimming': number;
-    /**
-     * 
-     * @type {Document}
-     * @memberof BackgroundType
-     */
-    'document': Document;
-    /**
-     * Intensity of the pattern when it is shown above the filled background; 0-100
-     * @type {number}
-     * @memberof BackgroundType
-     */
-    'intensity': number;
-    /**
-     * Name of the chat theme, which is usually an emoji
-     * @type {string}
-     * @memberof BackgroundType
-     */
-    'theme_name': string;
-    /**
-     * *Optional*. *True*, if the wallpaper is downscaled to fit in a 450x450 square and then box-blurred with radius 12
-     * @type {boolean}
-     * @memberof BackgroundType
-     */
-    'is_blurred'?: boolean;
-    /**
-     * *Optional*. *True*, if the background moves slightly when the device is tilted
-     * @type {boolean}
-     * @memberof BackgroundType
-     */
-    'is_moving'?: boolean;
-    /**
-     * *Optional*. *True*, if the background fill must be applied only to the pattern itself. All other pixels are black in this case. For dark themes only
-     * @type {boolean}
-     * @memberof BackgroundType
-     */
-    'is_inverted'?: boolean;
-}
+export type BackgroundType = BackgroundTypeChatTheme | BackgroundTypeFill | BackgroundTypePattern | BackgroundTypeWallpaper;
+
 /**
  * The background is taken directly from a built-in chat theme.
  * @export
@@ -768,12 +678,12 @@ export interface BanChatMemberPostRequest {
     'revoke_messages'?: boolean;
 }
 /**
+ * @type BanChatMemberPostRequestChatId
  * Unique identifier for the target group or username of the target supergroup or channel (in the format `@channelusername`)
  * @export
- * @interface BanChatMemberPostRequestChatId
  */
-export interface BanChatMemberPostRequestChatId {
-}
+export type BanChatMemberPostRequestChatId = number | string;
+
 /**
  * 
  * @export
@@ -838,30 +748,12 @@ export interface BotCommand {
     'description': string;
 }
 /**
+ * @type BotCommandScope
  * This object represents the scope to which bot commands are applied. Currently, the following 7 scopes are supported:  * [BotCommandScopeDefault](https://core.telegram.org/bots/api/#botcommandscopedefault) * [BotCommandScopeAllPrivateChats](https://core.telegram.org/bots/api/#botcommandscopeallprivatechats) * [BotCommandScopeAllGroupChats](https://core.telegram.org/bots/api/#botcommandscopeallgroupchats) * [BotCommandScopeAllChatAdministrators](https://core.telegram.org/bots/api/#botcommandscopeallchatadministrators) * [BotCommandScopeChat](https://core.telegram.org/bots/api/#botcommandscopechat) * [BotCommandScopeChatAdministrators](https://core.telegram.org/bots/api/#botcommandscopechatadministrators) * [BotCommandScopeChatMember](https://core.telegram.org/bots/api/#botcommandscopechatmember)
  * @export
- * @interface BotCommandScope
  */
-export interface BotCommandScope {
-    /**
-     * Scope type, must be *chat\\_member*
-     * @type {string}
-     * @memberof BotCommandScope
-     */
-    'type': string;
-    /**
-     * 
-     * @type {RestrictChatMemberPostRequestChatId}
-     * @memberof BotCommandScope
-     */
-    'chat_id': RestrictChatMemberPostRequestChatId;
-    /**
-     * Unique identifier of the target user
-     * @type {number}
-     * @memberof BotCommandScope
-     */
-    'user_id': number;
-}
+export type BotCommandScope = BotCommandScopeAllChatAdministrators | BotCommandScopeAllGroupChats | BotCommandScopeAllPrivateChats | BotCommandScopeChat | BotCommandScopeChatAdministrators | BotCommandScopeChatMember | BotCommandScopeDefault;
+
 /**
  * Represents the [scope](https://core.telegram.org/bots/api/#botcommandscope) of bot commands, covering all group and supergroup chat administrators.
  * @export
@@ -1551,42 +1443,12 @@ export interface ChatBoostRemoved {
     'source': ChatBoostSource;
 }
 /**
+ * @type ChatBoostSource
  * This object describes the source of a chat boost. It can be one of  * [ChatBoostSourcePremium](https://core.telegram.org/bots/api/#chatboostsourcepremium) * [ChatBoostSourceGiftCode](https://core.telegram.org/bots/api/#chatboostsourcegiftcode) * [ChatBoostSourceGiveaway](https://core.telegram.org/bots/api/#chatboostsourcegiveaway)
  * @export
- * @interface ChatBoostSource
  */
-export interface ChatBoostSource {
-    /**
-     * Source of the boost, always “giveaway”
-     * @type {string}
-     * @memberof ChatBoostSource
-     */
-    'source': string;
-    /**
-     * 
-     * @type {User}
-     * @memberof ChatBoostSource
-     */
-    'user': User;
-    /**
-     * Identifier of a message in the chat with the giveaway; the message could have been deleted already. May be 0 if the message isn\'t sent yet.
-     * @type {number}
-     * @memberof ChatBoostSource
-     */
-    'giveaway_message_id': number;
-    /**
-     * *Optional*. The number of Telegram Stars to be split between giveaway winners; for Telegram Star giveaways only
-     * @type {number}
-     * @memberof ChatBoostSource
-     */
-    'prize_star_count'?: number;
-    /**
-     * *Optional*. True, if the giveaway was completed, but there was no user to win the prize
-     * @type {boolean}
-     * @memberof ChatBoostSource
-     */
-    'is_unclaimed'?: boolean;
-}
+export type ChatBoostSource = ChatBoostSourceGiftCode | ChatBoostSourceGiveaway | ChatBoostSourcePremium;
+
 /**
  * The boost was obtained by the creation of Telegram Premium gift codes to boost a chat. Each such code boosts the chat 4 times for the duration of the corresponding Telegram Premium subscription.
  * @export
@@ -2104,198 +1966,12 @@ export interface ChatLocation {
     'address': string;
 }
 /**
+ * @type ChatMember
  * This object contains information about one member of a chat. Currently, the following 6 types of chat members are supported:  * [ChatMemberOwner](https://core.telegram.org/bots/api/#chatmemberowner) * [ChatMemberAdministrator](https://core.telegram.org/bots/api/#chatmemberadministrator) * [ChatMemberMember](https://core.telegram.org/bots/api/#chatmembermember) * [ChatMemberRestricted](https://core.telegram.org/bots/api/#chatmemberrestricted) * [ChatMemberLeft](https://core.telegram.org/bots/api/#chatmemberleft) * [ChatMemberBanned](https://core.telegram.org/bots/api/#chatmemberbanned)
  * @export
- * @interface ChatMember
  */
-export interface ChatMember {
-    /**
-     * The member\'s status in the chat, always “kicked”
-     * @type {string}
-     * @memberof ChatMember
-     */
-    'status': string;
-    /**
-     * 
-     * @type {User}
-     * @memberof ChatMember
-     */
-    'user': User;
-    /**
-     * *True*, if the user\'s presence in the chat is hidden
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'is_anonymous': boolean;
-    /**
-     * *True*, if the bot is allowed to edit administrator privileges of that user
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_be_edited': boolean;
-    /**
-     * *True*, if the administrator can access the chat event log, get boost list, see hidden supergroup and channel members, report spam messages and ignore slow mode. Implied by any other administrator privilege.
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_manage_chat': boolean;
-    /**
-     * *True*, if the administrator can delete messages of other users
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_delete_messages': boolean;
-    /**
-     * *True*, if the administrator can manage video chats
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_manage_video_chats': boolean;
-    /**
-     * *True*, if the administrator can restrict, ban or unban chat members, or access supergroup statistics
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_restrict_members': boolean;
-    /**
-     * *True*, if the administrator can add new administrators with a subset of their own privileges or demote administrators that they have promoted, directly or indirectly (promoted by administrators that were appointed by the user)
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_promote_members': boolean;
-    /**
-     * *True*, if the user is allowed to change the chat title, photo and other settings
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_change_info': boolean;
-    /**
-     * *True*, if the user is allowed to invite new users to the chat
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_invite_users': boolean;
-    /**
-     * *True*, if the administrator can post stories to the chat
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_post_stories': boolean;
-    /**
-     * *True*, if the administrator can edit stories posted by other users, post stories to the chat page, pin chat stories, and access the chat\'s story archive
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_edit_stories': boolean;
-    /**
-     * *True*, if the administrator can delete stories posted by other users
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_delete_stories': boolean;
-    /**
-     * *True*, if the user is allowed to pin messages
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_pin_messages': boolean;
-    /**
-     * *True*, if the user is allowed to create forum topics
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_manage_topics': boolean;
-    /**
-     * Date when restrictions will be lifted for this user; Unix time. If 0, then the user is banned forever
-     * @type {number}
-     * @memberof ChatMember
-     */
-    'until_date': number;
-    /**
-     * *True*, if the user is a member of the chat at the moment of the request
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'is_member': boolean;
-    /**
-     * *True*, if the user is allowed to send text messages, contacts, giveaways, giveaway winners, invoices, locations and venues
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_send_messages': boolean;
-    /**
-     * *True*, if the user is allowed to send audios
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_send_audios': boolean;
-    /**
-     * *True*, if the user is allowed to send documents
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_send_documents': boolean;
-    /**
-     * *True*, if the user is allowed to send photos
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_send_photos': boolean;
-    /**
-     * *True*, if the user is allowed to send videos
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_send_videos': boolean;
-    /**
-     * *True*, if the user is allowed to send video notes
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_send_video_notes': boolean;
-    /**
-     * *True*, if the user is allowed to send voice notes
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_send_voice_notes': boolean;
-    /**
-     * *True*, if the user is allowed to send polls
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_send_polls': boolean;
-    /**
-     * *True*, if the user is allowed to send animations, games, stickers and use inline bots
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_send_other_messages': boolean;
-    /**
-     * *True*, if the user is allowed to add web page previews to their messages
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_add_web_page_previews': boolean;
-    /**
-     * *Optional*. Custom title for this user
-     * @type {string}
-     * @memberof ChatMember
-     */
-    'custom_title'?: string;
-    /**
-     * *Optional*. *True*, if the administrator can post messages in the channel, or access channel statistics; for channels only
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_post_messages'?: boolean;
-    /**
-     * *Optional*. *True*, if the administrator can edit messages of other users and can pin messages; for channels only
-     * @type {boolean}
-     * @memberof ChatMember
-     */
-    'can_edit_messages'?: boolean;
-}
+export type ChatMember = ChatMemberAdministrator | ChatMemberBanned | ChatMemberLeft | ChatMemberMember | ChatMemberOwner | ChatMemberRestricted;
+
 /**
  * Represents a [chat member](https://core.telegram.org/bots/api/#chatmember) that has some additional privileges.
  * @export
@@ -3218,12 +2894,12 @@ export interface CreateChatSubscriptionInviteLinkPostRequest {
     'name'?: string;
 }
 /**
+ * @type CreateChatSubscriptionInviteLinkPostRequestChatId
  * Unique identifier for the target channel chat or username of the target channel (in the format `@channelusername`)
  * @export
- * @interface CreateChatSubscriptionInviteLinkPostRequestChatId
  */
-export interface CreateChatSubscriptionInviteLinkPostRequestChatId {
-}
+export type CreateChatSubscriptionInviteLinkPostRequestChatId = number | string;
+
 /**
  * 
  * @export
@@ -3943,546 +3619,11 @@ export interface EditMessageTextPost200Response {
     'result': EditMessageTextPost200ResponseResult;
 }
 /**
- * 
+ * @type EditMessageTextPost200ResponseResult
  * @export
- * @interface EditMessageTextPost200ResponseResult
  */
-export interface EditMessageTextPost200ResponseResult {
-    /**
-     * Unique message identifier inside this chat. In specific instances (e.g., message containing a video sent to a big chat), the server might automatically schedule a message instead of sending it immediately. In such cases, this field will be 0 and the relevant message will be unusable until it is actually sent
-     * @type {number}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'message_id': number;
-    /**
-     * Date the message was sent in Unix time. It is always a positive number, representing a valid date.
-     * @type {number}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'date': number;
-    /**
-     * 
-     * @type {Chat}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'chat': Chat;
-    /**
-     * *Optional*. Unique identifier of a message thread to which the message belongs; for supergroups only
-     * @type {number}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'message_thread_id'?: number;
-    /**
-     * 
-     * @type {User}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'from'?: User;
-    /**
-     * 
-     * @type {Chat}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'sender_chat'?: Chat;
-    /**
-     * *Optional*. If the sender of the message boosted the chat, the number of boosts added by the user
-     * @type {number}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'sender_boost_count'?: number;
-    /**
-     * 
-     * @type {User}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'sender_business_bot'?: User;
-    /**
-     * *Optional*. Unique identifier of the business connection from which the message was received. If non-empty, the message belongs to a chat of the corresponding business account that is independent from any potential bot chat which might share the same identifier.
-     * @type {string}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'business_connection_id'?: string;
-    /**
-     * 
-     * @type {MessageOrigin}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'forward_origin'?: MessageOrigin;
-    /**
-     * *Optional*. *True*, if the message is sent to a forum topic
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'is_topic_message'?: boolean;
-    /**
-     * *Optional*. *True*, if the message is a channel post that was automatically forwarded to the connected discussion group
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'is_automatic_forward'?: boolean;
-    /**
-     * 
-     * @type {Message}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'reply_to_message'?: Message;
-    /**
-     * 
-     * @type {ExternalReplyInfo}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'external_reply'?: ExternalReplyInfo;
-    /**
-     * 
-     * @type {TextQuote}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'quote'?: TextQuote;
-    /**
-     * 
-     * @type {Story}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'reply_to_story'?: Story;
-    /**
-     * 
-     * @type {User}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'via_bot'?: User;
-    /**
-     * *Optional*. Date the message was last edited in Unix time
-     * @type {number}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'edit_date'?: number;
-    /**
-     * *Optional*. *True*, if the message can\'t be forwarded
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'has_protected_content'?: boolean;
-    /**
-     * *Optional*. True, if the message was sent by an implicit action, for example, as an away or a greeting business message, or as a scheduled message
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'is_from_offline'?: boolean;
-    /**
-     * *Optional*. The unique identifier of a media message group this message belongs to
-     * @type {string}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'media_group_id'?: string;
-    /**
-     * *Optional*. Signature of the post author for messages in channels, or the custom title of an anonymous group administrator
-     * @type {string}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'author_signature'?: string;
-    /**
-     * *Optional*. The number of Telegram Stars that were paid by the sender of the message to send it
-     * @type {number}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'paid_star_count'?: number;
-    /**
-     * *Optional*. For text messages, the actual UTF-8 text of the message
-     * @type {string}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'text'?: string;
-    /**
-     * *Optional*. For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text
-     * @type {Array<MessageEntity>}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'entities'?: Array<MessageEntity>;
-    /**
-     * 
-     * @type {LinkPreviewOptions}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'link_preview_options'?: LinkPreviewOptions;
-    /**
-     * *Optional*. Unique identifier of the message effect added to the message
-     * @type {string}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'effect_id'?: string;
-    /**
-     * 
-     * @type {Animation}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'animation'?: Animation;
-    /**
-     * 
-     * @type {Audio}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'audio'?: Audio;
-    /**
-     * 
-     * @type {Document}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'document'?: Document;
-    /**
-     * 
-     * @type {PaidMediaInfo}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'paid_media'?: PaidMediaInfo;
-    /**
-     * *Optional*. Message is a photo, available sizes of the photo
-     * @type {Array<PhotoSize>}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'photo'?: Array<PhotoSize>;
-    /**
-     * 
-     * @type {Sticker}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'sticker'?: Sticker;
-    /**
-     * 
-     * @type {Story}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'story'?: Story;
-    /**
-     * 
-     * @type {Video}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'video'?: Video;
-    /**
-     * 
-     * @type {VideoNote}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'video_note'?: VideoNote;
-    /**
-     * 
-     * @type {Voice}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'voice'?: Voice;
-    /**
-     * *Optional*. Caption for the animation, audio, document, paid media, photo, video or voice
-     * @type {string}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'caption'?: string;
-    /**
-     * *Optional*. For messages with a caption, special entities like usernames, URLs, bot commands, etc. that appear in the caption
-     * @type {Array<MessageEntity>}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'caption_entities'?: Array<MessageEntity>;
-    /**
-     * *Optional*. True, if the caption must be shown above the message media
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'show_caption_above_media'?: boolean;
-    /**
-     * *Optional*. *True*, if the message media is covered by a spoiler animation
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'has_media_spoiler'?: boolean;
-    /**
-     * 
-     * @type {Contact}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'contact'?: Contact;
-    /**
-     * 
-     * @type {Dice}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'dice'?: Dice;
-    /**
-     * 
-     * @type {Game}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'game'?: Game;
-    /**
-     * 
-     * @type {Poll}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'poll'?: Poll;
-    /**
-     * 
-     * @type {Venue}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'venue'?: Venue;
-    /**
-     * 
-     * @type {Location}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'location'?: Location;
-    /**
-     * *Optional*. New members that were added to the group or supergroup and information about them (the bot itself may be one of these members)
-     * @type {Array<User>}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'new_chat_members'?: Array<User>;
-    /**
-     * 
-     * @type {User}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'left_chat_member'?: User;
-    /**
-     * *Optional*. A chat title was changed to this value
-     * @type {string}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'new_chat_title'?: string;
-    /**
-     * *Optional*. A chat photo was change to this value
-     * @type {Array<PhotoSize>}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'new_chat_photo'?: Array<PhotoSize>;
-    /**
-     * *Optional*. Service message: the chat photo was deleted
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'delete_chat_photo'?: boolean;
-    /**
-     * *Optional*. Service message: the group has been created
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'group_chat_created'?: boolean;
-    /**
-     * *Optional*. Service message: the supergroup has been created. This field can\'t be received in a message coming through updates, because bot can\'t be a member of a supergroup when it is created. It can only be found in reply\\_to\\_message if someone replies to a very first message in a directly created supergroup.
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'supergroup_chat_created'?: boolean;
-    /**
-     * *Optional*. Service message: the channel has been created. This field can\'t be received in a message coming through updates, because bot can\'t be a member of a channel when it is created. It can only be found in reply\\_to\\_message if someone replies to a very first message in a channel.
-     * @type {boolean}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'channel_chat_created'?: boolean;
-    /**
-     * 
-     * @type {MessageAutoDeleteTimerChanged}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'message_auto_delete_timer_changed'?: MessageAutoDeleteTimerChanged;
-    /**
-     * *Optional*. The group has been migrated to a supergroup with the specified identifier. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
-     * @type {number}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'migrate_to_chat_id'?: number;
-    /**
-     * *Optional*. The supergroup has been migrated from a group with the specified identifier. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
-     * @type {number}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'migrate_from_chat_id'?: number;
-    /**
-     * 
-     * @type {MaybeInaccessibleMessage}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'pinned_message'?: MaybeInaccessibleMessage;
-    /**
-     * 
-     * @type {Invoice}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'invoice'?: Invoice;
-    /**
-     * 
-     * @type {SuccessfulPayment}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'successful_payment'?: SuccessfulPayment;
-    /**
-     * 
-     * @type {RefundedPayment}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'refunded_payment'?: RefundedPayment;
-    /**
-     * 
-     * @type {UsersShared}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'users_shared'?: UsersShared;
-    /**
-     * 
-     * @type {ChatShared}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'chat_shared'?: ChatShared;
-    /**
-     * 
-     * @type {GiftInfo}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'gift'?: GiftInfo;
-    /**
-     * 
-     * @type {UniqueGiftInfo}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'unique_gift'?: UniqueGiftInfo;
-    /**
-     * *Optional*. The domain name of the website on which the user has logged in. [More about Telegram Login »](https://core.telegram.org/widgets/login)
-     * @type {string}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'connected_website'?: string;
-    /**
-     * 
-     * @type {WriteAccessAllowed}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'write_access_allowed'?: WriteAccessAllowed;
-    /**
-     * 
-     * @type {PassportData}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'passport_data'?: PassportData;
-    /**
-     * 
-     * @type {ProximityAlertTriggered}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'proximity_alert_triggered'?: ProximityAlertTriggered;
-    /**
-     * 
-     * @type {ChatBoostAdded}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'boost_added'?: ChatBoostAdded;
-    /**
-     * 
-     * @type {ChatBackground}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'chat_background_set'?: ChatBackground;
-    /**
-     * 
-     * @type {ForumTopicCreated}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'forum_topic_created'?: ForumTopicCreated;
-    /**
-     * 
-     * @type {ForumTopicEdited}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'forum_topic_edited'?: ForumTopicEdited;
-    /**
-     * 
-     * @type {any}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'forum_topic_closed'?: any;
-    /**
-     * 
-     * @type {any}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'forum_topic_reopened'?: any;
-    /**
-     * 
-     * @type {any}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'general_forum_topic_hidden'?: any;
-    /**
-     * 
-     * @type {any}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'general_forum_topic_unhidden'?: any;
-    /**
-     * 
-     * @type {GiveawayCreated}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'giveaway_created'?: GiveawayCreated;
-    /**
-     * 
-     * @type {Giveaway}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'giveaway'?: Giveaway;
-    /**
-     * 
-     * @type {GiveawayWinners}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'giveaway_winners'?: GiveawayWinners;
-    /**
-     * 
-     * @type {GiveawayCompleted}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'giveaway_completed'?: GiveawayCompleted;
-    /**
-     * 
-     * @type {PaidMessagePriceChanged}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'paid_message_price_changed'?: PaidMessagePriceChanged;
-    /**
-     * 
-     * @type {VideoChatScheduled}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'video_chat_scheduled'?: VideoChatScheduled;
-    /**
-     * 
-     * @type {any}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'video_chat_started'?: any;
-    /**
-     * 
-     * @type {VideoChatEnded}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'video_chat_ended'?: VideoChatEnded;
-    /**
-     * 
-     * @type {VideoChatParticipantsInvited}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'video_chat_participants_invited'?: VideoChatParticipantsInvited;
-    /**
-     * 
-     * @type {WebAppData}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'web_app_data'?: WebAppData;
-    /**
-     * 
-     * @type {InlineKeyboardMarkup}
-     * @memberof EditMessageTextPost200ResponseResult
-     */
-    'reply_markup'?: InlineKeyboardMarkup;
-}
+export type EditMessageTextPost200ResponseResult = Message | boolean;
+
 /**
  * 
  * @export
@@ -4545,12 +3686,12 @@ export interface EditMessageTextPostRequest {
     'reply_markup'?: InlineKeyboardMarkup;
 }
 /**
+ * @type EditMessageTextPostRequestChatId
  * Required if *inline\\_message\\_id* is not specified. Unique identifier for the target chat or username of the target channel (in the format `@channelusername`)
  * @export
- * @interface EditMessageTextPostRequestChatId
  */
-export interface EditMessageTextPostRequestChatId {
-}
+export type EditMessageTextPostRequestChatId = number | string;
+
 /**
  * 
  * @export
@@ -5020,12 +4161,12 @@ export interface ForwardMessagePostRequest {
     'protect_content'?: boolean;
 }
 /**
+ * @type ForwardMessagePostRequestFromChatId
  * Unique identifier for the chat where the original message was sent (or channel username in the format `@channelusername`)
  * @export
- * @interface ForwardMessagePostRequestFromChatId
  */
-export interface ForwardMessagePostRequestFromChatId {
-}
+export type ForwardMessagePostRequestFromChatId = number | string;
+
 /**
  * 
  * @export
@@ -5089,12 +4230,12 @@ export interface ForwardMessagesPostRequest {
     'protect_content'?: boolean;
 }
 /**
+ * @type ForwardMessagesPostRequestFromChatId
  * Unique identifier for the chat where the original messages were sent (or channel username in the format `@channelusername`)
  * @export
- * @interface ForwardMessagesPostRequestFromChatId
  */
-export interface ForwardMessagesPostRequestFromChatId {
-}
+export type ForwardMessagesPostRequestFromChatId = number | string;
+
 /**
  * This object represents a game. Use BotFather to create and edit games, their short names will act as unique identifiers.
  * @export
@@ -5872,12 +5013,12 @@ export interface GetUserChatBoostsPostRequest {
     'user_id': number;
 }
 /**
+ * @type GetUserChatBoostsPostRequestChatId
  * Unique identifier for the chat or username of the channel (in the format `@channelusername`)
  * @export
- * @interface GetUserChatBoostsPostRequestChatId
  */
-export interface GetUserChatBoostsPostRequestChatId {
-}
+export type GetUserChatBoostsPostRequestChatId = number | string;
+
 /**
  * 
  * @export
@@ -6454,392 +5595,11 @@ export const InlineQueryChatTypeEnum = {
 export type InlineQueryChatTypeEnum = typeof InlineQueryChatTypeEnum[keyof typeof InlineQueryChatTypeEnum];
 
 /**
+ * @type InlineQueryResult
  * This object represents one result of an inline query. Telegram clients currently support results of the following 20 types:  * [InlineQueryResultCachedAudio](https://core.telegram.org/bots/api/#inlinequeryresultcachedaudio) * [InlineQueryResultCachedDocument](https://core.telegram.org/bots/api/#inlinequeryresultcacheddocument) * [InlineQueryResultCachedGif](https://core.telegram.org/bots/api/#inlinequeryresultcachedgif) * [InlineQueryResultCachedMpeg4Gif](https://core.telegram.org/bots/api/#inlinequeryresultcachedmpeg4gif) * [InlineQueryResultCachedPhoto](https://core.telegram.org/bots/api/#inlinequeryresultcachedphoto) * [InlineQueryResultCachedSticker](https://core.telegram.org/bots/api/#inlinequeryresultcachedsticker) * [InlineQueryResultCachedVideo](https://core.telegram.org/bots/api/#inlinequeryresultcachedvideo) * [InlineQueryResultCachedVoice](https://core.telegram.org/bots/api/#inlinequeryresultcachedvoice) * [InlineQueryResultArticle](https://core.telegram.org/bots/api/#inlinequeryresultarticle) * [InlineQueryResultAudio](https://core.telegram.org/bots/api/#inlinequeryresultaudio) * [InlineQueryResultContact](https://core.telegram.org/bots/api/#inlinequeryresultcontact) * [InlineQueryResultGame](https://core.telegram.org/bots/api/#inlinequeryresultgame) * [InlineQueryResultDocument](https://core.telegram.org/bots/api/#inlinequeryresultdocument) * [InlineQueryResultGif](https://core.telegram.org/bots/api/#inlinequeryresultgif) * [InlineQueryResultLocation](https://core.telegram.org/bots/api/#inlinequeryresultlocation) * [InlineQueryResultMpeg4Gif](https://core.telegram.org/bots/api/#inlinequeryresultmpeg4gif) * [InlineQueryResultPhoto](https://core.telegram.org/bots/api/#inlinequeryresultphoto) * [InlineQueryResultVenue](https://core.telegram.org/bots/api/#inlinequeryresultvenue) * [InlineQueryResultVideo](https://core.telegram.org/bots/api/#inlinequeryresultvideo) * [InlineQueryResultVoice](https://core.telegram.org/bots/api/#inlinequeryresultvoice)
  * @export
- * @interface InlineQueryResult
  */
-export interface InlineQueryResult {
-    /**
-     * Type of the result, must be *voice*
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'type': string;
-    /**
-     * Unique identifier for this result, 1-64 bytes
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'id': string;
-    /**
-     * A valid file identifier for the audio file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'audio_file_id': string;
-    /**
-     * 
-     * @type {InputMessageContent}
-     * @memberof InlineQueryResult
-     */
-    'input_message_content': InputMessageContent;
-    /**
-     * Recording title
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'title': string;
-    /**
-     * A valid file identifier for the file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'document_file_id': string;
-    /**
-     * A valid file identifier for the GIF file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'gif_file_id': string;
-    /**
-     * A valid file identifier for the MPEG4 file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'mpeg4_file_id': string;
-    /**
-     * A valid file identifier of the photo
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'photo_file_id': string;
-    /**
-     * A valid file identifier of the sticker
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'sticker_file_id': string;
-    /**
-     * A valid file identifier for the video file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'video_file_id': string;
-    /**
-     * A valid file identifier for the voice message
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'voice_file_id': string;
-    /**
-     * URL of the thumbnail (JPEG only) for the video
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'thumbnail_url': string;
-    /**
-     * A valid URL for the audio file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'audio_url': string;
-    /**
-     * Contact\'s phone number
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'phone_number': string;
-    /**
-     * Contact\'s first name
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'first_name': string;
-    /**
-     * Short name of the game
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'game_short_name': string;
-    /**
-     * A valid URL for the file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'document_url': string;
-    /**
-     * MIME type of the content of the video URL, “text/html” or “video/mp4”
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'mime_type': InlineQueryResultMimeTypeEnum;
-    /**
-     * A valid URL for the GIF file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'gif_url': string;
-    /**
-     * Latitude of the venue location in degrees
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'latitude': number;
-    /**
-     * Longitude of the venue location in degrees
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'longitude': number;
-    /**
-     * A valid URL for the MPEG4 file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'mpeg4_url': string;
-    /**
-     * A valid URL of the photo. Photo must be in **JPEG** format. Photo size must not exceed 5MB
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'photo_url': string;
-    /**
-     * Address of the venue
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'address': string;
-    /**
-     * A valid URL for the embedded video player or video file
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'video_url': string;
-    /**
-     * A valid URL for the voice recording
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'voice_url': string;
-    /**
-     * *Optional*. Caption, 0-1024 characters after entities parsing
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'caption'?: string;
-    /**
-     * *Optional*. Mode for parsing entities in the voice message caption. See [formatting options](https://core.telegram.org/bots/api/#formatting-options) for more details.
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'parse_mode'?: string;
-    /**
-     * *Optional*. List of special entities that appear in the caption, which can be specified instead of *parse\\_mode*
-     * @type {Array<MessageEntity>}
-     * @memberof InlineQueryResult
-     */
-    'caption_entities'?: Array<MessageEntity>;
-    /**
-     * 
-     * @type {InlineKeyboardMarkup}
-     * @memberof InlineQueryResult
-     */
-    'reply_markup'?: InlineKeyboardMarkup;
-    /**
-     * *Optional*. Short description of the result
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'description'?: string;
-    /**
-     * *Optional*. Pass *True*, if the caption must be shown above the message media
-     * @type {boolean}
-     * @memberof InlineQueryResult
-     */
-    'show_caption_above_media'?: boolean;
-    /**
-     * *Optional*. URL of the result
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'url'?: string;
-    /**
-     * *Optional*. Thumbnail width
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'thumbnail_width'?: number;
-    /**
-     * *Optional*. Thumbnail height
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'thumbnail_height'?: number;
-    /**
-     * *Optional*. Performer
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'performer'?: string;
-    /**
-     * *Optional*. Audio duration in seconds
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'audio_duration'?: number;
-    /**
-     * *Optional*. Contact\'s last name
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'last_name'?: string;
-    /**
-     * *Optional*. Additional data about the contact in the form of a [vCard](https://en.wikipedia.org/wiki/VCard), 0-2048 bytes
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'vcard'?: string;
-    /**
-     * *Optional*. Width of the GIF
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'gif_width'?: number;
-    /**
-     * *Optional*. Height of the GIF
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'gif_height'?: number;
-    /**
-     * *Optional*. Duration of the GIF in seconds
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'gif_duration'?: number;
-    /**
-     * *Optional*. MIME type of the thumbnail, must be one of “image/jpeg”, “image/gif”, or “video/mp4”. Defaults to “image/jpeg”
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'thumbnail_mime_type'?: InlineQueryResultThumbnailMimeTypeEnum;
-    /**
-     * *Optional*. The radius of uncertainty for the location, measured in meters; 0-1500
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'horizontal_accuracy'?: number;
-    /**
-     * *Optional*. Period in seconds during which the location can be updated, should be between 60 and 86400, or 0x7FFFFFFF for live locations that can be edited indefinitely.
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'live_period'?: number;
-    /**
-     * *Optional*. For live locations, a direction in which the user is moving, in degrees. Must be between 1 and 360 if specified.
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'heading'?: number;
-    /**
-     * *Optional*. For live locations, a maximum distance for proximity alerts about approaching another chat member, in meters. Must be between 1 and 100000 if specified.
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'proximity_alert_radius'?: number;
-    /**
-     * *Optional*. Video width
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'mpeg4_width'?: number;
-    /**
-     * *Optional*. Video height
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'mpeg4_height'?: number;
-    /**
-     * *Optional*. Video duration in seconds
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'mpeg4_duration'?: number;
-    /**
-     * *Optional*. Width of the photo
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'photo_width'?: number;
-    /**
-     * *Optional*. Height of the photo
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'photo_height'?: number;
-    /**
-     * *Optional*. Foursquare identifier of the venue if known
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'foursquare_id'?: string;
-    /**
-     * *Optional*. Foursquare type of the venue, if known. (For example, “arts\\_entertainment/default”, “arts\\_entertainment/aquarium” or “food/icecream”.)
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'foursquare_type'?: string;
-    /**
-     * *Optional*. Google Places identifier of the venue
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'google_place_id'?: string;
-    /**
-     * *Optional*. Google Places type of the venue. (See [supported types](https://developers.google.com/places/web-service/supported_types).)
-     * @type {string}
-     * @memberof InlineQueryResult
-     */
-    'google_place_type'?: string;
-    /**
-     * *Optional*. Video width
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'video_width'?: number;
-    /**
-     * *Optional*. Video height
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'video_height'?: number;
-    /**
-     * *Optional*. Video duration in seconds
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'video_duration'?: number;
-    /**
-     * *Optional*. Recording duration in seconds
-     * @type {number}
-     * @memberof InlineQueryResult
-     */
-    'voice_duration'?: number;
-}
-
-export const InlineQueryResultMimeTypeEnum = {
-    TextHtml: 'text/html',
-    VideoMp4: 'video/mp4'
-} as const;
-
-export type InlineQueryResultMimeTypeEnum = typeof InlineQueryResultMimeTypeEnum[keyof typeof InlineQueryResultMimeTypeEnum];
-export const InlineQueryResultThumbnailMimeTypeEnum = {
-    ImageJpeg: 'image/jpeg',
-    ImageGif: 'image/gif',
-    VideoMp4: 'video/mp4'
-} as const;
-
-export type InlineQueryResultThumbnailMimeTypeEnum = typeof InlineQueryResultThumbnailMimeTypeEnum[keyof typeof InlineQueryResultThumbnailMimeTypeEnum];
+export type InlineQueryResult = InlineQueryResultArticle | InlineQueryResultAudio | InlineQueryResultCachedAudio | InlineQueryResultCachedDocument | InlineQueryResultCachedGif | InlineQueryResultCachedMpeg4Gif | InlineQueryResultCachedPhoto | InlineQueryResultCachedSticker | InlineQueryResultCachedVideo | InlineQueryResultCachedVoice | InlineQueryResultContact | InlineQueryResultDocument | InlineQueryResultGame | InlineQueryResultGif | InlineQueryResultLocation | InlineQueryResultMpeg4Gif | InlineQueryResultPhoto | InlineQueryResultVenue | InlineQueryResultVideo | InlineQueryResultVoice;
 
 /**
  * Represents a link to an article or web page.
@@ -8580,114 +7340,12 @@ export interface InputLocationMessageContent {
     'proximity_alert_radius'?: number;
 }
 /**
+ * @type InputMedia
  * This object represents the content of a media message to be sent. It should be one of  * [InputMediaAnimation](https://core.telegram.org/bots/api/#inputmediaanimation) * [InputMediaDocument](https://core.telegram.org/bots/api/#inputmediadocument) * [InputMediaAudio](https://core.telegram.org/bots/api/#inputmediaaudio) * [InputMediaPhoto](https://core.telegram.org/bots/api/#inputmediaphoto) * [InputMediaVideo](https://core.telegram.org/bots/api/#inputmediavideo)
  * @export
- * @interface InputMedia
  */
-export interface InputMedia {
-    /**
-     * Type of the result, must be *video*
-     * @type {string}
-     * @memberof InputMedia
-     */
-    'type': string;
-    /**
-     * File to send. Pass a file\\_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass “attach://\\<file\\_attach\\_name\\>” to upload a new one using multipart/form-data under \\<file\\_attach\\_name\\> name. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputMedia
-     */
-    'media': string;
-    /**
-     * *Optional*. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail\'s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can\'t be reused and can be only uploaded as a new file, so you can pass “attach://\\<file\\_attach\\_name\\>” if the thumbnail was uploaded using multipart/form-data under \\<file\\_attach\\_name\\>. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputMedia
-     */
-    'thumbnail'?: string;
-    /**
-     * *Optional*. Caption of the video to be sent, 0-1024 characters after entities parsing
-     * @type {string}
-     * @memberof InputMedia
-     */
-    'caption'?: string;
-    /**
-     * *Optional*. Mode for parsing entities in the video caption. See [formatting options](https://core.telegram.org/bots/api/#formatting-options) for more details.
-     * @type {string}
-     * @memberof InputMedia
-     */
-    'parse_mode'?: string;
-    /**
-     * *Optional*. List of special entities that appear in the caption, which can be specified instead of *parse\\_mode*
-     * @type {Array<MessageEntity>}
-     * @memberof InputMedia
-     */
-    'caption_entities'?: Array<MessageEntity>;
-    /**
-     * *Optional*. Pass *True*, if the caption must be shown above the message media
-     * @type {boolean}
-     * @memberof InputMedia
-     */
-    'show_caption_above_media'?: boolean;
-    /**
-     * *Optional*. Video width
-     * @type {number}
-     * @memberof InputMedia
-     */
-    'width'?: number;
-    /**
-     * *Optional*. Video height
-     * @type {number}
-     * @memberof InputMedia
-     */
-    'height'?: number;
-    /**
-     * *Optional*. Video duration in seconds
-     * @type {number}
-     * @memberof InputMedia
-     */
-    'duration'?: number;
-    /**
-     * *Optional*. Pass *True* if the video needs to be covered with a spoiler animation
-     * @type {boolean}
-     * @memberof InputMedia
-     */
-    'has_spoiler'?: boolean;
-    /**
-     * *Optional*. Disables automatic server-side content type detection for files uploaded using multipart/form-data. Always *True*, if the document is sent as part of an album.
-     * @type {boolean}
-     * @memberof InputMedia
-     */
-    'disable_content_type_detection'?: boolean;
-    /**
-     * *Optional*. Performer of the audio
-     * @type {string}
-     * @memberof InputMedia
-     */
-    'performer'?: string;
-    /**
-     * *Optional*. Title of the audio
-     * @type {string}
-     * @memberof InputMedia
-     */
-    'title'?: string;
-    /**
-     * *Optional*. Cover for the video in the message. Pass a file\\_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass “attach://\\<file\\_attach\\_name\\>” to upload a new one using multipart/form-data under \\<file\\_attach\\_name\\> name. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputMedia
-     */
-    'cover'?: string;
-    /**
-     * *Optional*. Start timestamp for the video in the message
-     * @type {number}
-     * @memberof InputMedia
-     */
-    'start_timestamp'?: number;
-    /**
-     * *Optional*. Pass *True* if the uploaded video is suitable for streaming
-     * @type {boolean}
-     * @memberof InputMedia
-     */
-    'supports_streaming'?: boolean;
-}
+export type InputMedia = InputMediaAnimation | InputMediaAudio | InputMediaDocument | InputMediaPhoto | InputMediaVideo;
+
 /**
  * Represents an animation file (GIF or H.264/MPEG-4 AVC video without sound) to be sent.
  * @export
@@ -9012,307 +7670,19 @@ export interface InputMediaVideo {
     'has_spoiler'?: boolean;
 }
 /**
+ * @type InputMessageContent
  * This object represents the content of a message to be sent as a result of an inline query. Telegram clients currently support the following 5 types:  * [InputTextMessageContent](https://core.telegram.org/bots/api/#inputtextmessagecontent) * [InputLocationMessageContent](https://core.telegram.org/bots/api/#inputlocationmessagecontent) * [InputVenueMessageContent](https://core.telegram.org/bots/api/#inputvenuemessagecontent) * [InputContactMessageContent](https://core.telegram.org/bots/api/#inputcontactmessagecontent) * [InputInvoiceMessageContent](https://core.telegram.org/bots/api/#inputinvoicemessagecontent)
  * @export
- * @interface InputMessageContent
  */
-export interface InputMessageContent {
-    /**
-     * Text of the message to be sent, 1-4096 characters
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'message_text': string;
-    /**
-     * Latitude of the venue in degrees
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'latitude': number;
-    /**
-     * Longitude of the venue in degrees
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'longitude': number;
-    /**
-     * Product name, 1-32 characters
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'title': string;
-    /**
-     * Address of the venue
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'address': string;
-    /**
-     * Contact\'s phone number
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'phone_number': string;
-    /**
-     * Contact\'s first name
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'first_name': string;
-    /**
-     * Product description, 1-255 characters
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'description': string;
-    /**
-     * Bot-defined invoice payload, 1-128 bytes. This will not be displayed to the user, use it for your internal processes.
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'payload': string;
-    /**
-     * Three-letter ISO 4217 currency code, see [more on currencies](https://core.telegram.org/bots/payments#supported-currencies). Pass “XTR” for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'currency': string;
-    /**
-     * Price breakdown, a JSON-serialized list of components (e.g. product price, tax, discount, delivery cost, delivery tax, bonus, etc.). Must contain exactly one item for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {Array<LabeledPrice>}
-     * @memberof InputMessageContent
-     */
-    'prices': Array<LabeledPrice>;
-    /**
-     * *Optional*. Mode for parsing entities in the message text. See [formatting options](https://core.telegram.org/bots/api/#formatting-options) for more details.
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'parse_mode'?: string;
-    /**
-     * *Optional*. List of special entities that appear in message text, which can be specified instead of *parse\\_mode*
-     * @type {Array<MessageEntity>}
-     * @memberof InputMessageContent
-     */
-    'entities'?: Array<MessageEntity>;
-    /**
-     * 
-     * @type {LinkPreviewOptions}
-     * @memberof InputMessageContent
-     */
-    'link_preview_options'?: LinkPreviewOptions;
-    /**
-     * *Optional*. The radius of uncertainty for the location, measured in meters; 0-1500
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'horizontal_accuracy'?: number;
-    /**
-     * *Optional*. Period in seconds during which the location can be updated, should be between 60 and 86400, or 0x7FFFFFFF for live locations that can be edited indefinitely.
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'live_period'?: number;
-    /**
-     * *Optional*. For live locations, a direction in which the user is moving, in degrees. Must be between 1 and 360 if specified.
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'heading'?: number;
-    /**
-     * *Optional*. For live locations, a maximum distance for proximity alerts about approaching another chat member, in meters. Must be between 1 and 100000 if specified.
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'proximity_alert_radius'?: number;
-    /**
-     * *Optional*. Foursquare identifier of the venue, if known
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'foursquare_id'?: string;
-    /**
-     * *Optional*. Foursquare type of the venue, if known. (For example, “arts\\_entertainment/default”, “arts\\_entertainment/aquarium” or “food/icecream”.)
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'foursquare_type'?: string;
-    /**
-     * *Optional*. Google Places identifier of the venue
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'google_place_id'?: string;
-    /**
-     * *Optional*. Google Places type of the venue. (See [supported types](https://developers.google.com/places/web-service/supported_types).)
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'google_place_type'?: string;
-    /**
-     * *Optional*. Contact\'s last name
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'last_name'?: string;
-    /**
-     * *Optional*. Additional data about the contact in the form of a [vCard](https://en.wikipedia.org/wiki/VCard), 0-2048 bytes
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'vcard'?: string;
-    /**
-     * *Optional*. Payment provider token, obtained via [@BotFather](https://t.me/botfather). Pass an empty string for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'provider_token'?: string;
-    /**
-     * *Optional*. The maximum accepted amount for tips in the *smallest units* of the currency (integer, **not** float/double). For example, for a maximum tip of `US$ 1.45` pass `max_tip_amount = 145`. See the *exp* parameter in [currencies.json](https://core.telegram.org/bots/payments/currencies.json), it shows the number of digits past the decimal point for each currency (2 for the majority of currencies). Defaults to 0. Not supported for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'max_tip_amount'?: number;
-    /**
-     * *Optional*. A JSON-serialized array of suggested amounts of tip in the *smallest units* of the currency (integer, **not** float/double). At most 4 suggested tip amounts can be specified. The suggested tip amounts must be positive, passed in a strictly increased order and must not exceed *max\\_tip\\_amount*.
-     * @type {Array<number>}
-     * @memberof InputMessageContent
-     */
-    'suggested_tip_amounts'?: Array<number>;
-    /**
-     * *Optional*. A JSON-serialized object for data about the invoice, which will be shared with the payment provider. A detailed description of the required fields should be provided by the payment provider.
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'provider_data'?: string;
-    /**
-     * *Optional*. URL of the product photo for the invoice. Can be a photo of the goods or a marketing image for a service.
-     * @type {string}
-     * @memberof InputMessageContent
-     */
-    'photo_url'?: string;
-    /**
-     * *Optional*. Photo size in bytes
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'photo_size'?: number;
-    /**
-     * *Optional*. Photo width
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'photo_width'?: number;
-    /**
-     * *Optional*. Photo height
-     * @type {number}
-     * @memberof InputMessageContent
-     */
-    'photo_height'?: number;
-    /**
-     * *Optional*. Pass *True* if you require the user\'s full name to complete the order. Ignored for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {boolean}
-     * @memberof InputMessageContent
-     */
-    'need_name'?: boolean;
-    /**
-     * *Optional*. Pass *True* if you require the user\'s phone number to complete the order. Ignored for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {boolean}
-     * @memberof InputMessageContent
-     */
-    'need_phone_number'?: boolean;
-    /**
-     * *Optional*. Pass *True* if you require the user\'s email address to complete the order. Ignored for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {boolean}
-     * @memberof InputMessageContent
-     */
-    'need_email'?: boolean;
-    /**
-     * *Optional*. Pass *True* if you require the user\'s shipping address to complete the order. Ignored for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {boolean}
-     * @memberof InputMessageContent
-     */
-    'need_shipping_address'?: boolean;
-    /**
-     * *Optional*. Pass *True* if the user\'s phone number should be sent to the provider. Ignored for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {boolean}
-     * @memberof InputMessageContent
-     */
-    'send_phone_number_to_provider'?: boolean;
-    /**
-     * *Optional*. Pass *True* if the user\'s email address should be sent to the provider. Ignored for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {boolean}
-     * @memberof InputMessageContent
-     */
-    'send_email_to_provider'?: boolean;
-    /**
-     * *Optional*. Pass *True* if the final price depends on the shipping method. Ignored for payments in [Telegram Stars](https://t.me/BotNews/90).
-     * @type {boolean}
-     * @memberof InputMessageContent
-     */
-    'is_flexible'?: boolean;
-}
+export type InputMessageContent = InputContactMessageContent | InputInvoiceMessageContent | InputLocationMessageContent | InputTextMessageContent | InputVenueMessageContent;
+
 /**
+ * @type InputPaidMedia
  * This object describes the paid media to be sent. Currently, it can be one of  * [InputPaidMediaPhoto](https://core.telegram.org/bots/api/#inputpaidmediaphoto) * [InputPaidMediaVideo](https://core.telegram.org/bots/api/#inputpaidmediavideo)
  * @export
- * @interface InputPaidMedia
  */
-export interface InputPaidMedia {
-    /**
-     * Type of the media, must be *video*
-     * @type {string}
-     * @memberof InputPaidMedia
-     */
-    'type': string;
-    /**
-     * File to send. Pass a file\\_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass “attach://\\<file\\_attach\\_name\\>” to upload a new one using multipart/form-data under \\<file\\_attach\\_name\\> name. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputPaidMedia
-     */
-    'media': string;
-    /**
-     * *Optional*. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail\'s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can\'t be reused and can be only uploaded as a new file, so you can pass “attach://\\<file\\_attach\\_name\\>” if the thumbnail was uploaded using multipart/form-data under \\<file\\_attach\\_name\\>. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputPaidMedia
-     */
-    'thumbnail'?: string;
-    /**
-     * *Optional*. Cover for the video in the message. Pass a file\\_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass “attach://\\<file\\_attach\\_name\\>” to upload a new one using multipart/form-data under \\<file\\_attach\\_name\\> name. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputPaidMedia
-     */
-    'cover'?: string;
-    /**
-     * *Optional*. Start timestamp for the video in the message
-     * @type {number}
-     * @memberof InputPaidMedia
-     */
-    'start_timestamp'?: number;
-    /**
-     * *Optional*. Video width
-     * @type {number}
-     * @memberof InputPaidMedia
-     */
-    'width'?: number;
-    /**
-     * *Optional*. Video height
-     * @type {number}
-     * @memberof InputPaidMedia
-     */
-    'height'?: number;
-    /**
-     * *Optional*. Video duration in seconds
-     * @type {number}
-     * @memberof InputPaidMedia
-     */
-    'duration'?: number;
-    /**
-     * *Optional*. Pass *True* if the uploaded video is suitable for streaming
-     * @type {boolean}
-     * @memberof InputPaidMedia
-     */
-    'supports_streaming'?: boolean;
-}
+export type InputPaidMedia = InputPaidMediaPhoto | InputPaidMediaVideo;
+
 /**
  * The paid media to send is a photo.
  * @export
@@ -9419,36 +7789,12 @@ export interface InputPollOption {
     'text_entities'?: Array<MessageEntity>;
 }
 /**
+ * @type InputProfilePhoto
  * This object describes a profile photo to set. Currently, it can be one of  * [InputProfilePhotoStatic](https://core.telegram.org/bots/api/#inputprofilephotostatic) * [InputProfilePhotoAnimated](https://core.telegram.org/bots/api/#inputprofilephotoanimated)
  * @export
- * @interface InputProfilePhoto
  */
-export interface InputProfilePhoto {
-    /**
-     * Type of the profile photo, must be *animated*
-     * @type {string}
-     * @memberof InputProfilePhoto
-     */
-    'type': string;
-    /**
-     * The static profile photo. Profile photos can\'t be reused and can only be uploaded as a new file, so you can pass “attach://\\<file\\_attach\\_name\\>” if the photo was uploaded using multipart/form-data under \\<file\\_attach\\_name\\>. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputProfilePhoto
-     */
-    'photo': string;
-    /**
-     * The animated profile photo. Profile photos can\'t be reused and can only be uploaded as a new file, so you can pass “attach://\\<file\\_attach\\_name\\>” if the photo was uploaded using multipart/form-data under \\<file\\_attach\\_name\\>. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputProfilePhoto
-     */
-    'animation': string;
-    /**
-     * *Optional*. Timestamp in seconds of the frame that will be used as the static profile photo. Defaults to 0.0.
-     * @type {number}
-     * @memberof InputProfilePhoto
-     */
-    'main_frame_timestamp'?: number;
-}
+export type InputProfilePhoto = InputProfilePhotoAnimated | InputProfilePhotoStatic;
+
 /**
  * An animated profile photo in the MPEG4 format.
  * @export
@@ -9540,48 +7886,12 @@ export const InputStickerFormatEnum = {
 export type InputStickerFormatEnum = typeof InputStickerFormatEnum[keyof typeof InputStickerFormatEnum];
 
 /**
+ * @type InputStoryContent
  * This object describes the content of a story to post. Currently, it can be one of  * [InputStoryContentPhoto](https://core.telegram.org/bots/api/#inputstorycontentphoto) * [InputStoryContentVideo](https://core.telegram.org/bots/api/#inputstorycontentvideo)
  * @export
- * @interface InputStoryContent
  */
-export interface InputStoryContent {
-    /**
-     * Type of the content, must be *video*
-     * @type {string}
-     * @memberof InputStoryContent
-     */
-    'type': string;
-    /**
-     * The photo to post as a story. The photo must be of the size 1080x1920 and must not exceed 10 MB. The photo can\'t be reused and can only be uploaded as a new file, so you can pass “attach://\\<file\\_attach\\_name\\>” if the photo was uploaded using multipart/form-data under \\<file\\_attach\\_name\\>. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputStoryContent
-     */
-    'photo': string;
-    /**
-     * The video to post as a story. The video must be of the size 720x1280, streamable, encoded with H.265 codec, with key frames added each second in the MPEG4 format, and must not exceed 30 MB. The video can\'t be reused and can only be uploaded as a new file, so you can pass “attach://\\<file\\_attach\\_name\\>” if the video was uploaded using multipart/form-data under \\<file\\_attach\\_name\\>. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof InputStoryContent
-     */
-    'video': string;
-    /**
-     * *Optional*. Precise duration of the video in seconds; 0-60
-     * @type {number}
-     * @memberof InputStoryContent
-     */
-    'duration'?: number;
-    /**
-     * *Optional*. Timestamp in seconds of the frame that will be used as the static cover for the story. Defaults to 0.0.
-     * @type {number}
-     * @memberof InputStoryContent
-     */
-    'cover_frame_timestamp'?: number;
-    /**
-     * *Optional*. Pass *True* if the video has no sound
-     * @type {boolean}
-     * @memberof InputStoryContent
-     */
-    'is_animation'?: boolean;
-}
+export type InputStoryContent = InputStoryContentPhoto | InputStoryContentVideo;
+
 /**
  * Describes a photo to post as a story.
  * @export
@@ -9978,12 +8288,12 @@ export interface LeaveChatPostRequest {
     'chat_id': LeaveChatPostRequestChatId;
 }
 /**
+ * @type LeaveChatPostRequestChatId
  * Unique identifier for the target chat or username of the target supergroup or channel (in the format `@channelusername`)
  * @export
- * @interface LeaveChatPostRequestChatId
  */
-export interface LeaveChatPostRequestChatId {
-}
+export type LeaveChatPostRequestChatId = number | string;
+
 /**
  * Describes the options used for link preview generation.
  * @export
@@ -10168,571 +8478,19 @@ export const MaskPositionPointEnum = {
 export type MaskPositionPointEnum = typeof MaskPositionPointEnum[keyof typeof MaskPositionPointEnum];
 
 /**
+ * @type MaybeInaccessibleMessage
  * This object describes a message that can be inaccessible to the bot. It can be one of  * [Message](https://core.telegram.org/bots/api/#message) * [InaccessibleMessage](https://core.telegram.org/bots/api/#inaccessiblemessage)
  * @export
- * @interface MaybeInaccessibleMessage
  */
-export interface MaybeInaccessibleMessage {
-    /**
-     * Unique message identifier inside the chat
-     * @type {number}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'message_id': number;
-    /**
-     * Always 0. The field can be used to differentiate regular and inaccessible messages.
-     * @type {number}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'date': number;
-    /**
-     * 
-     * @type {Chat}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'chat': Chat;
-    /**
-     * *Optional*. Unique identifier of a message thread to which the message belongs; for supergroups only
-     * @type {number}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'message_thread_id'?: number;
-    /**
-     * 
-     * @type {User}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'from'?: User;
-    /**
-     * 
-     * @type {Chat}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'sender_chat'?: Chat;
-    /**
-     * *Optional*. If the sender of the message boosted the chat, the number of boosts added by the user
-     * @type {number}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'sender_boost_count'?: number;
-    /**
-     * 
-     * @type {User}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'sender_business_bot'?: User;
-    /**
-     * *Optional*. Unique identifier of the business connection from which the message was received. If non-empty, the message belongs to a chat of the corresponding business account that is independent from any potential bot chat which might share the same identifier.
-     * @type {string}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'business_connection_id'?: string;
-    /**
-     * 
-     * @type {MessageOrigin}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'forward_origin'?: MessageOrigin;
-    /**
-     * *Optional*. *True*, if the message is sent to a forum topic
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'is_topic_message'?: boolean;
-    /**
-     * *Optional*. *True*, if the message is a channel post that was automatically forwarded to the connected discussion group
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'is_automatic_forward'?: boolean;
-    /**
-     * 
-     * @type {Message}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'reply_to_message'?: Message;
-    /**
-     * 
-     * @type {ExternalReplyInfo}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'external_reply'?: ExternalReplyInfo;
-    /**
-     * 
-     * @type {TextQuote}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'quote'?: TextQuote;
-    /**
-     * 
-     * @type {Story}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'reply_to_story'?: Story;
-    /**
-     * 
-     * @type {User}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'via_bot'?: User;
-    /**
-     * *Optional*. Date the message was last edited in Unix time
-     * @type {number}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'edit_date'?: number;
-    /**
-     * *Optional*. *True*, if the message can\'t be forwarded
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'has_protected_content'?: boolean;
-    /**
-     * *Optional*. True, if the message was sent by an implicit action, for example, as an away or a greeting business message, or as a scheduled message
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'is_from_offline'?: boolean;
-    /**
-     * *Optional*. The unique identifier of a media message group this message belongs to
-     * @type {string}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'media_group_id'?: string;
-    /**
-     * *Optional*. Signature of the post author for messages in channels, or the custom title of an anonymous group administrator
-     * @type {string}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'author_signature'?: string;
-    /**
-     * *Optional*. The number of Telegram Stars that were paid by the sender of the message to send it
-     * @type {number}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'paid_star_count'?: number;
-    /**
-     * *Optional*. For text messages, the actual UTF-8 text of the message
-     * @type {string}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'text'?: string;
-    /**
-     * *Optional*. For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text
-     * @type {Array<MessageEntity>}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'entities'?: Array<MessageEntity>;
-    /**
-     * 
-     * @type {LinkPreviewOptions}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'link_preview_options'?: LinkPreviewOptions;
-    /**
-     * *Optional*. Unique identifier of the message effect added to the message
-     * @type {string}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'effect_id'?: string;
-    /**
-     * 
-     * @type {Animation}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'animation'?: Animation;
-    /**
-     * 
-     * @type {Audio}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'audio'?: Audio;
-    /**
-     * 
-     * @type {Document}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'document'?: Document;
-    /**
-     * 
-     * @type {PaidMediaInfo}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'paid_media'?: PaidMediaInfo;
-    /**
-     * *Optional*. Message is a photo, available sizes of the photo
-     * @type {Array<PhotoSize>}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'photo'?: Array<PhotoSize>;
-    /**
-     * 
-     * @type {Sticker}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'sticker'?: Sticker;
-    /**
-     * 
-     * @type {Story}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'story'?: Story;
-    /**
-     * 
-     * @type {Video}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'video'?: Video;
-    /**
-     * 
-     * @type {VideoNote}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'video_note'?: VideoNote;
-    /**
-     * 
-     * @type {Voice}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'voice'?: Voice;
-    /**
-     * *Optional*. Caption for the animation, audio, document, paid media, photo, video or voice
-     * @type {string}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'caption'?: string;
-    /**
-     * *Optional*. For messages with a caption, special entities like usernames, URLs, bot commands, etc. that appear in the caption
-     * @type {Array<MessageEntity>}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'caption_entities'?: Array<MessageEntity>;
-    /**
-     * *Optional*. True, if the caption must be shown above the message media
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'show_caption_above_media'?: boolean;
-    /**
-     * *Optional*. *True*, if the message media is covered by a spoiler animation
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'has_media_spoiler'?: boolean;
-    /**
-     * 
-     * @type {Contact}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'contact'?: Contact;
-    /**
-     * 
-     * @type {Dice}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'dice'?: Dice;
-    /**
-     * 
-     * @type {Game}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'game'?: Game;
-    /**
-     * 
-     * @type {Poll}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'poll'?: Poll;
-    /**
-     * 
-     * @type {Venue}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'venue'?: Venue;
-    /**
-     * 
-     * @type {Location}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'location'?: Location;
-    /**
-     * *Optional*. New members that were added to the group or supergroup and information about them (the bot itself may be one of these members)
-     * @type {Array<User>}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'new_chat_members'?: Array<User>;
-    /**
-     * 
-     * @type {User}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'left_chat_member'?: User;
-    /**
-     * *Optional*. A chat title was changed to this value
-     * @type {string}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'new_chat_title'?: string;
-    /**
-     * *Optional*. A chat photo was change to this value
-     * @type {Array<PhotoSize>}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'new_chat_photo'?: Array<PhotoSize>;
-    /**
-     * *Optional*. Service message: the chat photo was deleted
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'delete_chat_photo'?: boolean;
-    /**
-     * *Optional*. Service message: the group has been created
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'group_chat_created'?: boolean;
-    /**
-     * *Optional*. Service message: the supergroup has been created. This field can\'t be received in a message coming through updates, because bot can\'t be a member of a supergroup when it is created. It can only be found in reply\\_to\\_message if someone replies to a very first message in a directly created supergroup.
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'supergroup_chat_created'?: boolean;
-    /**
-     * *Optional*. Service message: the channel has been created. This field can\'t be received in a message coming through updates, because bot can\'t be a member of a channel when it is created. It can only be found in reply\\_to\\_message if someone replies to a very first message in a channel.
-     * @type {boolean}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'channel_chat_created'?: boolean;
-    /**
-     * 
-     * @type {MessageAutoDeleteTimerChanged}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'message_auto_delete_timer_changed'?: MessageAutoDeleteTimerChanged;
-    /**
-     * *Optional*. The group has been migrated to a supergroup with the specified identifier. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
-     * @type {number}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'migrate_to_chat_id'?: number;
-    /**
-     * *Optional*. The supergroup has been migrated from a group with the specified identifier. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
-     * @type {number}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'migrate_from_chat_id'?: number;
-    /**
-     * 
-     * @type {MaybeInaccessibleMessage}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'pinned_message'?: MaybeInaccessibleMessage;
-    /**
-     * 
-     * @type {Invoice}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'invoice'?: Invoice;
-    /**
-     * 
-     * @type {SuccessfulPayment}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'successful_payment'?: SuccessfulPayment;
-    /**
-     * 
-     * @type {RefundedPayment}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'refunded_payment'?: RefundedPayment;
-    /**
-     * 
-     * @type {UsersShared}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'users_shared'?: UsersShared;
-    /**
-     * 
-     * @type {ChatShared}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'chat_shared'?: ChatShared;
-    /**
-     * 
-     * @type {GiftInfo}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'gift'?: GiftInfo;
-    /**
-     * 
-     * @type {UniqueGiftInfo}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'unique_gift'?: UniqueGiftInfo;
-    /**
-     * *Optional*. The domain name of the website on which the user has logged in. [More about Telegram Login »](https://core.telegram.org/widgets/login)
-     * @type {string}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'connected_website'?: string;
-    /**
-     * 
-     * @type {WriteAccessAllowed}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'write_access_allowed'?: WriteAccessAllowed;
-    /**
-     * 
-     * @type {PassportData}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'passport_data'?: PassportData;
-    /**
-     * 
-     * @type {ProximityAlertTriggered}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'proximity_alert_triggered'?: ProximityAlertTriggered;
-    /**
-     * 
-     * @type {ChatBoostAdded}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'boost_added'?: ChatBoostAdded;
-    /**
-     * 
-     * @type {ChatBackground}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'chat_background_set'?: ChatBackground;
-    /**
-     * 
-     * @type {ForumTopicCreated}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'forum_topic_created'?: ForumTopicCreated;
-    /**
-     * 
-     * @type {ForumTopicEdited}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'forum_topic_edited'?: ForumTopicEdited;
-    /**
-     * 
-     * @type {any}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'forum_topic_closed'?: any;
-    /**
-     * 
-     * @type {any}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'forum_topic_reopened'?: any;
-    /**
-     * 
-     * @type {any}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'general_forum_topic_hidden'?: any;
-    /**
-     * 
-     * @type {any}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'general_forum_topic_unhidden'?: any;
-    /**
-     * 
-     * @type {GiveawayCreated}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'giveaway_created'?: GiveawayCreated;
-    /**
-     * 
-     * @type {Giveaway}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'giveaway'?: Giveaway;
-    /**
-     * 
-     * @type {GiveawayWinners}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'giveaway_winners'?: GiveawayWinners;
-    /**
-     * 
-     * @type {GiveawayCompleted}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'giveaway_completed'?: GiveawayCompleted;
-    /**
-     * 
-     * @type {PaidMessagePriceChanged}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'paid_message_price_changed'?: PaidMessagePriceChanged;
-    /**
-     * 
-     * @type {VideoChatScheduled}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'video_chat_scheduled'?: VideoChatScheduled;
-    /**
-     * 
-     * @type {any}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'video_chat_started'?: any;
-    /**
-     * 
-     * @type {VideoChatEnded}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'video_chat_ended'?: VideoChatEnded;
-    /**
-     * 
-     * @type {VideoChatParticipantsInvited}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'video_chat_participants_invited'?: VideoChatParticipantsInvited;
-    /**
-     * 
-     * @type {WebAppData}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'web_app_data'?: WebAppData;
-    /**
-     * 
-     * @type {InlineKeyboardMarkup}
-     * @memberof MaybeInaccessibleMessage
-     */
-    'reply_markup'?: InlineKeyboardMarkup;
-}
+export type MaybeInaccessibleMessage = InaccessibleMessage | Message;
+
 /**
+ * @type MenuButton
  * This object describes the bot\'s menu button in a private chat. It should be one of  * [MenuButtonCommands](https://core.telegram.org/bots/api/#menubuttoncommands) * [MenuButtonWebApp](https://core.telegram.org/bots/api/#menubuttonwebapp) * [MenuButtonDefault](https://core.telegram.org/bots/api/#menubuttondefault)
  * @export
- * @interface MenuButton
  */
-export interface MenuButton {
-    /**
-     * Type of the button, must be *default*
-     * @type {string}
-     * @memberof MenuButton
-     */
-    'type': string;
-    /**
-     * Text on the button
-     * @type {string}
-     * @memberof MenuButton
-     */
-    'text': string;
-    /**
-     * 
-     * @type {WebAppInfo}
-     * @memberof MenuButton
-     */
-    'web_app': WebAppInfo;
-}
+export type MenuButton = MenuButtonCommands | MenuButtonDefault | MenuButtonWebApp;
+
 /**
  * Represents a menu button, which opens the bot\'s list of commands.
  * @export
@@ -11426,60 +9184,12 @@ export interface MessageId {
     'message_id': number;
 }
 /**
+ * @type MessageOrigin
  * This object describes the origin of a message. It can be one of  * [MessageOriginUser](https://core.telegram.org/bots/api/#messageoriginuser) * [MessageOriginHiddenUser](https://core.telegram.org/bots/api/#messageoriginhiddenuser) * [MessageOriginChat](https://core.telegram.org/bots/api/#messageoriginchat) * [MessageOriginChannel](https://core.telegram.org/bots/api/#messageoriginchannel)
  * @export
- * @interface MessageOrigin
  */
-export interface MessageOrigin {
-    /**
-     * Type of the message origin, always “channel”
-     * @type {string}
-     * @memberof MessageOrigin
-     */
-    'type': string;
-    /**
-     * Date the message was sent originally in Unix time
-     * @type {number}
-     * @memberof MessageOrigin
-     */
-    'date': number;
-    /**
-     * 
-     * @type {User}
-     * @memberof MessageOrigin
-     */
-    'sender_user': User;
-    /**
-     * Name of the user that sent the message originally
-     * @type {string}
-     * @memberof MessageOrigin
-     */
-    'sender_user_name': string;
-    /**
-     * 
-     * @type {Chat}
-     * @memberof MessageOrigin
-     */
-    'sender_chat': Chat;
-    /**
-     * 
-     * @type {Chat}
-     * @memberof MessageOrigin
-     */
-    'chat': Chat;
-    /**
-     * Unique message identifier inside the chat
-     * @type {number}
-     * @memberof MessageOrigin
-     */
-    'message_id': number;
-    /**
-     * *Optional*. Signature of the original post author
-     * @type {string}
-     * @memberof MessageOrigin
-     */
-    'author_signature'?: string;
-}
+export type MessageOrigin = MessageOriginChannel | MessageOriginChat | MessageOriginHiddenUser | MessageOriginUser;
+
 /**
  * The message was originally sent to a channel chat.
  * @export
@@ -11772,102 +9482,12 @@ export interface OrderInfo {
     'shipping_address'?: ShippingAddress;
 }
 /**
+ * @type OwnedGift
  * This object describes a gift received and owned by a user or a chat. Currently, it can be one of  * [OwnedGiftRegular](https://core.telegram.org/bots/api/#ownedgiftregular) * [OwnedGiftUnique](https://core.telegram.org/bots/api/#ownedgiftunique)
  * @export
- * @interface OwnedGift
  */
-export interface OwnedGift {
-    /**
-     * Type of the gift, always “unique”
-     * @type {string}
-     * @memberof OwnedGift
-     */
-    'type': string;
-    /**
-     * 
-     * @type {UniqueGift}
-     * @memberof OwnedGift
-     */
-    'gift': UniqueGift;
-    /**
-     * Date the gift was sent in Unix time
-     * @type {number}
-     * @memberof OwnedGift
-     */
-    'send_date': number;
-    /**
-     * *Optional*. Unique identifier of the received gift for the bot; for gifts received on behalf of business accounts only
-     * @type {string}
-     * @memberof OwnedGift
-     */
-    'owned_gift_id'?: string;
-    /**
-     * 
-     * @type {User}
-     * @memberof OwnedGift
-     */
-    'sender_user'?: User;
-    /**
-     * *Optional*. Text of the message that was added to the gift
-     * @type {string}
-     * @memberof OwnedGift
-     */
-    'text'?: string;
-    /**
-     * *Optional*. Special entities that appear in the text
-     * @type {Array<MessageEntity>}
-     * @memberof OwnedGift
-     */
-    'entities'?: Array<MessageEntity>;
-    /**
-     * *Optional*. True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone will be able to see them
-     * @type {boolean}
-     * @memberof OwnedGift
-     */
-    'is_private'?: boolean;
-    /**
-     * *Optional*. True, if the gift is displayed on the account\'s profile page; for gifts received on behalf of business accounts only
-     * @type {boolean}
-     * @memberof OwnedGift
-     */
-    'is_saved'?: boolean;
-    /**
-     * *Optional*. True, if the gift can be upgraded to a unique gift; for gifts received on behalf of business accounts only
-     * @type {boolean}
-     * @memberof OwnedGift
-     */
-    'can_be_upgraded'?: boolean;
-    /**
-     * *Optional*. True, if the gift was refunded and isn\'t available anymore
-     * @type {boolean}
-     * @memberof OwnedGift
-     */
-    'was_refunded'?: boolean;
-    /**
-     * *Optional*. Number of Telegram Stars that can be claimed by the receiver instead of the gift; omitted if the gift cannot be converted to Telegram Stars
-     * @type {number}
-     * @memberof OwnedGift
-     */
-    'convert_star_count'?: number;
-    /**
-     * *Optional*. Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift
-     * @type {number}
-     * @memberof OwnedGift
-     */
-    'prepaid_upgrade_star_count'?: number;
-    /**
-     * *Optional*. True, if the gift can be transferred to another owner; for gifts received on behalf of business accounts only
-     * @type {boolean}
-     * @memberof OwnedGift
-     */
-    'can_be_transferred'?: boolean;
-    /**
-     * *Optional*. Number of Telegram Stars that must be paid to transfer the gift; omitted if the bot cannot transfer the gift
-     * @type {number}
-     * @memberof OwnedGift
-     */
-    'transfer_star_count'?: number;
-}
+export type OwnedGift = OwnedGiftRegular | OwnedGiftUnique;
+
 /**
  * Describes a regular gift owned by a user or a chat.
  * @export
@@ -12034,48 +9654,12 @@ export interface OwnedGifts {
     'next_offset'?: string;
 }
 /**
+ * @type PaidMedia
  * This object describes paid media. Currently, it can be one of  * [PaidMediaPreview](https://core.telegram.org/bots/api/#paidmediapreview) * [PaidMediaPhoto](https://core.telegram.org/bots/api/#paidmediaphoto) * [PaidMediaVideo](https://core.telegram.org/bots/api/#paidmediavideo)
  * @export
- * @interface PaidMedia
  */
-export interface PaidMedia {
-    /**
-     * Type of the paid media, always “video”
-     * @type {string}
-     * @memberof PaidMedia
-     */
-    'type': string;
-    /**
-     * The photo
-     * @type {Array<PhotoSize>}
-     * @memberof PaidMedia
-     */
-    'photo': Array<PhotoSize>;
-    /**
-     * 
-     * @type {Video}
-     * @memberof PaidMedia
-     */
-    'video': Video;
-    /**
-     * *Optional*. Media width as defined by the sender
-     * @type {number}
-     * @memberof PaidMedia
-     */
-    'width'?: number;
-    /**
-     * *Optional*. Media height as defined by the sender
-     * @type {number}
-     * @memberof PaidMedia
-     */
-    'height'?: number;
-    /**
-     * *Optional*. Duration of the media in seconds as defined by the sender
-     * @type {number}
-     * @memberof PaidMedia
-     */
-    'duration'?: number;
-}
+export type PaidMedia = PaidMediaPhoto | PaidMediaPreview | PaidMediaVideo;
+
 /**
  * Describes the paid media added to a message.
  * @export
@@ -12216,60 +9800,12 @@ export interface PassportData {
     'credentials': EncryptedCredentials;
 }
 /**
+ * @type PassportElementError
  * This object represents an error in the Telegram Passport element which was submitted that should be resolved by the user. It should be one of:  * [PassportElementErrorDataField](https://core.telegram.org/bots/api/#passportelementerrordatafield) * [PassportElementErrorFrontSide](https://core.telegram.org/bots/api/#passportelementerrorfrontside) * [PassportElementErrorReverseSide](https://core.telegram.org/bots/api/#passportelementerrorreverseside) * [PassportElementErrorSelfie](https://core.telegram.org/bots/api/#passportelementerrorselfie) * [PassportElementErrorFile](https://core.telegram.org/bots/api/#passportelementerrorfile) * [PassportElementErrorFiles](https://core.telegram.org/bots/api/#passportelementerrorfiles) * [PassportElementErrorTranslationFile](https://core.telegram.org/bots/api/#passportelementerrortranslationfile) * [PassportElementErrorTranslationFiles](https://core.telegram.org/bots/api/#passportelementerrortranslationfiles) * [PassportElementErrorUnspecified](https://core.telegram.org/bots/api/#passportelementerrorunspecified)
  * @export
- * @interface PassportElementError
  */
-export interface PassportElementError {
-    /**
-     * Error source, must be *unspecified*
-     * @type {string}
-     * @memberof PassportElementError
-     */
-    'source': string;
-    /**
-     * Type of element of the user\'s Telegram Passport which has the issue
-     * @type {string}
-     * @memberof PassportElementError
-     */
-    'type': string;
-    /**
-     * Name of the data field which has the error
-     * @type {string}
-     * @memberof PassportElementError
-     */
-    'field_name': string;
-    /**
-     * Base64-encoded data hash
-     * @type {string}
-     * @memberof PassportElementError
-     */
-    'data_hash': string;
-    /**
-     * Error message
-     * @type {string}
-     * @memberof PassportElementError
-     */
-    'message': string;
-    /**
-     * Base64-encoded file hash
-     * @type {string}
-     * @memberof PassportElementError
-     */
-    'file_hash': string;
-    /**
-     * List of base64-encoded file hashes
-     * @type {Array<string>}
-     * @memberof PassportElementError
-     */
-    'file_hashes': Array<string>;
-    /**
-     * Base64-encoded element hash
-     * @type {string}
-     * @memberof PassportElementError
-     */
-    'element_hash': string;
-}
+export type PassportElementError = PassportElementErrorDataField | PassportElementErrorFile | PassportElementErrorFiles | PassportElementErrorFrontSide | PassportElementErrorReverseSide | PassportElementErrorSelfie | PassportElementErrorTranslationFile | PassportElementErrorTranslationFiles | PassportElementErrorUnspecified;
+
 /**
  * Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field\'s value changes.
  * @export
@@ -13142,108 +10678,11 @@ export interface ReactionCount {
     'total_count': number;
 }
 /**
+ * @type ReactionType
  * This object describes the type of a reaction. Currently, it can be one of  * [ReactionTypeEmoji](https://core.telegram.org/bots/api/#reactiontypeemoji) * [ReactionTypeCustomEmoji](https://core.telegram.org/bots/api/#reactiontypecustomemoji) * [ReactionTypePaid](https://core.telegram.org/bots/api/#reactiontypepaid)
  * @export
- * @interface ReactionType
  */
-export interface ReactionType {
-    /**
-     * Type of the reaction, always “paid”
-     * @type {string}
-     * @memberof ReactionType
-     */
-    'type': string;
-    /**
-     * Reaction emoji. Currently, it can be one of \"❤\", \"👍\", \"👎\", \"🔥\", \"🥰\", \"👏\", \"😁\", \"🤔\", \"🤯\", \"😱\", \"🤬\", \"😢\", \"🎉\", \"🤩\", \"🤮\", \"💩\", \"🙏\", \"👌\", \"🕊\", \"🤡\", \"🥱\", \"🥴\", \"😍\", \"🐳\", \"❤‍🔥\", \"🌚\", \"🌭\", \"💯\", \"🤣\", \"⚡\", \"🍌\", \"🏆\", \"💔\", \"🤨\", \"😐\", \"🍓\", \"🍾\", \"💋\", \"🖕\", \"😈\", \"😴\", \"😭\", \"🤓\", \"👻\", \"👨‍💻\", \"👀\", \"🎃\", \"🙈\", \"😇\", \"😨\", \"🤝\", \"✍\", \"🤗\", \"🫡\", \"🎅\", \"🎄\", \"☃\", \"💅\", \"🤪\", \"🗿\", \"🆒\", \"💘\", \"🙉\", \"🦄\", \"😘\", \"💊\", \"🙊\", \"😎\", \"👾\", \"🤷‍♂\", \"🤷\", \"🤷‍♀\", \"😡\"
-     * @type {string}
-     * @memberof ReactionType
-     */
-    'emoji': ReactionTypeEmojiEnum;
-    /**
-     * Custom emoji identifier
-     * @type {string}
-     * @memberof ReactionType
-     */
-    'custom_emoji_id': string;
-}
-
-export const ReactionTypeEmojiEnum = {
-    : '❤',
-    2: '👍',
-    3: '👎',
-    4: '🔥',
-    5: '🥰',
-    6: '👏',
-    7: '😁',
-    8: '🤔',
-    9: '🤯',
-    10: '😱',
-    11: '🤬',
-    12: '😢',
-    13: '🎉',
-    14: '🤩',
-    15: '🤮',
-    16: '💩',
-    17: '🙏',
-    18: '👌',
-    19: '🕊',
-    20: '🤡',
-    21: '🥱',
-    22: '🥴',
-    23: '😍',
-    24: '🐳',
-    25: '❤‍🔥',
-    26: '🌚',
-    27: '🌭',
-    28: '💯',
-    29: '🤣',
-    30: '⚡',
-    31: '🍌',
-    32: '🏆',
-    33: '💔',
-    34: '🤨',
-    35: '😐',
-    36: '🍓',
-    37: '🍾',
-    38: '💋',
-    39: '🖕',
-    40: '😈',
-    41: '😴',
-    42: '😭',
-    43: '🤓',
-    44: '👻',
-    45: '👨‍💻',
-    46: '👀',
-    47: '🎃',
-    48: '🙈',
-    49: '😇',
-    50: '😨',
-    51: '🤝',
-    52: '✍',
-    53: '🤗',
-    54: '🫡',
-    55: '🎅',
-    56: '🎄',
-    57: '☃',
-    58: '💅',
-    59: '🤪',
-    60: '🗿',
-    61: '🆒',
-    62: '💘',
-    63: '🙉',
-    64: '🦄',
-    65: '😘',
-    66: '💊',
-    67: '🙊',
-    68: '😎',
-    69: '👾',
-    70: '🤷‍♂',
-    71: '🤷',
-    72: '🤷‍♀',
-    73: '😡'
-} as const;
-
-export type ReactionTypeEmojiEnum = typeof ReactionTypeEmojiEnum[keyof typeof ReactionTypeEmojiEnum];
+export type ReactionType = ReactionTypeCustomEmoji | ReactionTypeEmoji | ReactionTypePaid;
 
 /**
  * The reaction is based on a custom emoji.
@@ -13600,12 +11039,12 @@ export interface ReplyParameters {
     'quote_position'?: number;
 }
 /**
+ * @type ReplyParametersChatId
  * *Optional*. If the message to be replied to is from a different chat, unique identifier for the chat or username of the channel (in the format `@channelusername`). Not supported for messages sent on behalf of a business account.
  * @export
- * @interface ReplyParametersChatId
  */
-export interface ReplyParametersChatId {
-}
+export type ReplyParametersChatId = number | string;
+
 /**
  * Describes why a request was unsuccessful.
  * @export
@@ -13663,37 +11102,19 @@ export interface RestrictChatMemberPostRequest {
     'until_date'?: number;
 }
 /**
+ * @type RestrictChatMemberPostRequestChatId
  * Unique identifier for the target chat or username of the target supergroup (in the format `@supergroupusername`)
  * @export
- * @interface RestrictChatMemberPostRequestChatId
  */
-export interface RestrictChatMemberPostRequestChatId {
-}
+export type RestrictChatMemberPostRequestChatId = number | string;
+
 /**
+ * @type RevenueWithdrawalState
  * This object describes the state of a revenue withdrawal operation. Currently, it can be one of  * [RevenueWithdrawalStatePending](https://core.telegram.org/bots/api/#revenuewithdrawalstatepending) * [RevenueWithdrawalStateSucceeded](https://core.telegram.org/bots/api/#revenuewithdrawalstatesucceeded) * [RevenueWithdrawalStateFailed](https://core.telegram.org/bots/api/#revenuewithdrawalstatefailed)
  * @export
- * @interface RevenueWithdrawalState
  */
-export interface RevenueWithdrawalState {
-    /**
-     * Type of the state, always “failed”
-     * @type {string}
-     * @memberof RevenueWithdrawalState
-     */
-    'type': string;
-    /**
-     * Date the withdrawal was completed in Unix time
-     * @type {number}
-     * @memberof RevenueWithdrawalState
-     */
-    'date': number;
-    /**
-     * An HTTPS URL that can be used to see transaction details
-     * @type {string}
-     * @memberof RevenueWithdrawalState
-     */
-    'url': string;
-}
+export type RevenueWithdrawalState = RevenueWithdrawalStateFailed | RevenueWithdrawalStatePending | RevenueWithdrawalStateSucceeded;
+
 /**
  * The withdrawal failed and the transaction was refunded.
  * @export
@@ -13765,12 +11186,12 @@ export interface RevokeChatInviteLinkPostRequest {
     'invite_link': string;
 }
 /**
+ * @type RevokeChatInviteLinkPostRequestChatId
  * Unique identifier of the target chat or username of the target channel (in the format `@channelusername`)
  * @export
- * @interface RevokeChatInviteLinkPostRequestChatId
  */
-export interface RevokeChatInviteLinkPostRequestChatId {
-}
+export type RevokeChatInviteLinkPostRequestChatId = number | string;
+
 /**
  * 
  * @export
@@ -13834,26 +11255,26 @@ export interface SavePreparedInlineMessagePostRequest {
     'allow_channel_chats'?: boolean;
 }
 /**
+ * @type SendAnimationPostRequestAnimation
  * Animation to send. Pass a file\\_id as String to send an animation that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get an animation from the Internet, or upload a new animation using multipart/form-data. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
  * @export
- * @interface SendAnimationPostRequestAnimation
  */
-export interface SendAnimationPostRequestAnimation {
-}
+export type SendAnimationPostRequestAnimation = any | string;
+
 /**
+ * @type SendAudioPostRequestAudio
  * Audio file to send. Pass a file\\_id as String to send an audio file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get an audio file from the Internet, or upload a new one using multipart/form-data. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
  * @export
- * @interface SendAudioPostRequestAudio
  */
-export interface SendAudioPostRequestAudio {
-}
+export type SendAudioPostRequestAudio = any | string;
+
 /**
+ * @type SendAudioPostRequestThumbnail
  * Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail\'s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can\'t be reused and can be only uploaded as a new file, so you can pass “attach://\\<file\\_attach\\_name\\>” if the thumbnail was uploaded using multipart/form-data under \\<file\\_attach\\_name\\>. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
  * @export
- * @interface SendAudioPostRequestThumbnail
  */
-export interface SendAudioPostRequestThumbnail {
-}
+export type SendAudioPostRequestThumbnail = any | string;
+
 /**
  * 
  * @export
@@ -14067,12 +11488,12 @@ export const SendDicePostRequestEmojiEnum = {
 export type SendDicePostRequestEmojiEnum = typeof SendDicePostRequestEmojiEnum[keyof typeof SendDicePostRequestEmojiEnum];
 
 /**
+ * @type SendDocumentPostRequestDocument
  * File to send. Pass a file\\_id as String to send a file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
  * @export
- * @interface SendDocumentPostRequestDocument
  */
-export interface SendDocumentPostRequestDocument {
-}
+export type SendDocumentPostRequestDocument = any | string;
+
 /**
  * 
  * @export
@@ -14190,12 +11611,12 @@ export interface SendGiftPostRequest {
     'text_entities'?: Array<MessageEntity>;
 }
 /**
+ * @type SendGiftPostRequestChatId
  * Required if *user\\_id* is not specified. Unique identifier for the chat or username of the channel (in the format `@channelusername`) that will receive the gift.
  * @export
- * @interface SendGiftPostRequestChatId
  */
-export interface SendGiftPostRequestChatId {
-}
+export type SendGiftPostRequestChatId = number | string;
+
 /**
  * 
  * @export
@@ -14494,114 +11915,11 @@ export interface SendMediaGroupPost200Response {
     'result': Array<Message>;
 }
 /**
- * 
+ * @type SendMediaGroupPostRequestMediaInner
  * @export
- * @interface SendMediaGroupPostRequestMediaInner
  */
-export interface SendMediaGroupPostRequestMediaInner {
-    /**
-     * Type of the result, must be *video*
-     * @type {string}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'type': string;
-    /**
-     * File to send. Pass a file\\_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass “attach://\\<file\\_attach\\_name\\>” to upload a new one using multipart/form-data under \\<file\\_attach\\_name\\> name. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'media': string;
-    /**
-     * *Optional*. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail\'s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can\'t be reused and can be only uploaded as a new file, so you can pass “attach://\\<file\\_attach\\_name\\>” if the thumbnail was uploaded using multipart/form-data under \\<file\\_attach\\_name\\>. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'thumbnail'?: string;
-    /**
-     * *Optional*. Caption of the video to be sent, 0-1024 characters after entities parsing
-     * @type {string}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'caption'?: string;
-    /**
-     * *Optional*. Mode for parsing entities in the video caption. See [formatting options](https://core.telegram.org/bots/api/#formatting-options) for more details.
-     * @type {string}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'parse_mode'?: string;
-    /**
-     * *Optional*. List of special entities that appear in the caption, which can be specified instead of *parse\\_mode*
-     * @type {Array<MessageEntity>}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'caption_entities'?: Array<MessageEntity>;
-    /**
-     * *Optional*. Video duration in seconds
-     * @type {number}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'duration'?: number;
-    /**
-     * *Optional*. Performer of the audio
-     * @type {string}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'performer'?: string;
-    /**
-     * *Optional*. Title of the audio
-     * @type {string}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'title'?: string;
-    /**
-     * *Optional*. Disables automatic server-side content type detection for files uploaded using multipart/form-data. Always *True*, if the document is sent as part of an album.
-     * @type {boolean}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'disable_content_type_detection'?: boolean;
-    /**
-     * *Optional*. Pass *True*, if the caption must be shown above the message media
-     * @type {boolean}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'show_caption_above_media'?: boolean;
-    /**
-     * *Optional*. Pass *True* if the video needs to be covered with a spoiler animation
-     * @type {boolean}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'has_spoiler'?: boolean;
-    /**
-     * *Optional*. Cover for the video in the message. Pass a file\\_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass “attach://\\<file\\_attach\\_name\\>” to upload a new one using multipart/form-data under \\<file\\_attach\\_name\\> name. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
-     * @type {string}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'cover'?: string;
-    /**
-     * *Optional*. Start timestamp for the video in the message
-     * @type {number}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'start_timestamp'?: number;
-    /**
-     * *Optional*. Video width
-     * @type {number}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'width'?: number;
-    /**
-     * *Optional*. Video height
-     * @type {number}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'height'?: number;
-    /**
-     * *Optional*. Pass *True* if the uploaded video is suitable for streaming
-     * @type {boolean}
-     * @memberof SendMediaGroupPostRequestMediaInner
-     */
-    'supports_streaming'?: boolean;
-}
+export type SendMediaGroupPostRequestMediaInner = InputMediaAudio | InputMediaDocument | InputMediaPhoto | InputMediaVideo;
+
 /**
  * 
  * @export
@@ -14707,87 +12025,33 @@ export interface SendMessagePostRequest {
     'reply_markup'?: SendMessagePostRequestReplyMarkup;
 }
 /**
+ * @type SendMessagePostRequestChatId
  * Unique identifier for the target chat or username of the target channel (in the format `@channelusername`)
  * @export
- * @interface SendMessagePostRequestChatId
  */
-export interface SendMessagePostRequestChatId {
-}
+export type SendMessagePostRequestChatId = number | string;
+
 /**
+ * @type SendMessagePostRequestReplyMarkup
  * Additional interface options. A JSON-serialized object for an [inline keyboard](https://core.telegram.org/bots/features#inline-keyboards), [custom reply keyboard](https://core.telegram.org/bots/features#keyboards), instructions to remove a reply keyboard or to force a reply from the user
  * @export
- * @interface SendMessagePostRequestReplyMarkup
  */
-export interface SendMessagePostRequestReplyMarkup {
-    /**
-     * Array of button rows, each represented by an Array of [InlineKeyboardButton](https://core.telegram.org/bots/api/#inlinekeyboardbutton) objects
-     * @type {Array<Array<InlineKeyboardButton>>}
-     * @memberof SendMessagePostRequestReplyMarkup
-     */
-    'inline_keyboard': Array<Array<InlineKeyboardButton>>;
-    /**
-     * Array of button rows, each represented by an Array of [KeyboardButton](https://core.telegram.org/bots/api/#keyboardbutton) objects
-     * @type {Array<Array<KeyboardButton>>}
-     * @memberof SendMessagePostRequestReplyMarkup
-     */
-    'keyboard': Array<Array<KeyboardButton>>;
-    /**
-     * Requests clients to remove the custom keyboard (user will not be able to summon this keyboard; if you want to hide the keyboard from sight but keep it accessible, use *one\\_time\\_keyboard* in [ReplyKeyboardMarkup](https://core.telegram.org/bots/api/#replykeyboardmarkup))
-     * @type {boolean}
-     * @memberof SendMessagePostRequestReplyMarkup
-     */
-    'remove_keyboard': boolean;
-    /**
-     * Shows reply interface to the user, as if they manually selected the bot\'s message and tapped \'Reply\'
-     * @type {boolean}
-     * @memberof SendMessagePostRequestReplyMarkup
-     */
-    'force_reply': boolean;
-    /**
-     * *Optional*. Requests clients to always show the keyboard when the regular keyboard is hidden. Defaults to *false*, in which case the custom keyboard can be hidden and opened with a keyboard icon.
-     * @type {boolean}
-     * @memberof SendMessagePostRequestReplyMarkup
-     */
-    'is_persistent'?: boolean;
-    /**
-     * *Optional*. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to *false*, in which case the custom keyboard is always of the same height as the app\'s standard keyboard.
-     * @type {boolean}
-     * @memberof SendMessagePostRequestReplyMarkup
-     */
-    'resize_keyboard'?: boolean;
-    /**
-     * *Optional*. Requests clients to hide the keyboard as soon as it\'s been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat - the user can press a special button in the input field to see the custom keyboard again. Defaults to *false*.
-     * @type {boolean}
-     * @memberof SendMessagePostRequestReplyMarkup
-     */
-    'one_time_keyboard'?: boolean;
-    /**
-     * *Optional*. The placeholder to be shown in the input field when the reply is active; 1-64 characters
-     * @type {string}
-     * @memberof SendMessagePostRequestReplyMarkup
-     */
-    'input_field_placeholder'?: string;
-    /**
-     * *Optional*. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the *text* of the [Message](https://core.telegram.org/bots/api/#message) object; 2) if the bot\'s message is a reply to a message in the same chat and forum topic, sender of the original message.
-     * @type {boolean}
-     * @memberof SendMessagePostRequestReplyMarkup
-     */
-    'selective'?: boolean;
-}
+export type SendMessagePostRequestReplyMarkup = ForceReply | InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove;
+
 /**
+ * @type SendPaidMediaPostRequestChatId
  * Unique identifier for the target chat or username of the target channel (in the format `@channelusername`). If the chat is a channel, all Telegram Star proceeds from this media will be credited to the chat\'s balance. Otherwise, they will be credited to the bot\'s balance.
  * @export
- * @interface SendPaidMediaPostRequestChatId
  */
-export interface SendPaidMediaPostRequestChatId {
-}
+export type SendPaidMediaPostRequestChatId = number | string;
+
 /**
+ * @type SendPhotoPostRequestPhoto
  * Photo to send. Pass a file\\_id as String to send a photo that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a photo from the Internet, or upload a new photo using multipart/form-data. The photo must be at most 10 MB in size. The photo\'s width and height must not exceed 10000 in total. Width and height ratio must be at most 20. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
  * @export
- * @interface SendPhotoPostRequestPhoto
  */
-export interface SendPhotoPostRequestPhoto {
-}
+export type SendPhotoPostRequestPhoto = any | string;
+
 /**
  * 
  * @export
@@ -14942,12 +12206,12 @@ export const SendPollPostRequestTypeEnum = {
 export type SendPollPostRequestTypeEnum = typeof SendPollPostRequestTypeEnum[keyof typeof SendPollPostRequestTypeEnum];
 
 /**
+ * @type SendStickerPostRequestSticker
  * Sticker to send. Pass a file\\_id as String to send a file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a .WEBP sticker from the Internet, or upload a new .WEBP, .TGS, or .WEBM sticker using multipart/form-data. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files). Video and animated stickers can\'t be sent via an HTTP URL.
  * @export
- * @interface SendStickerPostRequestSticker
  */
-export interface SendStickerPostRequestSticker {
-}
+export type SendStickerPostRequestSticker = any | string;
+
 /**
  * 
  * @export
@@ -15058,33 +12322,33 @@ export interface SendVenuePostRequest {
     'reply_markup'?: SendMessagePostRequestReplyMarkup;
 }
 /**
+ * @type SendVideoNotePostRequestVideoNote
  * Video note to send. Pass a file\\_id as String to send a video note that exists on the Telegram servers (recommended) or upload a new video using multipart/form-data. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files). Sending video notes by a URL is currently unsupported
  * @export
- * @interface SendVideoNotePostRequestVideoNote
  */
-export interface SendVideoNotePostRequestVideoNote {
-}
+export type SendVideoNotePostRequestVideoNote = any | string;
+
 /**
+ * @type SendVideoPostRequestCover
  * Cover for the video in the message. Pass a file\\_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass “attach://\\<file\\_attach\\_name\\>” to upload a new one using multipart/form-data under \\<file\\_attach\\_name\\> name. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
  * @export
- * @interface SendVideoPostRequestCover
  */
-export interface SendVideoPostRequestCover {
-}
+export type SendVideoPostRequestCover = any | string;
+
 /**
+ * @type SendVideoPostRequestVideo
  * Video to send. Pass a file\\_id as String to send a video that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a video from the Internet, or upload a new video using multipart/form-data. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
  * @export
- * @interface SendVideoPostRequestVideo
  */
-export interface SendVideoPostRequestVideo {
-}
+export type SendVideoPostRequestVideo = any | string;
+
 /**
+ * @type SendVoicePostRequestVoice
  * Audio file to send. Pass a file\\_id as String to send a file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files)
  * @export
- * @interface SendVoicePostRequestVoice
  */
-export interface SendVoicePostRequestVoice {
-}
+export type SendVoicePostRequestVoice = any | string;
+
 /**
  * Describes an inline message sent by a [Web App](https://core.telegram.org/bots/webapps) on behalf of a user.
  * @export
@@ -15608,12 +12872,12 @@ export interface SetStickerPositionInSetPostRequest {
     'position': number;
 }
 /**
+ * @type SetStickerSetThumbnailPostRequestThumbnail
  * A **.WEBP** or **.PNG** image with the thumbnail, must be up to 128 kilobytes in size and have a width and height of exactly 100px, or a **.TGS** animation with a thumbnail up to 32 kilobytes in size (see [https://core.telegram.org/stickers#animation-requirements](https://core.telegram.org/stickers#animation-requirements) for animated sticker technical requirements), or a **.WEBM** video with the thumbnail up to 32 kilobytes in size; see [https://core.telegram.org/stickers#video-requirements](https://core.telegram.org/stickers#video-requirements) for video sticker technical requirements. Pass a *file\\_id* as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. [More information on Sending Files »](https://core.telegram.org/bots/api/#sending-files). Animated and video sticker set thumbnails can\'t be uploaded via HTTP URL. If omitted, then the thumbnail is dropped and the first sticker is used as the thumbnail.
  * @export
- * @interface SetStickerSetThumbnailPostRequestThumbnail
  */
-export interface SetStickerSetThumbnailPostRequestThumbnail {
-}
+export type SetStickerSetThumbnailPostRequestThumbnail = any | string;
+
 /**
  * 
  * @export
@@ -16209,84 +13473,12 @@ export interface StoryAreaPosition {
     'corner_radius_percentage': number;
 }
 /**
+ * @type StoryAreaType
  * Describes the type of a clickable area on a story. Currently, it can be one of  * [StoryAreaTypeLocation](https://core.telegram.org/bots/api/#storyareatypelocation) * [StoryAreaTypeSuggestedReaction](https://core.telegram.org/bots/api/#storyareatypesuggestedreaction) * [StoryAreaTypeLink](https://core.telegram.org/bots/api/#storyareatypelink) * [StoryAreaTypeWeather](https://core.telegram.org/bots/api/#storyareatypeweather) * [StoryAreaTypeUniqueGift](https://core.telegram.org/bots/api/#storyareatypeuniquegift)
  * @export
- * @interface StoryAreaType
  */
-export interface StoryAreaType {
-    /**
-     * Type of the area, always “unique\\_gift”
-     * @type {string}
-     * @memberof StoryAreaType
-     */
-    'type': string;
-    /**
-     * Location latitude in degrees
-     * @type {number}
-     * @memberof StoryAreaType
-     */
-    'latitude': number;
-    /**
-     * Location longitude in degrees
-     * @type {number}
-     * @memberof StoryAreaType
-     */
-    'longitude': number;
-    /**
-     * 
-     * @type {ReactionType}
-     * @memberof StoryAreaType
-     */
-    'reaction_type': ReactionType;
-    /**
-     * HTTP or tg:// URL to be opened when the area is clicked
-     * @type {string}
-     * @memberof StoryAreaType
-     */
-    'url': string;
-    /**
-     * Temperature, in degree Celsius
-     * @type {number}
-     * @memberof StoryAreaType
-     */
-    'temperature': number;
-    /**
-     * Emoji representing the weather
-     * @type {string}
-     * @memberof StoryAreaType
-     */
-    'emoji': string;
-    /**
-     * A color of the area background in the ARGB format
-     * @type {number}
-     * @memberof StoryAreaType
-     */
-    'background_color': number;
-    /**
-     * Unique name of the gift
-     * @type {string}
-     * @memberof StoryAreaType
-     */
-    'name': string;
-    /**
-     * 
-     * @type {LocationAddress}
-     * @memberof StoryAreaType
-     */
-    'address'?: LocationAddress;
-    /**
-     * *Optional*. Pass *True* if the reaction area has a dark background
-     * @type {boolean}
-     * @memberof StoryAreaType
-     */
-    'is_dark'?: boolean;
-    /**
-     * *Optional*. Pass *True* if reaction area corner is flipped
-     * @type {boolean}
-     * @memberof StoryAreaType
-     */
-    'is_flipped'?: boolean;
-}
+export type StoryAreaType = StoryAreaTypeLink | StoryAreaTypeLocation | StoryAreaTypeSuggestedReaction | StoryAreaTypeUniqueGift | StoryAreaTypeWeather;
+
 /**
  * Describes a story area pointing to an HTTP or tg:// link. Currently, a story can have up to 3 link areas.
  * @export
@@ -16554,112 +13746,11 @@ export interface TextQuote {
     'is_manual'?: boolean;
 }
 /**
+ * @type TransactionPartner
  * This object describes the source of a transaction, or its recipient for outgoing transactions. Currently, it can be one of  * [TransactionPartnerUser](https://core.telegram.org/bots/api/#transactionpartneruser) * [TransactionPartnerChat](https://core.telegram.org/bots/api/#transactionpartnerchat) * [TransactionPartnerAffiliateProgram](https://core.telegram.org/bots/api/#transactionpartneraffiliateprogram) * [TransactionPartnerFragment](https://core.telegram.org/bots/api/#transactionpartnerfragment) * [TransactionPartnerTelegramAds](https://core.telegram.org/bots/api/#transactionpartnertelegramads) * [TransactionPartnerTelegramApi](https://core.telegram.org/bots/api/#transactionpartnertelegramapi) * [TransactionPartnerOther](https://core.telegram.org/bots/api/#transactionpartnerother)
  * @export
- * @interface TransactionPartner
  */
-export interface TransactionPartner {
-    /**
-     * Type of the transaction partner, always “other”
-     * @type {string}
-     * @memberof TransactionPartner
-     */
-    'type': string;
-    /**
-     * Type of the transaction, currently one of “invoice\\_payment” for payments via invoices, “paid\\_media\\_payment” for payments for paid media, “gift\\_purchase” for gifts sent by the bot, “premium\\_purchase” for Telegram Premium subscriptions gifted by the bot, “business\\_account\\_transfer” for direct transfers from managed business accounts
-     * @type {string}
-     * @memberof TransactionPartner
-     */
-    'transaction_type': TransactionPartnerTransactionTypeEnum;
-    /**
-     * 
-     * @type {User}
-     * @memberof TransactionPartner
-     */
-    'user': User;
-    /**
-     * 
-     * @type {Chat}
-     * @memberof TransactionPartner
-     */
-    'chat': Chat;
-    /**
-     * The number of Telegram Stars received by the bot for each 1000 Telegram Stars received by the affiliate program sponsor from referred users
-     * @type {number}
-     * @memberof TransactionPartner
-     */
-    'commission_per_mille': number;
-    /**
-     * The number of successful requests that exceeded regular limits and were therefore billed
-     * @type {number}
-     * @memberof TransactionPartner
-     */
-    'request_count': number;
-    /**
-     * 
-     * @type {AffiliateInfo}
-     * @memberof TransactionPartner
-     */
-    'affiliate'?: AffiliateInfo;
-    /**
-     * *Optional*. Bot-specified invoice payload. Can be available only for “invoice\\_payment” transactions.
-     * @type {string}
-     * @memberof TransactionPartner
-     */
-    'invoice_payload'?: string;
-    /**
-     * *Optional*. The duration of the paid subscription. Can be available only for “invoice\\_payment” transactions.
-     * @type {number}
-     * @memberof TransactionPartner
-     */
-    'subscription_period'?: number;
-    /**
-     * *Optional*. Information about the paid media bought by the user; for “paid\\_media\\_payment” transactions only
-     * @type {Array<PaidMedia>}
-     * @memberof TransactionPartner
-     */
-    'paid_media'?: Array<PaidMedia>;
-    /**
-     * *Optional*. Bot-specified paid media payload. Can be available only for “paid\\_media\\_payment” transactions.
-     * @type {string}
-     * @memberof TransactionPartner
-     */
-    'paid_media_payload'?: string;
-    /**
-     * 
-     * @type {Gift}
-     * @memberof TransactionPartner
-     */
-    'gift'?: Gift;
-    /**
-     * *Optional*. Number of months the gifted Telegram Premium subscription will be active for; for “premium\\_purchase” transactions only
-     * @type {number}
-     * @memberof TransactionPartner
-     */
-    'premium_subscription_duration'?: number;
-    /**
-     * 
-     * @type {User}
-     * @memberof TransactionPartner
-     */
-    'sponsor_user'?: User;
-    /**
-     * 
-     * @type {RevenueWithdrawalState}
-     * @memberof TransactionPartner
-     */
-    'withdrawal_state'?: RevenueWithdrawalState;
-}
-
-export const TransactionPartnerTransactionTypeEnum = {
-    InvoicePayment: 'invoice_payment',
-    PaidMediaPayment: 'paid_media_payment',
-    GiftPurchase: 'gift_purchase',
-    PremiumPurchase: 'premium_purchase',
-    BusinessAccountTransfer: 'business_account_transfer'
-} as const;
-
-export type TransactionPartnerTransactionTypeEnum = typeof TransactionPartnerTransactionTypeEnum[keyof typeof TransactionPartnerTransactionTypeEnum];
+export type TransactionPartner = TransactionPartnerAffiliateProgram | TransactionPartnerChat | TransactionPartnerFragment | TransactionPartnerOther | TransactionPartnerTelegramAds | TransactionPartnerTelegramApi | TransactionPartnerUser;
 
 /**
  * Describes the affiliate program that issued the affiliate commission received via this transaction.
