@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **can_reply** | **boolean** | *Optional*. True, if the bot can send and edit messages in the private chats that had incoming messages in the last 24 hours | [optional] [default to true]
 **can_read_messages** | **boolean** | *Optional*. True, if the bot can mark incoming private messages as read | [optional] [default to true]
-**can_delete_sent_messages** | **boolean** | *Optional*. True, if the bot can delete messages sent by the bot | [optional] [default to true]
+**can_delete_outgoing_messages** | **boolean** | *Optional*. True, if the bot can delete messages sent by the bot | [optional] [default to true]
 **can_delete_all_messages** | **boolean** | *Optional*. True, if the bot can delete all private messages in managed chats | [optional] [default to true]
 **can_edit_name** | **boolean** | *Optional*. True, if the bot can edit the first and last name of the business account | [optional] [default to true]
 **can_edit_bio** | **boolean** | *Optional*. True, if the bot can edit the bio of the business account | [optional] [default to true]
@@ -29,7 +29,7 @@ import { BusinessBotRights } from 'tele_rest';
 const instance: BusinessBotRights = {
     can_reply,
     can_read_messages,
-    can_delete_sent_messages,
+    can_delete_outgoing_messages,
     can_delete_all_messages,
     can_edit_name,
     can_edit_bio,
