@@ -7,7 +7,7 @@ This object represents the scope to which bot commands are applied. Currently, t
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** | Scope type, must be *chat\\_member* | [default to 'chat_member']
-**chat_id** | [**RestrictChatMemberPostRequestChatId**](RestrictChatMemberPostRequestChatId.md) |  | [default to undefined]
+**chat_id** | [**BotCommandScopeChatChatId**](BotCommandScopeChatChatId.md) |  | [default to undefined]
 **user_id** | **number** | Unique identifier of the target user | [default to undefined]
 
 ## Example

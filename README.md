@@ -51,173 +51,180 @@ All URIs are relative to *https://api.telegram.org/bot123456:ABC-DEF1234ghIkl-zy
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**addStickerToSetPost**](docs/DefaultApi.md#addstickertosetpost) | **POST** /addStickerToSet | 
-*DefaultApi* | [**answerCallbackQueryPost**](docs/DefaultApi.md#answercallbackquerypost) | **POST** /answerCallbackQuery | 
-*DefaultApi* | [**answerInlineQueryPost**](docs/DefaultApi.md#answerinlinequerypost) | **POST** /answerInlineQuery | 
-*DefaultApi* | [**answerPreCheckoutQueryPost**](docs/DefaultApi.md#answerprecheckoutquerypost) | **POST** /answerPreCheckoutQuery | 
-*DefaultApi* | [**answerShippingQueryPost**](docs/DefaultApi.md#answershippingquerypost) | **POST** /answerShippingQuery | 
-*DefaultApi* | [**answerWebAppQueryPost**](docs/DefaultApi.md#answerwebappquerypost) | **POST** /answerWebAppQuery | 
-*DefaultApi* | [**approveChatJoinRequestPost**](docs/DefaultApi.md#approvechatjoinrequestpost) | **POST** /approveChatJoinRequest | 
-*DefaultApi* | [**banChatMemberPost**](docs/DefaultApi.md#banchatmemberpost) | **POST** /banChatMember | 
-*DefaultApi* | [**banChatSenderChatPost**](docs/DefaultApi.md#banchatsenderchatpost) | **POST** /banChatSenderChat | 
-*DefaultApi* | [**closeForumTopicPost**](docs/DefaultApi.md#closeforumtopicpost) | **POST** /closeForumTopic | 
-*DefaultApi* | [**closeGeneralForumTopicPost**](docs/DefaultApi.md#closegeneralforumtopicpost) | **POST** /closeGeneralForumTopic | 
-*DefaultApi* | [**closePost**](docs/DefaultApi.md#closepost) | **POST** /close | 
-*DefaultApi* | [**convertGiftToStarsPost**](docs/DefaultApi.md#convertgifttostarspost) | **POST** /convertGiftToStars | 
-*DefaultApi* | [**copyMessagePost**](docs/DefaultApi.md#copymessagepost) | **POST** /copyMessage | 
-*DefaultApi* | [**copyMessagesPost**](docs/DefaultApi.md#copymessagespost) | **POST** /copyMessages | 
-*DefaultApi* | [**createChatInviteLinkPost**](docs/DefaultApi.md#createchatinvitelinkpost) | **POST** /createChatInviteLink | 
-*DefaultApi* | [**createChatSubscriptionInviteLinkPost**](docs/DefaultApi.md#createchatsubscriptioninvitelinkpost) | **POST** /createChatSubscriptionInviteLink | 
-*DefaultApi* | [**createForumTopicPost**](docs/DefaultApi.md#createforumtopicpost) | **POST** /createForumTopic | 
-*DefaultApi* | [**createInvoiceLinkPost**](docs/DefaultApi.md#createinvoicelinkpost) | **POST** /createInvoiceLink | 
-*DefaultApi* | [**createNewStickerSetPost**](docs/DefaultApi.md#createnewstickersetpost) | **POST** /createNewStickerSet | 
-*DefaultApi* | [**declineChatJoinRequestPost**](docs/DefaultApi.md#declinechatjoinrequestpost) | **POST** /declineChatJoinRequest | 
-*DefaultApi* | [**deleteBusinessMessagesPost**](docs/DefaultApi.md#deletebusinessmessagespost) | **POST** /deleteBusinessMessages | 
-*DefaultApi* | [**deleteChatPhotoPost**](docs/DefaultApi.md#deletechatphotopost) | **POST** /deleteChatPhoto | 
-*DefaultApi* | [**deleteChatStickerSetPost**](docs/DefaultApi.md#deletechatstickersetpost) | **POST** /deleteChatStickerSet | 
-*DefaultApi* | [**deleteForumTopicPost**](docs/DefaultApi.md#deleteforumtopicpost) | **POST** /deleteForumTopic | 
-*DefaultApi* | [**deleteMessagePost**](docs/DefaultApi.md#deletemessagepost) | **POST** /deleteMessage | 
-*DefaultApi* | [**deleteMessagesPost**](docs/DefaultApi.md#deletemessagespost) | **POST** /deleteMessages | 
-*DefaultApi* | [**deleteMyCommandsPost**](docs/DefaultApi.md#deletemycommandspost) | **POST** /deleteMyCommands | 
-*DefaultApi* | [**deleteStickerFromSetPost**](docs/DefaultApi.md#deletestickerfromsetpost) | **POST** /deleteStickerFromSet | 
-*DefaultApi* | [**deleteStickerSetPost**](docs/DefaultApi.md#deletestickersetpost) | **POST** /deleteStickerSet | 
-*DefaultApi* | [**deleteStoryPost**](docs/DefaultApi.md#deletestorypost) | **POST** /deleteStory | 
-*DefaultApi* | [**deleteWebhookPost**](docs/DefaultApi.md#deletewebhookpost) | **POST** /deleteWebhook | 
-*DefaultApi* | [**editChatInviteLinkPost**](docs/DefaultApi.md#editchatinvitelinkpost) | **POST** /editChatInviteLink | 
-*DefaultApi* | [**editChatSubscriptionInviteLinkPost**](docs/DefaultApi.md#editchatsubscriptioninvitelinkpost) | **POST** /editChatSubscriptionInviteLink | 
-*DefaultApi* | [**editForumTopicPost**](docs/DefaultApi.md#editforumtopicpost) | **POST** /editForumTopic | 
-*DefaultApi* | [**editGeneralForumTopicPost**](docs/DefaultApi.md#editgeneralforumtopicpost) | **POST** /editGeneralForumTopic | 
-*DefaultApi* | [**editMessageCaptionPost**](docs/DefaultApi.md#editmessagecaptionpost) | **POST** /editMessageCaption | 
-*DefaultApi* | [**editMessageLiveLocationPost**](docs/DefaultApi.md#editmessagelivelocationpost) | **POST** /editMessageLiveLocation | 
-*DefaultApi* | [**editMessageMediaPost**](docs/DefaultApi.md#editmessagemediapost) | **POST** /editMessageMedia | 
-*DefaultApi* | [**editMessageReplyMarkupPost**](docs/DefaultApi.md#editmessagereplymarkuppost) | **POST** /editMessageReplyMarkup | 
-*DefaultApi* | [**editMessageTextPost**](docs/DefaultApi.md#editmessagetextpost) | **POST** /editMessageText | 
-*DefaultApi* | [**editStoryPost**](docs/DefaultApi.md#editstorypost) | **POST** /editStory | 
-*DefaultApi* | [**editUserStarSubscriptionPost**](docs/DefaultApi.md#edituserstarsubscriptionpost) | **POST** /editUserStarSubscription | 
-*DefaultApi* | [**exportChatInviteLinkPost**](docs/DefaultApi.md#exportchatinvitelinkpost) | **POST** /exportChatInviteLink | 
-*DefaultApi* | [**forwardMessagePost**](docs/DefaultApi.md#forwardmessagepost) | **POST** /forwardMessage | 
-*DefaultApi* | [**forwardMessagesPost**](docs/DefaultApi.md#forwardmessagespost) | **POST** /forwardMessages | 
-*DefaultApi* | [**getAvailableGiftsPost**](docs/DefaultApi.md#getavailablegiftspost) | **POST** /getAvailableGifts | 
-*DefaultApi* | [**getBusinessAccountGiftsPost**](docs/DefaultApi.md#getbusinessaccountgiftspost) | **POST** /getBusinessAccountGifts | 
-*DefaultApi* | [**getBusinessAccountStarBalancePost**](docs/DefaultApi.md#getbusinessaccountstarbalancepost) | **POST** /getBusinessAccountStarBalance | 
-*DefaultApi* | [**getBusinessConnectionPost**](docs/DefaultApi.md#getbusinessconnectionpost) | **POST** /getBusinessConnection | 
-*DefaultApi* | [**getChatAdministratorsPost**](docs/DefaultApi.md#getchatadministratorspost) | **POST** /getChatAdministrators | 
-*DefaultApi* | [**getChatMemberCountPost**](docs/DefaultApi.md#getchatmembercountpost) | **POST** /getChatMemberCount | 
-*DefaultApi* | [**getChatMemberPost**](docs/DefaultApi.md#getchatmemberpost) | **POST** /getChatMember | 
-*DefaultApi* | [**getChatMenuButtonPost**](docs/DefaultApi.md#getchatmenubuttonpost) | **POST** /getChatMenuButton | 
-*DefaultApi* | [**getChatPost**](docs/DefaultApi.md#getchatpost) | **POST** /getChat | 
-*DefaultApi* | [**getCustomEmojiStickersPost**](docs/DefaultApi.md#getcustomemojistickerspost) | **POST** /getCustomEmojiStickers | 
-*DefaultApi* | [**getFilePost**](docs/DefaultApi.md#getfilepost) | **POST** /getFile | 
-*DefaultApi* | [**getForumTopicIconStickersPost**](docs/DefaultApi.md#getforumtopiciconstickerspost) | **POST** /getForumTopicIconStickers | 
-*DefaultApi* | [**getGameHighScoresPost**](docs/DefaultApi.md#getgamehighscorespost) | **POST** /getGameHighScores | 
-*DefaultApi* | [**getMePost**](docs/DefaultApi.md#getmepost) | **POST** /getMe | 
-*DefaultApi* | [**getMyCommandsPost**](docs/DefaultApi.md#getmycommandspost) | **POST** /getMyCommands | 
-*DefaultApi* | [**getMyDefaultAdministratorRightsPost**](docs/DefaultApi.md#getmydefaultadministratorrightspost) | **POST** /getMyDefaultAdministratorRights | 
-*DefaultApi* | [**getMyDescriptionPost**](docs/DefaultApi.md#getmydescriptionpost) | **POST** /getMyDescription | 
-*DefaultApi* | [**getMyNamePost**](docs/DefaultApi.md#getmynamepost) | **POST** /getMyName | 
-*DefaultApi* | [**getMyShortDescriptionPost**](docs/DefaultApi.md#getmyshortdescriptionpost) | **POST** /getMyShortDescription | 
-*DefaultApi* | [**getStarTransactionsPost**](docs/DefaultApi.md#getstartransactionspost) | **POST** /getStarTransactions | 
-*DefaultApi* | [**getStickerSetPost**](docs/DefaultApi.md#getstickersetpost) | **POST** /getStickerSet | 
-*DefaultApi* | [**getUpdatesPost**](docs/DefaultApi.md#getupdatespost) | **POST** /getUpdates | 
-*DefaultApi* | [**getUserChatBoostsPost**](docs/DefaultApi.md#getuserchatboostspost) | **POST** /getUserChatBoosts | 
-*DefaultApi* | [**getUserProfilePhotosPost**](docs/DefaultApi.md#getuserprofilephotospost) | **POST** /getUserProfilePhotos | 
-*DefaultApi* | [**getWebhookInfoPost**](docs/DefaultApi.md#getwebhookinfopost) | **POST** /getWebhookInfo | 
-*DefaultApi* | [**giftPremiumSubscriptionPost**](docs/DefaultApi.md#giftpremiumsubscriptionpost) | **POST** /giftPremiumSubscription | 
-*DefaultApi* | [**hideGeneralForumTopicPost**](docs/DefaultApi.md#hidegeneralforumtopicpost) | **POST** /hideGeneralForumTopic | 
-*DefaultApi* | [**leaveChatPost**](docs/DefaultApi.md#leavechatpost) | **POST** /leaveChat | 
-*DefaultApi* | [**logOutPost**](docs/DefaultApi.md#logoutpost) | **POST** /logOut | 
-*DefaultApi* | [**pinChatMessagePost**](docs/DefaultApi.md#pinchatmessagepost) | **POST** /pinChatMessage | 
-*DefaultApi* | [**postStoryPost**](docs/DefaultApi.md#poststorypost) | **POST** /postStory | 
-*DefaultApi* | [**promoteChatMemberPost**](docs/DefaultApi.md#promotechatmemberpost) | **POST** /promoteChatMember | 
-*DefaultApi* | [**readBusinessMessagePost**](docs/DefaultApi.md#readbusinessmessagepost) | **POST** /readBusinessMessage | 
-*DefaultApi* | [**refundStarPaymentPost**](docs/DefaultApi.md#refundstarpaymentpost) | **POST** /refundStarPayment | 
-*DefaultApi* | [**removeBusinessAccountProfilePhotoPost**](docs/DefaultApi.md#removebusinessaccountprofilephotopost) | **POST** /removeBusinessAccountProfilePhoto | 
-*DefaultApi* | [**removeChatVerificationPost**](docs/DefaultApi.md#removechatverificationpost) | **POST** /removeChatVerification | 
-*DefaultApi* | [**removeUserVerificationPost**](docs/DefaultApi.md#removeuserverificationpost) | **POST** /removeUserVerification | 
-*DefaultApi* | [**reopenForumTopicPost**](docs/DefaultApi.md#reopenforumtopicpost) | **POST** /reopenForumTopic | 
-*DefaultApi* | [**reopenGeneralForumTopicPost**](docs/DefaultApi.md#reopengeneralforumtopicpost) | **POST** /reopenGeneralForumTopic | 
-*DefaultApi* | [**replaceStickerInSetPost**](docs/DefaultApi.md#replacestickerinsetpost) | **POST** /replaceStickerInSet | 
-*DefaultApi* | [**restrictChatMemberPost**](docs/DefaultApi.md#restrictchatmemberpost) | **POST** /restrictChatMember | 
-*DefaultApi* | [**revokeChatInviteLinkPost**](docs/DefaultApi.md#revokechatinvitelinkpost) | **POST** /revokeChatInviteLink | 
-*DefaultApi* | [**savePreparedInlineMessagePost**](docs/DefaultApi.md#savepreparedinlinemessagepost) | **POST** /savePreparedInlineMessage | 
-*DefaultApi* | [**sendAnimationPost**](docs/DefaultApi.md#sendanimationpost) | **POST** /sendAnimation | 
-*DefaultApi* | [**sendAudioPost**](docs/DefaultApi.md#sendaudiopost) | **POST** /sendAudio | 
-*DefaultApi* | [**sendChatActionPost**](docs/DefaultApi.md#sendchatactionpost) | **POST** /sendChatAction | 
-*DefaultApi* | [**sendContactPost**](docs/DefaultApi.md#sendcontactpost) | **POST** /sendContact | 
-*DefaultApi* | [**sendDicePost**](docs/DefaultApi.md#senddicepost) | **POST** /sendDice | 
-*DefaultApi* | [**sendDocumentPost**](docs/DefaultApi.md#senddocumentpost) | **POST** /sendDocument | 
-*DefaultApi* | [**sendGamePost**](docs/DefaultApi.md#sendgamepost) | **POST** /sendGame | 
-*DefaultApi* | [**sendGiftPost**](docs/DefaultApi.md#sendgiftpost) | **POST** /sendGift | 
-*DefaultApi* | [**sendInvoicePost**](docs/DefaultApi.md#sendinvoicepost) | **POST** /sendInvoice | 
-*DefaultApi* | [**sendLocationPost**](docs/DefaultApi.md#sendlocationpost) | **POST** /sendLocation | 
-*DefaultApi* | [**sendMediaGroupPost**](docs/DefaultApi.md#sendmediagrouppost) | **POST** /sendMediaGroup | 
-*DefaultApi* | [**sendMessagePost**](docs/DefaultApi.md#sendmessagepost) | **POST** /sendMessage | 
-*DefaultApi* | [**sendPaidMediaPost**](docs/DefaultApi.md#sendpaidmediapost) | **POST** /sendPaidMedia | 
-*DefaultApi* | [**sendPhotoPost**](docs/DefaultApi.md#sendphotopost) | **POST** /sendPhoto | 
-*DefaultApi* | [**sendPollPost**](docs/DefaultApi.md#sendpollpost) | **POST** /sendPoll | 
-*DefaultApi* | [**sendStickerPost**](docs/DefaultApi.md#sendstickerpost) | **POST** /sendSticker | 
-*DefaultApi* | [**sendVenuePost**](docs/DefaultApi.md#sendvenuepost) | **POST** /sendVenue | 
-*DefaultApi* | [**sendVideoNotePost**](docs/DefaultApi.md#sendvideonotepost) | **POST** /sendVideoNote | 
-*DefaultApi* | [**sendVideoPost**](docs/DefaultApi.md#sendvideopost) | **POST** /sendVideo | 
-*DefaultApi* | [**sendVoicePost**](docs/DefaultApi.md#sendvoicepost) | **POST** /sendVoice | 
-*DefaultApi* | [**setBusinessAccountBioPost**](docs/DefaultApi.md#setbusinessaccountbiopost) | **POST** /setBusinessAccountBio | 
-*DefaultApi* | [**setBusinessAccountGiftSettingsPost**](docs/DefaultApi.md#setbusinessaccountgiftsettingspost) | **POST** /setBusinessAccountGiftSettings | 
-*DefaultApi* | [**setBusinessAccountNamePost**](docs/DefaultApi.md#setbusinessaccountnamepost) | **POST** /setBusinessAccountName | 
-*DefaultApi* | [**setBusinessAccountProfilePhotoPost**](docs/DefaultApi.md#setbusinessaccountprofilephotopost) | **POST** /setBusinessAccountProfilePhoto | 
-*DefaultApi* | [**setBusinessAccountUsernamePost**](docs/DefaultApi.md#setbusinessaccountusernamepost) | **POST** /setBusinessAccountUsername | 
-*DefaultApi* | [**setChatAdministratorCustomTitlePost**](docs/DefaultApi.md#setchatadministratorcustomtitlepost) | **POST** /setChatAdministratorCustomTitle | 
-*DefaultApi* | [**setChatDescriptionPost**](docs/DefaultApi.md#setchatdescriptionpost) | **POST** /setChatDescription | 
-*DefaultApi* | [**setChatMenuButtonPost**](docs/DefaultApi.md#setchatmenubuttonpost) | **POST** /setChatMenuButton | 
-*DefaultApi* | [**setChatPermissionsPost**](docs/DefaultApi.md#setchatpermissionspost) | **POST** /setChatPermissions | 
-*DefaultApi* | [**setChatPhotoPost**](docs/DefaultApi.md#setchatphotopost) | **POST** /setChatPhoto | 
-*DefaultApi* | [**setChatStickerSetPost**](docs/DefaultApi.md#setchatstickersetpost) | **POST** /setChatStickerSet | 
-*DefaultApi* | [**setChatTitlePost**](docs/DefaultApi.md#setchattitlepost) | **POST** /setChatTitle | 
-*DefaultApi* | [**setCustomEmojiStickerSetThumbnailPost**](docs/DefaultApi.md#setcustomemojistickersetthumbnailpost) | **POST** /setCustomEmojiStickerSetThumbnail | 
-*DefaultApi* | [**setGameScorePost**](docs/DefaultApi.md#setgamescorepost) | **POST** /setGameScore | 
-*DefaultApi* | [**setMessageReactionPost**](docs/DefaultApi.md#setmessagereactionpost) | **POST** /setMessageReaction | 
-*DefaultApi* | [**setMyCommandsPost**](docs/DefaultApi.md#setmycommandspost) | **POST** /setMyCommands | 
-*DefaultApi* | [**setMyDefaultAdministratorRightsPost**](docs/DefaultApi.md#setmydefaultadministratorrightspost) | **POST** /setMyDefaultAdministratorRights | 
-*DefaultApi* | [**setMyDescriptionPost**](docs/DefaultApi.md#setmydescriptionpost) | **POST** /setMyDescription | 
-*DefaultApi* | [**setMyNamePost**](docs/DefaultApi.md#setmynamepost) | **POST** /setMyName | 
-*DefaultApi* | [**setMyShortDescriptionPost**](docs/DefaultApi.md#setmyshortdescriptionpost) | **POST** /setMyShortDescription | 
-*DefaultApi* | [**setPassportDataErrorsPost**](docs/DefaultApi.md#setpassportdataerrorspost) | **POST** /setPassportDataErrors | 
-*DefaultApi* | [**setStickerEmojiListPost**](docs/DefaultApi.md#setstickeremojilistpost) | **POST** /setStickerEmojiList | 
-*DefaultApi* | [**setStickerKeywordsPost**](docs/DefaultApi.md#setstickerkeywordspost) | **POST** /setStickerKeywords | 
-*DefaultApi* | [**setStickerMaskPositionPost**](docs/DefaultApi.md#setstickermaskpositionpost) | **POST** /setStickerMaskPosition | 
-*DefaultApi* | [**setStickerPositionInSetPost**](docs/DefaultApi.md#setstickerpositioninsetpost) | **POST** /setStickerPositionInSet | 
-*DefaultApi* | [**setStickerSetThumbnailPost**](docs/DefaultApi.md#setstickersetthumbnailpost) | **POST** /setStickerSetThumbnail | 
-*DefaultApi* | [**setStickerSetTitlePost**](docs/DefaultApi.md#setstickersettitlepost) | **POST** /setStickerSetTitle | 
-*DefaultApi* | [**setUserEmojiStatusPost**](docs/DefaultApi.md#setuseremojistatuspost) | **POST** /setUserEmojiStatus | 
-*DefaultApi* | [**setWebhookPost**](docs/DefaultApi.md#setwebhookpost) | **POST** /setWebhook | 
-*DefaultApi* | [**stopMessageLiveLocationPost**](docs/DefaultApi.md#stopmessagelivelocationpost) | **POST** /stopMessageLiveLocation | 
-*DefaultApi* | [**stopPollPost**](docs/DefaultApi.md#stoppollpost) | **POST** /stopPoll | 
-*DefaultApi* | [**transferBusinessAccountStarsPost**](docs/DefaultApi.md#transferbusinessaccountstarspost) | **POST** /transferBusinessAccountStars | 
-*DefaultApi* | [**transferGiftPost**](docs/DefaultApi.md#transfergiftpost) | **POST** /transferGift | 
-*DefaultApi* | [**unbanChatMemberPost**](docs/DefaultApi.md#unbanchatmemberpost) | **POST** /unbanChatMember | 
-*DefaultApi* | [**unbanChatSenderChatPost**](docs/DefaultApi.md#unbanchatsenderchatpost) | **POST** /unbanChatSenderChat | 
-*DefaultApi* | [**unhideGeneralForumTopicPost**](docs/DefaultApi.md#unhidegeneralforumtopicpost) | **POST** /unhideGeneralForumTopic | 
-*DefaultApi* | [**unpinAllChatMessagesPost**](docs/DefaultApi.md#unpinallchatmessagespost) | **POST** /unpinAllChatMessages | 
-*DefaultApi* | [**unpinAllForumTopicMessagesPost**](docs/DefaultApi.md#unpinallforumtopicmessagespost) | **POST** /unpinAllForumTopicMessages | 
-*DefaultApi* | [**unpinAllGeneralForumTopicMessagesPost**](docs/DefaultApi.md#unpinallgeneralforumtopicmessagespost) | **POST** /unpinAllGeneralForumTopicMessages | 
-*DefaultApi* | [**unpinChatMessagePost**](docs/DefaultApi.md#unpinchatmessagepost) | **POST** /unpinChatMessage | 
-*DefaultApi* | [**upgradeGiftPost**](docs/DefaultApi.md#upgradegiftpost) | **POST** /upgradeGift | 
-*DefaultApi* | [**uploadStickerFilePost**](docs/DefaultApi.md#uploadstickerfilepost) | **POST** /uploadStickerFile | 
-*DefaultApi* | [**verifyChatPost**](docs/DefaultApi.md#verifychatpost) | **POST** /verifyChat | 
-*DefaultApi* | [**verifyUserPost**](docs/DefaultApi.md#verifyuserpost) | **POST** /verifyUser | 
+*DefaultApi* | [**postAddStickerToSet**](docs/DefaultApi.md#postaddstickertoset) | **POST** /addStickerToSet | addStickerToSet
+*DefaultApi* | [**postAnswerCallbackQuery**](docs/DefaultApi.md#postanswercallbackquery) | **POST** /answerCallbackQuery | answerCallbackQuery
+*DefaultApi* | [**postAnswerInlineQuery**](docs/DefaultApi.md#postanswerinlinequery) | **POST** /answerInlineQuery | answerInlineQuery
+*DefaultApi* | [**postAnswerPreCheckoutQuery**](docs/DefaultApi.md#postanswerprecheckoutquery) | **POST** /answerPreCheckoutQuery | answerPreCheckoutQuery
+*DefaultApi* | [**postAnswerShippingQuery**](docs/DefaultApi.md#postanswershippingquery) | **POST** /answerShippingQuery | answerShippingQuery
+*DefaultApi* | [**postAnswerWebAppQuery**](docs/DefaultApi.md#postanswerwebappquery) | **POST** /answerWebAppQuery | answerWebAppQuery
+*DefaultApi* | [**postApproveChatJoinRequest**](docs/DefaultApi.md#postapprovechatjoinrequest) | **POST** /approveChatJoinRequest | approveChatJoinRequest
+*DefaultApi* | [**postBanChatMember**](docs/DefaultApi.md#postbanchatmember) | **POST** /banChatMember | banChatMember
+*DefaultApi* | [**postBanChatSenderChat**](docs/DefaultApi.md#postbanchatsenderchat) | **POST** /banChatSenderChat | banChatSenderChat
+*DefaultApi* | [**postClose**](docs/DefaultApi.md#postclose) | **POST** /close | close
+*DefaultApi* | [**postCloseForumTopic**](docs/DefaultApi.md#postcloseforumtopic) | **POST** /closeForumTopic | closeForumTopic
+*DefaultApi* | [**postCloseGeneralForumTopic**](docs/DefaultApi.md#postclosegeneralforumtopic) | **POST** /closeGeneralForumTopic | closeGeneralForumTopic
+*DefaultApi* | [**postConvertGiftToStars**](docs/DefaultApi.md#postconvertgifttostars) | **POST** /convertGiftToStars | convertGiftToStars
+*DefaultApi* | [**postCopyMessage**](docs/DefaultApi.md#postcopymessage) | **POST** /copyMessage | copyMessage
+*DefaultApi* | [**postCopyMessages**](docs/DefaultApi.md#postcopymessages) | **POST** /copyMessages | copyMessages
+*DefaultApi* | [**postCreateChatInviteLink**](docs/DefaultApi.md#postcreatechatinvitelink) | **POST** /createChatInviteLink | createChatInviteLink
+*DefaultApi* | [**postCreateChatSubscriptionInviteLink**](docs/DefaultApi.md#postcreatechatsubscriptioninvitelink) | **POST** /createChatSubscriptionInviteLink | createChatSubscriptionInviteLink
+*DefaultApi* | [**postCreateForumTopic**](docs/DefaultApi.md#postcreateforumtopic) | **POST** /createForumTopic | createForumTopic
+*DefaultApi* | [**postCreateInvoiceLink**](docs/DefaultApi.md#postcreateinvoicelink) | **POST** /createInvoiceLink | createInvoiceLink
+*DefaultApi* | [**postCreateNewStickerSet**](docs/DefaultApi.md#postcreatenewstickerset) | **POST** /createNewStickerSet | createNewStickerSet
+*DefaultApi* | [**postDeclineChatJoinRequest**](docs/DefaultApi.md#postdeclinechatjoinrequest) | **POST** /declineChatJoinRequest | declineChatJoinRequest
+*DefaultApi* | [**postDeleteBusinessMessages**](docs/DefaultApi.md#postdeletebusinessmessages) | **POST** /deleteBusinessMessages | deleteBusinessMessages
+*DefaultApi* | [**postDeleteChatPhoto**](docs/DefaultApi.md#postdeletechatphoto) | **POST** /deleteChatPhoto | deleteChatPhoto
+*DefaultApi* | [**postDeleteChatStickerSet**](docs/DefaultApi.md#postdeletechatstickerset) | **POST** /deleteChatStickerSet | deleteChatStickerSet
+*DefaultApi* | [**postDeleteForumTopic**](docs/DefaultApi.md#postdeleteforumtopic) | **POST** /deleteForumTopic | deleteForumTopic
+*DefaultApi* | [**postDeleteMessage**](docs/DefaultApi.md#postdeletemessage) | **POST** /deleteMessage | deleteMessage
+*DefaultApi* | [**postDeleteMessages**](docs/DefaultApi.md#postdeletemessages) | **POST** /deleteMessages | deleteMessages
+*DefaultApi* | [**postDeleteMyCommands**](docs/DefaultApi.md#postdeletemycommands) | **POST** /deleteMyCommands | deleteMyCommands
+*DefaultApi* | [**postDeleteStickerFromSet**](docs/DefaultApi.md#postdeletestickerfromset) | **POST** /deleteStickerFromSet | deleteStickerFromSet
+*DefaultApi* | [**postDeleteStickerSet**](docs/DefaultApi.md#postdeletestickerset) | **POST** /deleteStickerSet | deleteStickerSet
+*DefaultApi* | [**postDeleteStory**](docs/DefaultApi.md#postdeletestory) | **POST** /deleteStory | deleteStory
+*DefaultApi* | [**postDeleteWebhook**](docs/DefaultApi.md#postdeletewebhook) | **POST** /deleteWebhook | deleteWebhook
+*DefaultApi* | [**postEditChatInviteLink**](docs/DefaultApi.md#posteditchatinvitelink) | **POST** /editChatInviteLink | editChatInviteLink
+*DefaultApi* | [**postEditChatSubscriptionInviteLink**](docs/DefaultApi.md#posteditchatsubscriptioninvitelink) | **POST** /editChatSubscriptionInviteLink | editChatSubscriptionInviteLink
+*DefaultApi* | [**postEditForumTopic**](docs/DefaultApi.md#posteditforumtopic) | **POST** /editForumTopic | editForumTopic
+*DefaultApi* | [**postEditGeneralForumTopic**](docs/DefaultApi.md#posteditgeneralforumtopic) | **POST** /editGeneralForumTopic | editGeneralForumTopic
+*DefaultApi* | [**postEditMessageCaption**](docs/DefaultApi.md#posteditmessagecaption) | **POST** /editMessageCaption | editMessageCaption
+*DefaultApi* | [**postEditMessageLiveLocation**](docs/DefaultApi.md#posteditmessagelivelocation) | **POST** /editMessageLiveLocation | editMessageLiveLocation
+*DefaultApi* | [**postEditMessageMedia**](docs/DefaultApi.md#posteditmessagemedia) | **POST** /editMessageMedia | editMessageMedia
+*DefaultApi* | [**postEditMessageReplyMarkup**](docs/DefaultApi.md#posteditmessagereplymarkup) | **POST** /editMessageReplyMarkup | editMessageReplyMarkup
+*DefaultApi* | [**postEditMessageText**](docs/DefaultApi.md#posteditmessagetext) | **POST** /editMessageText | editMessageText
+*DefaultApi* | [**postEditStory**](docs/DefaultApi.md#posteditstory) | **POST** /editStory | editStory
+*DefaultApi* | [**postEditUserStarSubscription**](docs/DefaultApi.md#postedituserstarsubscription) | **POST** /editUserStarSubscription | editUserStarSubscription
+*DefaultApi* | [**postExportChatInviteLink**](docs/DefaultApi.md#postexportchatinvitelink) | **POST** /exportChatInviteLink | exportChatInviteLink
+*DefaultApi* | [**postForwardMessage**](docs/DefaultApi.md#postforwardmessage) | **POST** /forwardMessage | forwardMessage
+*DefaultApi* | [**postForwardMessages**](docs/DefaultApi.md#postforwardmessages) | **POST** /forwardMessages | forwardMessages
+*DefaultApi* | [**postGetAvailableGifts**](docs/DefaultApi.md#postgetavailablegifts) | **POST** /getAvailableGifts | getAvailableGifts
+*DefaultApi* | [**postGetBusinessAccountGifts**](docs/DefaultApi.md#postgetbusinessaccountgifts) | **POST** /getBusinessAccountGifts | getBusinessAccountGifts
+*DefaultApi* | [**postGetBusinessAccountStarBalance**](docs/DefaultApi.md#postgetbusinessaccountstarbalance) | **POST** /getBusinessAccountStarBalance | getBusinessAccountStarBalance
+*DefaultApi* | [**postGetBusinessConnection**](docs/DefaultApi.md#postgetbusinessconnection) | **POST** /getBusinessConnection | getBusinessConnection
+*DefaultApi* | [**postGetChat**](docs/DefaultApi.md#postgetchat) | **POST** /getChat | getChat
+*DefaultApi* | [**postGetChatAdministrators**](docs/DefaultApi.md#postgetchatadministrators) | **POST** /getChatAdministrators | getChatAdministrators
+*DefaultApi* | [**postGetChatMember**](docs/DefaultApi.md#postgetchatmember) | **POST** /getChatMember | getChatMember
+*DefaultApi* | [**postGetChatMemberCount**](docs/DefaultApi.md#postgetchatmembercount) | **POST** /getChatMemberCount | getChatMemberCount
+*DefaultApi* | [**postGetChatMenuButton**](docs/DefaultApi.md#postgetchatmenubutton) | **POST** /getChatMenuButton | getChatMenuButton
+*DefaultApi* | [**postGetCustomEmojiStickers**](docs/DefaultApi.md#postgetcustomemojistickers) | **POST** /getCustomEmojiStickers | getCustomEmojiStickers
+*DefaultApi* | [**postGetFile**](docs/DefaultApi.md#postgetfile) | **POST** /getFile | getFile
+*DefaultApi* | [**postGetForumTopicIconStickers**](docs/DefaultApi.md#postgetforumtopiciconstickers) | **POST** /getForumTopicIconStickers | getForumTopicIconStickers
+*DefaultApi* | [**postGetGameHighScores**](docs/DefaultApi.md#postgetgamehighscores) | **POST** /getGameHighScores | getGameHighScores
+*DefaultApi* | [**postGetMe**](docs/DefaultApi.md#postgetme) | **POST** /getMe | getMe
+*DefaultApi* | [**postGetMyCommands**](docs/DefaultApi.md#postgetmycommands) | **POST** /getMyCommands | getMyCommands
+*DefaultApi* | [**postGetMyDefaultAdministratorRights**](docs/DefaultApi.md#postgetmydefaultadministratorrights) | **POST** /getMyDefaultAdministratorRights | getMyDefaultAdministratorRights
+*DefaultApi* | [**postGetMyDescription**](docs/DefaultApi.md#postgetmydescription) | **POST** /getMyDescription | getMyDescription
+*DefaultApi* | [**postGetMyName**](docs/DefaultApi.md#postgetmyname) | **POST** /getMyName | getMyName
+*DefaultApi* | [**postGetMyShortDescription**](docs/DefaultApi.md#postgetmyshortdescription) | **POST** /getMyShortDescription | getMyShortDescription
+*DefaultApi* | [**postGetStarTransactions**](docs/DefaultApi.md#postgetstartransactions) | **POST** /getStarTransactions | getStarTransactions
+*DefaultApi* | [**postGetStickerSet**](docs/DefaultApi.md#postgetstickerset) | **POST** /getStickerSet | getStickerSet
+*DefaultApi* | [**postGetUpdates**](docs/DefaultApi.md#postgetupdates) | **POST** /getUpdates | getUpdates
+*DefaultApi* | [**postGetUserChatBoosts**](docs/DefaultApi.md#postgetuserchatboosts) | **POST** /getUserChatBoosts | getUserChatBoosts
+*DefaultApi* | [**postGetUserProfilePhotos**](docs/DefaultApi.md#postgetuserprofilephotos) | **POST** /getUserProfilePhotos | getUserProfilePhotos
+*DefaultApi* | [**postGetWebhookInfo**](docs/DefaultApi.md#postgetwebhookinfo) | **POST** /getWebhookInfo | getWebhookInfo
+*DefaultApi* | [**postGiftPremiumSubscription**](docs/DefaultApi.md#postgiftpremiumsubscription) | **POST** /giftPremiumSubscription | giftPremiumSubscription
+*DefaultApi* | [**postHideGeneralForumTopic**](docs/DefaultApi.md#posthidegeneralforumtopic) | **POST** /hideGeneralForumTopic | hideGeneralForumTopic
+*DefaultApi* | [**postLeaveChat**](docs/DefaultApi.md#postleavechat) | **POST** /leaveChat | leaveChat
+*DefaultApi* | [**postLogOut**](docs/DefaultApi.md#postlogout) | **POST** /logOut | logOut
+*DefaultApi* | [**postPinChatMessage**](docs/DefaultApi.md#postpinchatmessage) | **POST** /pinChatMessage | pinChatMessage
+*DefaultApi* | [**postPostStory**](docs/DefaultApi.md#postpoststory) | **POST** /postStory | postStory
+*DefaultApi* | [**postPromoteChatMember**](docs/DefaultApi.md#postpromotechatmember) | **POST** /promoteChatMember | promoteChatMember
+*DefaultApi* | [**postReadBusinessMessage**](docs/DefaultApi.md#postreadbusinessmessage) | **POST** /readBusinessMessage | readBusinessMessage
+*DefaultApi* | [**postRefundStarPayment**](docs/DefaultApi.md#postrefundstarpayment) | **POST** /refundStarPayment | refundStarPayment
+*DefaultApi* | [**postRemoveBusinessAccountProfilePhoto**](docs/DefaultApi.md#postremovebusinessaccountprofilephoto) | **POST** /removeBusinessAccountProfilePhoto | removeBusinessAccountProfilePhoto
+*DefaultApi* | [**postRemoveChatVerification**](docs/DefaultApi.md#postremovechatverification) | **POST** /removeChatVerification | removeChatVerification
+*DefaultApi* | [**postRemoveUserVerification**](docs/DefaultApi.md#postremoveuserverification) | **POST** /removeUserVerification | removeUserVerification
+*DefaultApi* | [**postReopenForumTopic**](docs/DefaultApi.md#postreopenforumtopic) | **POST** /reopenForumTopic | reopenForumTopic
+*DefaultApi* | [**postReopenGeneralForumTopic**](docs/DefaultApi.md#postreopengeneralforumtopic) | **POST** /reopenGeneralForumTopic | reopenGeneralForumTopic
+*DefaultApi* | [**postReplaceStickerInSet**](docs/DefaultApi.md#postreplacestickerinset) | **POST** /replaceStickerInSet | replaceStickerInSet
+*DefaultApi* | [**postRestrictChatMember**](docs/DefaultApi.md#postrestrictchatmember) | **POST** /restrictChatMember | restrictChatMember
+*DefaultApi* | [**postRevokeChatInviteLink**](docs/DefaultApi.md#postrevokechatinvitelink) | **POST** /revokeChatInviteLink | revokeChatInviteLink
+*DefaultApi* | [**postSavePreparedInlineMessage**](docs/DefaultApi.md#postsavepreparedinlinemessage) | **POST** /savePreparedInlineMessage | savePreparedInlineMessage
+*DefaultApi* | [**postSendAnimation**](docs/DefaultApi.md#postsendanimation) | **POST** /sendAnimation | sendAnimation
+*DefaultApi* | [**postSendAudio**](docs/DefaultApi.md#postsendaudio) | **POST** /sendAudio | sendAudio
+*DefaultApi* | [**postSendChatAction**](docs/DefaultApi.md#postsendchataction) | **POST** /sendChatAction | sendChatAction
+*DefaultApi* | [**postSendContact**](docs/DefaultApi.md#postsendcontact) | **POST** /sendContact | sendContact
+*DefaultApi* | [**postSendDice**](docs/DefaultApi.md#postsenddice) | **POST** /sendDice | sendDice
+*DefaultApi* | [**postSendDocument**](docs/DefaultApi.md#postsenddocument) | **POST** /sendDocument | sendDocument
+*DefaultApi* | [**postSendGame**](docs/DefaultApi.md#postsendgame) | **POST** /sendGame | sendGame
+*DefaultApi* | [**postSendGift**](docs/DefaultApi.md#postsendgift) | **POST** /sendGift | sendGift
+*DefaultApi* | [**postSendInvoice**](docs/DefaultApi.md#postsendinvoice) | **POST** /sendInvoice | sendInvoice
+*DefaultApi* | [**postSendLocation**](docs/DefaultApi.md#postsendlocation) | **POST** /sendLocation | sendLocation
+*DefaultApi* | [**postSendMediaGroup**](docs/DefaultApi.md#postsendmediagroup) | **POST** /sendMediaGroup | sendMediaGroup
+*DefaultApi* | [**postSendMessage**](docs/DefaultApi.md#postsendmessage) | **POST** /sendMessage | sendMessage
+*DefaultApi* | [**postSendPaidMedia**](docs/DefaultApi.md#postsendpaidmedia) | **POST** /sendPaidMedia | sendPaidMedia
+*DefaultApi* | [**postSendPhoto**](docs/DefaultApi.md#postsendphoto) | **POST** /sendPhoto | sendPhoto
+*DefaultApi* | [**postSendPoll**](docs/DefaultApi.md#postsendpoll) | **POST** /sendPoll | sendPoll
+*DefaultApi* | [**postSendSticker**](docs/DefaultApi.md#postsendsticker) | **POST** /sendSticker | sendSticker
+*DefaultApi* | [**postSendVenue**](docs/DefaultApi.md#postsendvenue) | **POST** /sendVenue | sendVenue
+*DefaultApi* | [**postSendVideo**](docs/DefaultApi.md#postsendvideo) | **POST** /sendVideo | sendVideo
+*DefaultApi* | [**postSendVideoNote**](docs/DefaultApi.md#postsendvideonote) | **POST** /sendVideoNote | sendVideoNote
+*DefaultApi* | [**postSendVoice**](docs/DefaultApi.md#postsendvoice) | **POST** /sendVoice | sendVoice
+*DefaultApi* | [**postSetBusinessAccountBio**](docs/DefaultApi.md#postsetbusinessaccountbio) | **POST** /setBusinessAccountBio | setBusinessAccountBio
+*DefaultApi* | [**postSetBusinessAccountGiftSettings**](docs/DefaultApi.md#postsetbusinessaccountgiftsettings) | **POST** /setBusinessAccountGiftSettings | setBusinessAccountGiftSettings
+*DefaultApi* | [**postSetBusinessAccountName**](docs/DefaultApi.md#postsetbusinessaccountname) | **POST** /setBusinessAccountName | setBusinessAccountName
+*DefaultApi* | [**postSetBusinessAccountProfilePhoto**](docs/DefaultApi.md#postsetbusinessaccountprofilephoto) | **POST** /setBusinessAccountProfilePhoto | setBusinessAccountProfilePhoto
+*DefaultApi* | [**postSetBusinessAccountUsername**](docs/DefaultApi.md#postsetbusinessaccountusername) | **POST** /setBusinessAccountUsername | setBusinessAccountUsername
+*DefaultApi* | [**postSetChatAdministratorCustomTitle**](docs/DefaultApi.md#postsetchatadministratorcustomtitle) | **POST** /setChatAdministratorCustomTitle | setChatAdministratorCustomTitle
+*DefaultApi* | [**postSetChatDescription**](docs/DefaultApi.md#postsetchatdescription) | **POST** /setChatDescription | setChatDescription
+*DefaultApi* | [**postSetChatMenuButton**](docs/DefaultApi.md#postsetchatmenubutton) | **POST** /setChatMenuButton | setChatMenuButton
+*DefaultApi* | [**postSetChatPermissions**](docs/DefaultApi.md#postsetchatpermissions) | **POST** /setChatPermissions | setChatPermissions
+*DefaultApi* | [**postSetChatPhoto**](docs/DefaultApi.md#postsetchatphoto) | **POST** /setChatPhoto | setChatPhoto
+*DefaultApi* | [**postSetChatStickerSet**](docs/DefaultApi.md#postsetchatstickerset) | **POST** /setChatStickerSet | setChatStickerSet
+*DefaultApi* | [**postSetChatTitle**](docs/DefaultApi.md#postsetchattitle) | **POST** /setChatTitle | setChatTitle
+*DefaultApi* | [**postSetCustomEmojiStickerSetThumbnail**](docs/DefaultApi.md#postsetcustomemojistickersetthumbnail) | **POST** /setCustomEmojiStickerSetThumbnail | setCustomEmojiStickerSetThumbnail
+*DefaultApi* | [**postSetGameScore**](docs/DefaultApi.md#postsetgamescore) | **POST** /setGameScore | setGameScore
+*DefaultApi* | [**postSetMessageReaction**](docs/DefaultApi.md#postsetmessagereaction) | **POST** /setMessageReaction | setMessageReaction
+*DefaultApi* | [**postSetMyCommands**](docs/DefaultApi.md#postsetmycommands) | **POST** /setMyCommands | setMyCommands
+*DefaultApi* | [**postSetMyDefaultAdministratorRights**](docs/DefaultApi.md#postsetmydefaultadministratorrights) | **POST** /setMyDefaultAdministratorRights | setMyDefaultAdministratorRights
+*DefaultApi* | [**postSetMyDescription**](docs/DefaultApi.md#postsetmydescription) | **POST** /setMyDescription | setMyDescription
+*DefaultApi* | [**postSetMyName**](docs/DefaultApi.md#postsetmyname) | **POST** /setMyName | setMyName
+*DefaultApi* | [**postSetMyShortDescription**](docs/DefaultApi.md#postsetmyshortdescription) | **POST** /setMyShortDescription | setMyShortDescription
+*DefaultApi* | [**postSetPassportDataErrors**](docs/DefaultApi.md#postsetpassportdataerrors) | **POST** /setPassportDataErrors | setPassportDataErrors
+*DefaultApi* | [**postSetStickerEmojiList**](docs/DefaultApi.md#postsetstickeremojilist) | **POST** /setStickerEmojiList | setStickerEmojiList
+*DefaultApi* | [**postSetStickerKeywords**](docs/DefaultApi.md#postsetstickerkeywords) | **POST** /setStickerKeywords | setStickerKeywords
+*DefaultApi* | [**postSetStickerMaskPosition**](docs/DefaultApi.md#postsetstickermaskposition) | **POST** /setStickerMaskPosition | setStickerMaskPosition
+*DefaultApi* | [**postSetStickerPositionInSet**](docs/DefaultApi.md#postsetstickerpositioninset) | **POST** /setStickerPositionInSet | setStickerPositionInSet
+*DefaultApi* | [**postSetStickerSetThumbnail**](docs/DefaultApi.md#postsetstickersetthumbnail) | **POST** /setStickerSetThumbnail | setStickerSetThumbnail
+*DefaultApi* | [**postSetStickerSetTitle**](docs/DefaultApi.md#postsetstickersettitle) | **POST** /setStickerSetTitle | setStickerSetTitle
+*DefaultApi* | [**postSetUserEmojiStatus**](docs/DefaultApi.md#postsetuseremojistatus) | **POST** /setUserEmojiStatus | setUserEmojiStatus
+*DefaultApi* | [**postSetWebhook**](docs/DefaultApi.md#postsetwebhook) | **POST** /setWebhook | setWebhook
+*DefaultApi* | [**postStopMessageLiveLocation**](docs/DefaultApi.md#poststopmessagelivelocation) | **POST** /stopMessageLiveLocation | stopMessageLiveLocation
+*DefaultApi* | [**postStopPoll**](docs/DefaultApi.md#poststoppoll) | **POST** /stopPoll | stopPoll
+*DefaultApi* | [**postTransferBusinessAccountStars**](docs/DefaultApi.md#posttransferbusinessaccountstars) | **POST** /transferBusinessAccountStars | transferBusinessAccountStars
+*DefaultApi* | [**postTransferGift**](docs/DefaultApi.md#posttransfergift) | **POST** /transferGift | transferGift
+*DefaultApi* | [**postUnbanChatMember**](docs/DefaultApi.md#postunbanchatmember) | **POST** /unbanChatMember | unbanChatMember
+*DefaultApi* | [**postUnbanChatSenderChat**](docs/DefaultApi.md#postunbanchatsenderchat) | **POST** /unbanChatSenderChat | unbanChatSenderChat
+*DefaultApi* | [**postUnhideGeneralForumTopic**](docs/DefaultApi.md#postunhidegeneralforumtopic) | **POST** /unhideGeneralForumTopic | unhideGeneralForumTopic
+*DefaultApi* | [**postUnpinAllChatMessages**](docs/DefaultApi.md#postunpinallchatmessages) | **POST** /unpinAllChatMessages | unpinAllChatMessages
+*DefaultApi* | [**postUnpinAllForumTopicMessages**](docs/DefaultApi.md#postunpinallforumtopicmessages) | **POST** /unpinAllForumTopicMessages | unpinAllForumTopicMessages
+*DefaultApi* | [**postUnpinAllGeneralForumTopicMessages**](docs/DefaultApi.md#postunpinallgeneralforumtopicmessages) | **POST** /unpinAllGeneralForumTopicMessages | unpinAllGeneralForumTopicMessages
+*DefaultApi* | [**postUnpinChatMessage**](docs/DefaultApi.md#postunpinchatmessage) | **POST** /unpinChatMessage | unpinChatMessage
+*DefaultApi* | [**postUpgradeGift**](docs/DefaultApi.md#postupgradegift) | **POST** /upgradeGift | upgradeGift
+*DefaultApi* | [**postUploadStickerFile**](docs/DefaultApi.md#postuploadstickerfile) | **POST** /uploadStickerFile | uploadStickerFile
+*DefaultApi* | [**postVerifyChat**](docs/DefaultApi.md#postverifychat) | **POST** /verifyChat | verifyChat
+*DefaultApi* | [**postVerifyUser**](docs/DefaultApi.md#postverifyuser) | **POST** /verifyUser | verifyUser
 
 
 ### Documentation For Models
 
  - [AcceptedGiftTypes](docs/AcceptedGiftTypes.md)
+ - [AddStickerToSetRequest](docs/AddStickerToSetRequest.md)
+ - [AddStickerToSetResponse](docs/AddStickerToSetResponse.md)
  - [AffiliateInfo](docs/AffiliateInfo.md)
  - [Animation](docs/Animation.md)
- - [AnswerCallbackQueryPostRequest](docs/AnswerCallbackQueryPostRequest.md)
- - [AnswerInlineQueryPostRequest](docs/AnswerInlineQueryPostRequest.md)
- - [AnswerPreCheckoutQueryPostRequest](docs/AnswerPreCheckoutQueryPostRequest.md)
- - [AnswerShippingQueryPostRequest](docs/AnswerShippingQueryPostRequest.md)
- - [AnswerWebAppQueryPost200Response](docs/AnswerWebAppQueryPost200Response.md)
- - [AnswerWebAppQueryPostRequest](docs/AnswerWebAppQueryPostRequest.md)
- - [ApproveChatJoinRequestPostRequest](docs/ApproveChatJoinRequestPostRequest.md)
+ - [AnswerCallbackQueryRequest](docs/AnswerCallbackQueryRequest.md)
+ - [AnswerCallbackQueryResponse](docs/AnswerCallbackQueryResponse.md)
+ - [AnswerInlineQueryRequest](docs/AnswerInlineQueryRequest.md)
+ - [AnswerInlineQueryResponse](docs/AnswerInlineQueryResponse.md)
+ - [AnswerPreCheckoutQueryRequest](docs/AnswerPreCheckoutQueryRequest.md)
+ - [AnswerPreCheckoutQueryResponse](docs/AnswerPreCheckoutQueryResponse.md)
+ - [AnswerShippingQueryRequest](docs/AnswerShippingQueryRequest.md)
+ - [AnswerShippingQueryResponse](docs/AnswerShippingQueryResponse.md)
+ - [AnswerWebAppQueryRequest](docs/AnswerWebAppQueryRequest.md)
+ - [AnswerWebAppQueryResponse](docs/AnswerWebAppQueryResponse.md)
+ - [ApproveChatJoinRequestRequest](docs/ApproveChatJoinRequestRequest.md)
+ - [ApproveChatJoinRequestResponse](docs/ApproveChatJoinRequestResponse.md)
  - [Audio](docs/Audio.md)
  - [BackgroundFill](docs/BackgroundFill.md)
  - [BackgroundFillFreeformGradient](docs/BackgroundFillFreeformGradient.md)
@@ -228,9 +235,11 @@ Class | Method | HTTP request | Description
  - [BackgroundTypeFill](docs/BackgroundTypeFill.md)
  - [BackgroundTypePattern](docs/BackgroundTypePattern.md)
  - [BackgroundTypeWallpaper](docs/BackgroundTypeWallpaper.md)
- - [BanChatMemberPostRequest](docs/BanChatMemberPostRequest.md)
- - [BanChatMemberPostRequestChatId](docs/BanChatMemberPostRequestChatId.md)
- - [BanChatSenderChatPostRequest](docs/BanChatSenderChatPostRequest.md)
+ - [BanChatMemberRequest](docs/BanChatMemberRequest.md)
+ - [BanChatMemberRequestChatId](docs/BanChatMemberRequestChatId.md)
+ - [BanChatMemberResponse](docs/BanChatMemberResponse.md)
+ - [BanChatSenderChatRequest](docs/BanChatSenderChatRequest.md)
+ - [BanChatSenderChatResponse](docs/BanChatSenderChatResponse.md)
  - [Birthdate](docs/Birthdate.md)
  - [BotCommand](docs/BotCommand.md)
  - [BotCommandScope](docs/BotCommandScope.md)
@@ -239,6 +248,7 @@ Class | Method | HTTP request | Description
  - [BotCommandScopeAllPrivateChats](docs/BotCommandScopeAllPrivateChats.md)
  - [BotCommandScopeChat](docs/BotCommandScopeChat.md)
  - [BotCommandScopeChatAdministrators](docs/BotCommandScopeChatAdministrators.md)
+ - [BotCommandScopeChatChatId](docs/BotCommandScopeChatChatId.md)
  - [BotCommandScopeChatMember](docs/BotCommandScopeChatMember.md)
  - [BotCommandScopeDefault](docs/BotCommandScopeDefault.md)
  - [BotDescription](docs/BotDescription.md)
@@ -279,107 +289,155 @@ Class | Method | HTTP request | Description
  - [ChatPhoto](docs/ChatPhoto.md)
  - [ChatShared](docs/ChatShared.md)
  - [ChosenInlineResult](docs/ChosenInlineResult.md)
- - [CloseForumTopicPostRequest](docs/CloseForumTopicPostRequest.md)
+ - [CloseForumTopicRequest](docs/CloseForumTopicRequest.md)
+ - [CloseForumTopicResponse](docs/CloseForumTopicResponse.md)
+ - [CloseGeneralForumTopicRequest](docs/CloseGeneralForumTopicRequest.md)
+ - [CloseGeneralForumTopicResponse](docs/CloseGeneralForumTopicResponse.md)
+ - [CloseResponse](docs/CloseResponse.md)
  - [Contact](docs/Contact.md)
- - [ConvertGiftToStarsPostRequest](docs/ConvertGiftToStarsPostRequest.md)
- - [CopyMessagePost200Response](docs/CopyMessagePost200Response.md)
- - [CopyMessagePostRequest](docs/CopyMessagePostRequest.md)
- - [CopyMessagesPostRequest](docs/CopyMessagesPostRequest.md)
+ - [ConvertGiftToStarsRequest](docs/ConvertGiftToStarsRequest.md)
+ - [ConvertGiftToStarsResponse](docs/ConvertGiftToStarsResponse.md)
+ - [CopyMessageRequest](docs/CopyMessageRequest.md)
+ - [CopyMessageResponse](docs/CopyMessageResponse.md)
+ - [CopyMessagesRequest](docs/CopyMessagesRequest.md)
+ - [CopyMessagesResponse](docs/CopyMessagesResponse.md)
  - [CopyTextButton](docs/CopyTextButton.md)
- - [CreateChatInviteLinkPost200Response](docs/CreateChatInviteLinkPost200Response.md)
- - [CreateChatInviteLinkPostRequest](docs/CreateChatInviteLinkPostRequest.md)
- - [CreateChatSubscriptionInviteLinkPostRequest](docs/CreateChatSubscriptionInviteLinkPostRequest.md)
- - [CreateChatSubscriptionInviteLinkPostRequestChatId](docs/CreateChatSubscriptionInviteLinkPostRequestChatId.md)
- - [CreateForumTopicPost200Response](docs/CreateForumTopicPost200Response.md)
- - [CreateForumTopicPostRequest](docs/CreateForumTopicPostRequest.md)
- - [CreateInvoiceLinkPostRequest](docs/CreateInvoiceLinkPostRequest.md)
- - [DeleteBusinessMessagesPostRequest](docs/DeleteBusinessMessagesPostRequest.md)
- - [DeleteChatStickerSetPostRequest](docs/DeleteChatStickerSetPostRequest.md)
- - [DeleteMessagePostRequest](docs/DeleteMessagePostRequest.md)
- - [DeleteMessagesPostRequest](docs/DeleteMessagesPostRequest.md)
- - [DeleteMyCommandsPostRequest](docs/DeleteMyCommandsPostRequest.md)
- - [DeleteStickerFromSetPostRequest](docs/DeleteStickerFromSetPostRequest.md)
- - [DeleteStickerSetPostRequest](docs/DeleteStickerSetPostRequest.md)
- - [DeleteStoryPostRequest](docs/DeleteStoryPostRequest.md)
- - [DeleteWebhookPostRequest](docs/DeleteWebhookPostRequest.md)
+ - [CreateChatInviteLinkRequest](docs/CreateChatInviteLinkRequest.md)
+ - [CreateChatInviteLinkResponse](docs/CreateChatInviteLinkResponse.md)
+ - [CreateChatSubscriptionInviteLinkRequest](docs/CreateChatSubscriptionInviteLinkRequest.md)
+ - [CreateChatSubscriptionInviteLinkRequestChatId](docs/CreateChatSubscriptionInviteLinkRequestChatId.md)
+ - [CreateChatSubscriptionInviteLinkResponse](docs/CreateChatSubscriptionInviteLinkResponse.md)
+ - [CreateForumTopicRequest](docs/CreateForumTopicRequest.md)
+ - [CreateForumTopicResponse](docs/CreateForumTopicResponse.md)
+ - [CreateInvoiceLinkRequest](docs/CreateInvoiceLinkRequest.md)
+ - [CreateInvoiceLinkResponse](docs/CreateInvoiceLinkResponse.md)
+ - [CreateNewStickerSetRequest](docs/CreateNewStickerSetRequest.md)
+ - [CreateNewStickerSetResponse](docs/CreateNewStickerSetResponse.md)
+ - [DeclineChatJoinRequestRequest](docs/DeclineChatJoinRequestRequest.md)
+ - [DeclineChatJoinRequestResponse](docs/DeclineChatJoinRequestResponse.md)
+ - [DeleteBusinessMessagesRequest](docs/DeleteBusinessMessagesRequest.md)
+ - [DeleteBusinessMessagesResponse](docs/DeleteBusinessMessagesResponse.md)
+ - [DeleteChatPhotoRequest](docs/DeleteChatPhotoRequest.md)
+ - [DeleteChatPhotoResponse](docs/DeleteChatPhotoResponse.md)
+ - [DeleteChatStickerSetRequest](docs/DeleteChatStickerSetRequest.md)
+ - [DeleteChatStickerSetResponse](docs/DeleteChatStickerSetResponse.md)
+ - [DeleteForumTopicRequest](docs/DeleteForumTopicRequest.md)
+ - [DeleteForumTopicResponse](docs/DeleteForumTopicResponse.md)
+ - [DeleteMessageRequest](docs/DeleteMessageRequest.md)
+ - [DeleteMessageResponse](docs/DeleteMessageResponse.md)
+ - [DeleteMessagesRequest](docs/DeleteMessagesRequest.md)
+ - [DeleteMessagesResponse](docs/DeleteMessagesResponse.md)
+ - [DeleteMyCommandsRequest](docs/DeleteMyCommandsRequest.md)
+ - [DeleteMyCommandsResponse](docs/DeleteMyCommandsResponse.md)
+ - [DeleteStickerFromSetRequest](docs/DeleteStickerFromSetRequest.md)
+ - [DeleteStickerFromSetResponse](docs/DeleteStickerFromSetResponse.md)
+ - [DeleteStickerSetRequest](docs/DeleteStickerSetRequest.md)
+ - [DeleteStickerSetResponse](docs/DeleteStickerSetResponse.md)
+ - [DeleteStoryRequest](docs/DeleteStoryRequest.md)
+ - [DeleteStoryResponse](docs/DeleteStoryResponse.md)
+ - [DeleteWebhookRequest](docs/DeleteWebhookRequest.md)
+ - [DeleteWebhookResponse](docs/DeleteWebhookResponse.md)
  - [Dice](docs/Dice.md)
  - [Document](docs/Document.md)
- - [EditChatInviteLinkPostRequest](docs/EditChatInviteLinkPostRequest.md)
- - [EditChatSubscriptionInviteLinkPostRequest](docs/EditChatSubscriptionInviteLinkPostRequest.md)
- - [EditForumTopicPostRequest](docs/EditForumTopicPostRequest.md)
- - [EditGeneralForumTopicPostRequest](docs/EditGeneralForumTopicPostRequest.md)
- - [EditMessageCaptionPostRequest](docs/EditMessageCaptionPostRequest.md)
- - [EditMessageLiveLocationPostRequest](docs/EditMessageLiveLocationPostRequest.md)
- - [EditMessageReplyMarkupPostRequest](docs/EditMessageReplyMarkupPostRequest.md)
- - [EditMessageTextPost200Response](docs/EditMessageTextPost200Response.md)
- - [EditMessageTextPost200ResponseResult](docs/EditMessageTextPost200ResponseResult.md)
- - [EditMessageTextPostRequest](docs/EditMessageTextPostRequest.md)
- - [EditMessageTextPostRequestChatId](docs/EditMessageTextPostRequestChatId.md)
- - [EditUserStarSubscriptionPostRequest](docs/EditUserStarSubscriptionPostRequest.md)
+ - [EditChatInviteLinkRequest](docs/EditChatInviteLinkRequest.md)
+ - [EditChatInviteLinkResponse](docs/EditChatInviteLinkResponse.md)
+ - [EditChatSubscriptionInviteLinkRequest](docs/EditChatSubscriptionInviteLinkRequest.md)
+ - [EditChatSubscriptionInviteLinkResponse](docs/EditChatSubscriptionInviteLinkResponse.md)
+ - [EditForumTopicRequest](docs/EditForumTopicRequest.md)
+ - [EditForumTopicResponse](docs/EditForumTopicResponse.md)
+ - [EditGeneralForumTopicRequest](docs/EditGeneralForumTopicRequest.md)
+ - [EditGeneralForumTopicResponse](docs/EditGeneralForumTopicResponse.md)
+ - [EditMessageCaptionRequest](docs/EditMessageCaptionRequest.md)
+ - [EditMessageCaptionResponse](docs/EditMessageCaptionResponse.md)
+ - [EditMessageLiveLocationRequest](docs/EditMessageLiveLocationRequest.md)
+ - [EditMessageLiveLocationResponse](docs/EditMessageLiveLocationResponse.md)
+ - [EditMessageMediaRequest](docs/EditMessageMediaRequest.md)
+ - [EditMessageMediaResponse](docs/EditMessageMediaResponse.md)
+ - [EditMessageReplyMarkupRequest](docs/EditMessageReplyMarkupRequest.md)
+ - [EditMessageReplyMarkupResponse](docs/EditMessageReplyMarkupResponse.md)
+ - [EditMessageTextRequest](docs/EditMessageTextRequest.md)
+ - [EditMessageTextRequestChatId](docs/EditMessageTextRequestChatId.md)
+ - [EditMessageTextResponse](docs/EditMessageTextResponse.md)
+ - [EditMessageTextResponseResult](docs/EditMessageTextResponseResult.md)
+ - [EditStoryRequest](docs/EditStoryRequest.md)
+ - [EditStoryResponse](docs/EditStoryResponse.md)
+ - [EditUserStarSubscriptionRequest](docs/EditUserStarSubscriptionRequest.md)
+ - [EditUserStarSubscriptionResponse](docs/EditUserStarSubscriptionResponse.md)
  - [EncryptedCredentials](docs/EncryptedCredentials.md)
  - [EncryptedPassportElement](docs/EncryptedPassportElement.md)
- - [ExportChatInviteLinkPost200Response](docs/ExportChatInviteLinkPost200Response.md)
- - [ExportChatInviteLinkPostRequest](docs/ExportChatInviteLinkPostRequest.md)
+ - [ExportChatInviteLinkRequest](docs/ExportChatInviteLinkRequest.md)
+ - [ExportChatInviteLinkResponse](docs/ExportChatInviteLinkResponse.md)
  - [ExternalReplyInfo](docs/ExternalReplyInfo.md)
  - [ForceReply](docs/ForceReply.md)
  - [ForumTopic](docs/ForumTopic.md)
  - [ForumTopicCreated](docs/ForumTopicCreated.md)
  - [ForumTopicEdited](docs/ForumTopicEdited.md)
- - [ForwardMessagePostRequest](docs/ForwardMessagePostRequest.md)
- - [ForwardMessagePostRequestFromChatId](docs/ForwardMessagePostRequestFromChatId.md)
- - [ForwardMessagesPost200Response](docs/ForwardMessagesPost200Response.md)
- - [ForwardMessagesPostRequest](docs/ForwardMessagesPostRequest.md)
- - [ForwardMessagesPostRequestFromChatId](docs/ForwardMessagesPostRequestFromChatId.md)
+ - [ForwardMessageRequest](docs/ForwardMessageRequest.md)
+ - [ForwardMessageRequestFromChatId](docs/ForwardMessageRequestFromChatId.md)
+ - [ForwardMessageResponse](docs/ForwardMessageResponse.md)
+ - [ForwardMessagesRequest](docs/ForwardMessagesRequest.md)
+ - [ForwardMessagesRequestFromChatId](docs/ForwardMessagesRequestFromChatId.md)
+ - [ForwardMessagesResponse](docs/ForwardMessagesResponse.md)
  - [Game](docs/Game.md)
  - [GameHighScore](docs/GameHighScore.md)
- - [GetAvailableGiftsPost200Response](docs/GetAvailableGiftsPost200Response.md)
- - [GetBusinessAccountGiftsPost200Response](docs/GetBusinessAccountGiftsPost200Response.md)
- - [GetBusinessAccountGiftsPostRequest](docs/GetBusinessAccountGiftsPostRequest.md)
- - [GetBusinessAccountStarBalancePost200Response](docs/GetBusinessAccountStarBalancePost200Response.md)
- - [GetBusinessConnectionPost200Response](docs/GetBusinessConnectionPost200Response.md)
- - [GetBusinessConnectionPostRequest](docs/GetBusinessConnectionPostRequest.md)
- - [GetChatAdministratorsPost200Response](docs/GetChatAdministratorsPost200Response.md)
- - [GetChatMemberCountPost200Response](docs/GetChatMemberCountPost200Response.md)
- - [GetChatMemberPost200Response](docs/GetChatMemberPost200Response.md)
- - [GetChatMemberPostRequest](docs/GetChatMemberPostRequest.md)
- - [GetChatMenuButtonPost200Response](docs/GetChatMenuButtonPost200Response.md)
- - [GetChatMenuButtonPostRequest](docs/GetChatMenuButtonPostRequest.md)
- - [GetChatPost200Response](docs/GetChatPost200Response.md)
- - [GetCustomEmojiStickersPostRequest](docs/GetCustomEmojiStickersPostRequest.md)
- - [GetFilePost200Response](docs/GetFilePost200Response.md)
- - [GetFilePostRequest](docs/GetFilePostRequest.md)
- - [GetForumTopicIconStickersPost200Response](docs/GetForumTopicIconStickersPost200Response.md)
- - [GetGameHighScoresPost200Response](docs/GetGameHighScoresPost200Response.md)
- - [GetGameHighScoresPostRequest](docs/GetGameHighScoresPostRequest.md)
- - [GetMePost200Response](docs/GetMePost200Response.md)
- - [GetMyCommandsPost200Response](docs/GetMyCommandsPost200Response.md)
- - [GetMyCommandsPostRequest](docs/GetMyCommandsPostRequest.md)
- - [GetMyDefaultAdministratorRightsPost200Response](docs/GetMyDefaultAdministratorRightsPost200Response.md)
- - [GetMyDefaultAdministratorRightsPostRequest](docs/GetMyDefaultAdministratorRightsPostRequest.md)
- - [GetMyDescriptionPost200Response](docs/GetMyDescriptionPost200Response.md)
- - [GetMyNamePost200Response](docs/GetMyNamePost200Response.md)
- - [GetMyNamePostRequest](docs/GetMyNamePostRequest.md)
- - [GetMyShortDescriptionPost200Response](docs/GetMyShortDescriptionPost200Response.md)
- - [GetStarTransactionsPost200Response](docs/GetStarTransactionsPost200Response.md)
- - [GetStarTransactionsPostRequest](docs/GetStarTransactionsPostRequest.md)
- - [GetStickerSetPost200Response](docs/GetStickerSetPost200Response.md)
- - [GetStickerSetPostRequest](docs/GetStickerSetPostRequest.md)
- - [GetUpdatesPost200Response](docs/GetUpdatesPost200Response.md)
- - [GetUpdatesPostRequest](docs/GetUpdatesPostRequest.md)
- - [GetUserChatBoostsPost200Response](docs/GetUserChatBoostsPost200Response.md)
- - [GetUserChatBoostsPostRequest](docs/GetUserChatBoostsPostRequest.md)
- - [GetUserChatBoostsPostRequestChatId](docs/GetUserChatBoostsPostRequestChatId.md)
- - [GetUserProfilePhotosPost200Response](docs/GetUserProfilePhotosPost200Response.md)
- - [GetUserProfilePhotosPostRequest](docs/GetUserProfilePhotosPostRequest.md)
- - [GetWebhookInfoPost200Response](docs/GetWebhookInfoPost200Response.md)
+ - [GetAvailableGiftsResponse](docs/GetAvailableGiftsResponse.md)
+ - [GetBusinessAccountGiftsRequest](docs/GetBusinessAccountGiftsRequest.md)
+ - [GetBusinessAccountGiftsResponse](docs/GetBusinessAccountGiftsResponse.md)
+ - [GetBusinessAccountStarBalanceRequest](docs/GetBusinessAccountStarBalanceRequest.md)
+ - [GetBusinessAccountStarBalanceResponse](docs/GetBusinessAccountStarBalanceResponse.md)
+ - [GetBusinessConnectionRequest](docs/GetBusinessConnectionRequest.md)
+ - [GetBusinessConnectionResponse](docs/GetBusinessConnectionResponse.md)
+ - [GetChatAdministratorsRequest](docs/GetChatAdministratorsRequest.md)
+ - [GetChatAdministratorsResponse](docs/GetChatAdministratorsResponse.md)
+ - [GetChatMemberCountRequest](docs/GetChatMemberCountRequest.md)
+ - [GetChatMemberCountResponse](docs/GetChatMemberCountResponse.md)
+ - [GetChatMemberRequest](docs/GetChatMemberRequest.md)
+ - [GetChatMemberResponse](docs/GetChatMemberResponse.md)
+ - [GetChatMenuButtonRequest](docs/GetChatMenuButtonRequest.md)
+ - [GetChatMenuButtonResponse](docs/GetChatMenuButtonResponse.md)
+ - [GetChatRequest](docs/GetChatRequest.md)
+ - [GetChatResponse](docs/GetChatResponse.md)
+ - [GetCustomEmojiStickersRequest](docs/GetCustomEmojiStickersRequest.md)
+ - [GetCustomEmojiStickersResponse](docs/GetCustomEmojiStickersResponse.md)
+ - [GetFileRequest](docs/GetFileRequest.md)
+ - [GetFileResponse](docs/GetFileResponse.md)
+ - [GetForumTopicIconStickersResponse](docs/GetForumTopicIconStickersResponse.md)
+ - [GetGameHighScoresRequest](docs/GetGameHighScoresRequest.md)
+ - [GetGameHighScoresResponse](docs/GetGameHighScoresResponse.md)
+ - [GetMeResponse](docs/GetMeResponse.md)
+ - [GetMyCommandsRequest](docs/GetMyCommandsRequest.md)
+ - [GetMyCommandsResponse](docs/GetMyCommandsResponse.md)
+ - [GetMyDefaultAdministratorRightsRequest](docs/GetMyDefaultAdministratorRightsRequest.md)
+ - [GetMyDefaultAdministratorRightsResponse](docs/GetMyDefaultAdministratorRightsResponse.md)
+ - [GetMyDescriptionRequest](docs/GetMyDescriptionRequest.md)
+ - [GetMyDescriptionResponse](docs/GetMyDescriptionResponse.md)
+ - [GetMyNameRequest](docs/GetMyNameRequest.md)
+ - [GetMyNameResponse](docs/GetMyNameResponse.md)
+ - [GetMyShortDescriptionRequest](docs/GetMyShortDescriptionRequest.md)
+ - [GetMyShortDescriptionResponse](docs/GetMyShortDescriptionResponse.md)
+ - [GetStarTransactionsRequest](docs/GetStarTransactionsRequest.md)
+ - [GetStarTransactionsResponse](docs/GetStarTransactionsResponse.md)
+ - [GetStickerSetRequest](docs/GetStickerSetRequest.md)
+ - [GetStickerSetResponse](docs/GetStickerSetResponse.md)
+ - [GetUpdatesRequest](docs/GetUpdatesRequest.md)
+ - [GetUpdatesResponse](docs/GetUpdatesResponse.md)
+ - [GetUserChatBoostsRequest](docs/GetUserChatBoostsRequest.md)
+ - [GetUserChatBoostsRequestChatId](docs/GetUserChatBoostsRequestChatId.md)
+ - [GetUserChatBoostsResponse](docs/GetUserChatBoostsResponse.md)
+ - [GetUserProfilePhotosRequest](docs/GetUserProfilePhotosRequest.md)
+ - [GetUserProfilePhotosResponse](docs/GetUserProfilePhotosResponse.md)
+ - [GetWebhookInfoResponse](docs/GetWebhookInfoResponse.md)
  - [Gift](docs/Gift.md)
  - [GiftInfo](docs/GiftInfo.md)
- - [GiftPremiumSubscriptionPostRequest](docs/GiftPremiumSubscriptionPostRequest.md)
+ - [GiftPremiumSubscriptionRequest](docs/GiftPremiumSubscriptionRequest.md)
+ - [GiftPremiumSubscriptionResponse](docs/GiftPremiumSubscriptionResponse.md)
  - [Gifts](docs/Gifts.md)
  - [Giveaway](docs/Giveaway.md)
  - [GiveawayCompleted](docs/GiveawayCompleted.md)
  - [GiveawayCreated](docs/GiveawayCreated.md)
  - [GiveawayWinners](docs/GiveawayWinners.md)
+ - [HideGeneralForumTopicRequest](docs/HideGeneralForumTopicRequest.md)
+ - [HideGeneralForumTopicResponse](docs/HideGeneralForumTopicResponse.md)
  - [InaccessibleMessage](docs/InaccessibleMessage.md)
  - [InlineKeyboardButton](docs/InlineKeyboardButton.md)
  - [InlineKeyboardMarkup](docs/InlineKeyboardMarkup.md)
@@ -435,11 +493,13 @@ Class | Method | HTTP request | Description
  - [KeyboardButtonRequestChat](docs/KeyboardButtonRequestChat.md)
  - [KeyboardButtonRequestUsers](docs/KeyboardButtonRequestUsers.md)
  - [LabeledPrice](docs/LabeledPrice.md)
- - [LeaveChatPostRequest](docs/LeaveChatPostRequest.md)
- - [LeaveChatPostRequestChatId](docs/LeaveChatPostRequestChatId.md)
+ - [LeaveChatRequest](docs/LeaveChatRequest.md)
+ - [LeaveChatRequestChatId](docs/LeaveChatRequestChatId.md)
+ - [LeaveChatResponse](docs/LeaveChatResponse.md)
  - [LinkPreviewOptions](docs/LinkPreviewOptions.md)
  - [Location](docs/Location.md)
  - [LocationAddress](docs/LocationAddress.md)
+ - [LogOutResponse](docs/LogOutResponse.md)
  - [LoginUrl](docs/LoginUrl.md)
  - [MaskPosition](docs/MaskPosition.md)
  - [MaybeInaccessibleMessage](docs/MaybeInaccessibleMessage.md)
@@ -485,95 +545,160 @@ Class | Method | HTTP request | Description
  - [PassportElementErrorUnspecified](docs/PassportElementErrorUnspecified.md)
  - [PassportFile](docs/PassportFile.md)
  - [PhotoSize](docs/PhotoSize.md)
- - [PinChatMessagePostRequest](docs/PinChatMessagePostRequest.md)
+ - [PinChatMessageRequest](docs/PinChatMessageRequest.md)
+ - [PinChatMessageResponse](docs/PinChatMessageResponse.md)
  - [Poll](docs/Poll.md)
  - [PollAnswer](docs/PollAnswer.md)
  - [PollOption](docs/PollOption.md)
- - [PostStoryPost200Response](docs/PostStoryPost200Response.md)
+ - [PostStoryRequest](docs/PostStoryRequest.md)
+ - [PostStoryResponse](docs/PostStoryResponse.md)
  - [PreCheckoutQuery](docs/PreCheckoutQuery.md)
  - [PreparedInlineMessage](docs/PreparedInlineMessage.md)
- - [PromoteChatMemberPostRequest](docs/PromoteChatMemberPostRequest.md)
+ - [PromoteChatMemberRequest](docs/PromoteChatMemberRequest.md)
+ - [PromoteChatMemberResponse](docs/PromoteChatMemberResponse.md)
  - [ProximityAlertTriggered](docs/ProximityAlertTriggered.md)
  - [ReactionCount](docs/ReactionCount.md)
  - [ReactionType](docs/ReactionType.md)
  - [ReactionTypeCustomEmoji](docs/ReactionTypeCustomEmoji.md)
  - [ReactionTypeEmoji](docs/ReactionTypeEmoji.md)
  - [ReactionTypePaid](docs/ReactionTypePaid.md)
- - [ReadBusinessMessagePostRequest](docs/ReadBusinessMessagePostRequest.md)
- - [RefundStarPaymentPostRequest](docs/RefundStarPaymentPostRequest.md)
+ - [ReadBusinessMessageRequest](docs/ReadBusinessMessageRequest.md)
+ - [ReadBusinessMessageResponse](docs/ReadBusinessMessageResponse.md)
+ - [RefundStarPaymentRequest](docs/RefundStarPaymentRequest.md)
+ - [RefundStarPaymentResponse](docs/RefundStarPaymentResponse.md)
  - [RefundedPayment](docs/RefundedPayment.md)
- - [RemoveBusinessAccountProfilePhotoPostRequest](docs/RemoveBusinessAccountProfilePhotoPostRequest.md)
- - [RemoveUserVerificationPostRequest](docs/RemoveUserVerificationPostRequest.md)
+ - [RemoveBusinessAccountProfilePhotoRequest](docs/RemoveBusinessAccountProfilePhotoRequest.md)
+ - [RemoveBusinessAccountProfilePhotoResponse](docs/RemoveBusinessAccountProfilePhotoResponse.md)
+ - [RemoveChatVerificationRequest](docs/RemoveChatVerificationRequest.md)
+ - [RemoveChatVerificationResponse](docs/RemoveChatVerificationResponse.md)
+ - [RemoveUserVerificationRequest](docs/RemoveUserVerificationRequest.md)
+ - [RemoveUserVerificationResponse](docs/RemoveUserVerificationResponse.md)
+ - [ReopenForumTopicRequest](docs/ReopenForumTopicRequest.md)
+ - [ReopenForumTopicResponse](docs/ReopenForumTopicResponse.md)
+ - [ReopenGeneralForumTopicRequest](docs/ReopenGeneralForumTopicRequest.md)
+ - [ReopenGeneralForumTopicResponse](docs/ReopenGeneralForumTopicResponse.md)
+ - [ReplaceStickerInSetRequest](docs/ReplaceStickerInSetRequest.md)
+ - [ReplaceStickerInSetResponse](docs/ReplaceStickerInSetResponse.md)
  - [ReplyKeyboardMarkup](docs/ReplyKeyboardMarkup.md)
  - [ReplyKeyboardRemove](docs/ReplyKeyboardRemove.md)
  - [ReplyParameters](docs/ReplyParameters.md)
  - [ReplyParametersChatId](docs/ReplyParametersChatId.md)
  - [ResponseParameters](docs/ResponseParameters.md)
- - [RestrictChatMemberPostRequest](docs/RestrictChatMemberPostRequest.md)
- - [RestrictChatMemberPostRequestChatId](docs/RestrictChatMemberPostRequestChatId.md)
+ - [RestrictChatMemberRequest](docs/RestrictChatMemberRequest.md)
+ - [RestrictChatMemberResponse](docs/RestrictChatMemberResponse.md)
  - [RevenueWithdrawalState](docs/RevenueWithdrawalState.md)
  - [RevenueWithdrawalStateFailed](docs/RevenueWithdrawalStateFailed.md)
  - [RevenueWithdrawalStatePending](docs/RevenueWithdrawalStatePending.md)
  - [RevenueWithdrawalStateSucceeded](docs/RevenueWithdrawalStateSucceeded.md)
- - [RevokeChatInviteLinkPostRequest](docs/RevokeChatInviteLinkPostRequest.md)
- - [RevokeChatInviteLinkPostRequestChatId](docs/RevokeChatInviteLinkPostRequestChatId.md)
- - [SavePreparedInlineMessagePost200Response](docs/SavePreparedInlineMessagePost200Response.md)
- - [SavePreparedInlineMessagePostRequest](docs/SavePreparedInlineMessagePostRequest.md)
- - [SendAnimationPostRequestAnimation](docs/SendAnimationPostRequestAnimation.md)
- - [SendAudioPostRequestAudio](docs/SendAudioPostRequestAudio.md)
- - [SendAudioPostRequestThumbnail](docs/SendAudioPostRequestThumbnail.md)
- - [SendChatActionPostRequest](docs/SendChatActionPostRequest.md)
- - [SendContactPostRequest](docs/SendContactPostRequest.md)
- - [SendDicePostRequest](docs/SendDicePostRequest.md)
- - [SendDocumentPostRequestDocument](docs/SendDocumentPostRequestDocument.md)
- - [SendGamePostRequest](docs/SendGamePostRequest.md)
- - [SendGiftPostRequest](docs/SendGiftPostRequest.md)
- - [SendGiftPostRequestChatId](docs/SendGiftPostRequestChatId.md)
- - [SendInvoicePostRequest](docs/SendInvoicePostRequest.md)
- - [SendLocationPostRequest](docs/SendLocationPostRequest.md)
- - [SendMediaGroupPost200Response](docs/SendMediaGroupPost200Response.md)
- - [SendMediaGroupPostRequestMediaInner](docs/SendMediaGroupPostRequestMediaInner.md)
- - [SendMessagePost200Response](docs/SendMessagePost200Response.md)
- - [SendMessagePostRequest](docs/SendMessagePostRequest.md)
- - [SendMessagePostRequestChatId](docs/SendMessagePostRequestChatId.md)
- - [SendMessagePostRequestReplyMarkup](docs/SendMessagePostRequestReplyMarkup.md)
- - [SendPaidMediaPostRequestChatId](docs/SendPaidMediaPostRequestChatId.md)
- - [SendPhotoPostRequestPhoto](docs/SendPhotoPostRequestPhoto.md)
- - [SendPollPostRequest](docs/SendPollPostRequest.md)
- - [SendStickerPostRequestSticker](docs/SendStickerPostRequestSticker.md)
- - [SendVenuePostRequest](docs/SendVenuePostRequest.md)
- - [SendVideoNotePostRequestVideoNote](docs/SendVideoNotePostRequestVideoNote.md)
- - [SendVideoPostRequestCover](docs/SendVideoPostRequestCover.md)
- - [SendVideoPostRequestVideo](docs/SendVideoPostRequestVideo.md)
- - [SendVoicePostRequestVoice](docs/SendVoicePostRequestVoice.md)
+ - [RevokeChatInviteLinkRequest](docs/RevokeChatInviteLinkRequest.md)
+ - [RevokeChatInviteLinkRequestChatId](docs/RevokeChatInviteLinkRequestChatId.md)
+ - [RevokeChatInviteLinkResponse](docs/RevokeChatInviteLinkResponse.md)
+ - [SavePreparedInlineMessageRequest](docs/SavePreparedInlineMessageRequest.md)
+ - [SavePreparedInlineMessageResponse](docs/SavePreparedInlineMessageResponse.md)
+ - [SendAnimationRequest](docs/SendAnimationRequest.md)
+ - [SendAnimationResponse](docs/SendAnimationResponse.md)
+ - [SendAudioRequest](docs/SendAudioRequest.md)
+ - [SendAudioResponse](docs/SendAudioResponse.md)
+ - [SendChatActionRequest](docs/SendChatActionRequest.md)
+ - [SendChatActionResponse](docs/SendChatActionResponse.md)
+ - [SendContactRequest](docs/SendContactRequest.md)
+ - [SendContactResponse](docs/SendContactResponse.md)
+ - [SendDiceRequest](docs/SendDiceRequest.md)
+ - [SendDiceResponse](docs/SendDiceResponse.md)
+ - [SendDocumentRequest](docs/SendDocumentRequest.md)
+ - [SendDocumentResponse](docs/SendDocumentResponse.md)
+ - [SendGameRequest](docs/SendGameRequest.md)
+ - [SendGameResponse](docs/SendGameResponse.md)
+ - [SendGiftRequest](docs/SendGiftRequest.md)
+ - [SendGiftRequestChatId](docs/SendGiftRequestChatId.md)
+ - [SendGiftResponse](docs/SendGiftResponse.md)
+ - [SendInvoiceRequest](docs/SendInvoiceRequest.md)
+ - [SendInvoiceResponse](docs/SendInvoiceResponse.md)
+ - [SendLocationRequest](docs/SendLocationRequest.md)
+ - [SendLocationResponse](docs/SendLocationResponse.md)
+ - [SendMediaGroupRequest](docs/SendMediaGroupRequest.md)
+ - [SendMediaGroupRequestMediaInner](docs/SendMediaGroupRequestMediaInner.md)
+ - [SendMediaGroupResponse](docs/SendMediaGroupResponse.md)
+ - [SendMessageRequest](docs/SendMessageRequest.md)
+ - [SendMessageRequestChatId](docs/SendMessageRequestChatId.md)
+ - [SendMessageRequestReplyMarkup](docs/SendMessageRequestReplyMarkup.md)
+ - [SendMessageResponse](docs/SendMessageResponse.md)
+ - [SendPaidMediaRequest](docs/SendPaidMediaRequest.md)
+ - [SendPaidMediaRequestChatId](docs/SendPaidMediaRequestChatId.md)
+ - [SendPaidMediaResponse](docs/SendPaidMediaResponse.md)
+ - [SendPhotoRequest](docs/SendPhotoRequest.md)
+ - [SendPhotoResponse](docs/SendPhotoResponse.md)
+ - [SendPollRequest](docs/SendPollRequest.md)
+ - [SendPollResponse](docs/SendPollResponse.md)
+ - [SendStickerRequest](docs/SendStickerRequest.md)
+ - [SendStickerResponse](docs/SendStickerResponse.md)
+ - [SendVenueRequest](docs/SendVenueRequest.md)
+ - [SendVenueResponse](docs/SendVenueResponse.md)
+ - [SendVideoNoteRequest](docs/SendVideoNoteRequest.md)
+ - [SendVideoNoteResponse](docs/SendVideoNoteResponse.md)
+ - [SendVideoRequest](docs/SendVideoRequest.md)
+ - [SendVideoResponse](docs/SendVideoResponse.md)
+ - [SendVoiceRequest](docs/SendVoiceRequest.md)
+ - [SendVoiceResponse](docs/SendVoiceResponse.md)
  - [SentWebAppMessage](docs/SentWebAppMessage.md)
- - [SetBusinessAccountBioPostRequest](docs/SetBusinessAccountBioPostRequest.md)
- - [SetBusinessAccountGiftSettingsPostRequest](docs/SetBusinessAccountGiftSettingsPostRequest.md)
- - [SetBusinessAccountNamePostRequest](docs/SetBusinessAccountNamePostRequest.md)
- - [SetBusinessAccountUsernamePostRequest](docs/SetBusinessAccountUsernamePostRequest.md)
- - [SetChatAdministratorCustomTitlePostRequest](docs/SetChatAdministratorCustomTitlePostRequest.md)
- - [SetChatDescriptionPostRequest](docs/SetChatDescriptionPostRequest.md)
- - [SetChatMenuButtonPostRequest](docs/SetChatMenuButtonPostRequest.md)
- - [SetChatPermissionsPostRequest](docs/SetChatPermissionsPostRequest.md)
- - [SetChatStickerSetPostRequest](docs/SetChatStickerSetPostRequest.md)
- - [SetChatTitlePostRequest](docs/SetChatTitlePostRequest.md)
- - [SetCustomEmojiStickerSetThumbnailPostRequest](docs/SetCustomEmojiStickerSetThumbnailPostRequest.md)
- - [SetGameScorePostRequest](docs/SetGameScorePostRequest.md)
- - [SetMessageReactionPostRequest](docs/SetMessageReactionPostRequest.md)
- - [SetMyCommandsPostRequest](docs/SetMyCommandsPostRequest.md)
- - [SetMyDefaultAdministratorRightsPostRequest](docs/SetMyDefaultAdministratorRightsPostRequest.md)
- - [SetMyDescriptionPostRequest](docs/SetMyDescriptionPostRequest.md)
- - [SetMyNamePostRequest](docs/SetMyNamePostRequest.md)
- - [SetMyShortDescriptionPostRequest](docs/SetMyShortDescriptionPostRequest.md)
- - [SetPassportDataErrorsPostRequest](docs/SetPassportDataErrorsPostRequest.md)
- - [SetStickerEmojiListPostRequest](docs/SetStickerEmojiListPostRequest.md)
- - [SetStickerKeywordsPostRequest](docs/SetStickerKeywordsPostRequest.md)
- - [SetStickerMaskPositionPostRequest](docs/SetStickerMaskPositionPostRequest.md)
- - [SetStickerPositionInSetPostRequest](docs/SetStickerPositionInSetPostRequest.md)
- - [SetStickerSetThumbnailPostRequestThumbnail](docs/SetStickerSetThumbnailPostRequestThumbnail.md)
- - [SetStickerSetTitlePostRequest](docs/SetStickerSetTitlePostRequest.md)
- - [SetUserEmojiStatusPostRequest](docs/SetUserEmojiStatusPostRequest.md)
- - [SetWebhookPost200Response](docs/SetWebhookPost200Response.md)
+ - [SetBusinessAccountBioRequest](docs/SetBusinessAccountBioRequest.md)
+ - [SetBusinessAccountBioResponse](docs/SetBusinessAccountBioResponse.md)
+ - [SetBusinessAccountGiftSettingsRequest](docs/SetBusinessAccountGiftSettingsRequest.md)
+ - [SetBusinessAccountGiftSettingsResponse](docs/SetBusinessAccountGiftSettingsResponse.md)
+ - [SetBusinessAccountNameRequest](docs/SetBusinessAccountNameRequest.md)
+ - [SetBusinessAccountNameResponse](docs/SetBusinessAccountNameResponse.md)
+ - [SetBusinessAccountProfilePhotoRequest](docs/SetBusinessAccountProfilePhotoRequest.md)
+ - [SetBusinessAccountProfilePhotoResponse](docs/SetBusinessAccountProfilePhotoResponse.md)
+ - [SetBusinessAccountUsernameRequest](docs/SetBusinessAccountUsernameRequest.md)
+ - [SetBusinessAccountUsernameResponse](docs/SetBusinessAccountUsernameResponse.md)
+ - [SetChatAdministratorCustomTitleRequest](docs/SetChatAdministratorCustomTitleRequest.md)
+ - [SetChatAdministratorCustomTitleResponse](docs/SetChatAdministratorCustomTitleResponse.md)
+ - [SetChatDescriptionRequest](docs/SetChatDescriptionRequest.md)
+ - [SetChatDescriptionResponse](docs/SetChatDescriptionResponse.md)
+ - [SetChatMenuButtonRequest](docs/SetChatMenuButtonRequest.md)
+ - [SetChatMenuButtonResponse](docs/SetChatMenuButtonResponse.md)
+ - [SetChatPermissionsRequest](docs/SetChatPermissionsRequest.md)
+ - [SetChatPermissionsResponse](docs/SetChatPermissionsResponse.md)
+ - [SetChatPhotoRequest](docs/SetChatPhotoRequest.md)
+ - [SetChatPhotoResponse](docs/SetChatPhotoResponse.md)
+ - [SetChatStickerSetRequest](docs/SetChatStickerSetRequest.md)
+ - [SetChatStickerSetResponse](docs/SetChatStickerSetResponse.md)
+ - [SetChatTitleRequest](docs/SetChatTitleRequest.md)
+ - [SetChatTitleResponse](docs/SetChatTitleResponse.md)
+ - [SetCustomEmojiStickerSetThumbnailRequest](docs/SetCustomEmojiStickerSetThumbnailRequest.md)
+ - [SetCustomEmojiStickerSetThumbnailResponse](docs/SetCustomEmojiStickerSetThumbnailResponse.md)
+ - [SetGameScoreRequest](docs/SetGameScoreRequest.md)
+ - [SetGameScoreResponse](docs/SetGameScoreResponse.md)
+ - [SetMessageReactionRequest](docs/SetMessageReactionRequest.md)
+ - [SetMessageReactionResponse](docs/SetMessageReactionResponse.md)
+ - [SetMyCommandsRequest](docs/SetMyCommandsRequest.md)
+ - [SetMyCommandsResponse](docs/SetMyCommandsResponse.md)
+ - [SetMyDefaultAdministratorRightsRequest](docs/SetMyDefaultAdministratorRightsRequest.md)
+ - [SetMyDefaultAdministratorRightsResponse](docs/SetMyDefaultAdministratorRightsResponse.md)
+ - [SetMyDescriptionRequest](docs/SetMyDescriptionRequest.md)
+ - [SetMyDescriptionResponse](docs/SetMyDescriptionResponse.md)
+ - [SetMyNameRequest](docs/SetMyNameRequest.md)
+ - [SetMyNameResponse](docs/SetMyNameResponse.md)
+ - [SetMyShortDescriptionRequest](docs/SetMyShortDescriptionRequest.md)
+ - [SetMyShortDescriptionResponse](docs/SetMyShortDescriptionResponse.md)
+ - [SetPassportDataErrorsRequest](docs/SetPassportDataErrorsRequest.md)
+ - [SetPassportDataErrorsResponse](docs/SetPassportDataErrorsResponse.md)
+ - [SetStickerEmojiListRequest](docs/SetStickerEmojiListRequest.md)
+ - [SetStickerEmojiListResponse](docs/SetStickerEmojiListResponse.md)
+ - [SetStickerKeywordsRequest](docs/SetStickerKeywordsRequest.md)
+ - [SetStickerKeywordsResponse](docs/SetStickerKeywordsResponse.md)
+ - [SetStickerMaskPositionRequest](docs/SetStickerMaskPositionRequest.md)
+ - [SetStickerMaskPositionResponse](docs/SetStickerMaskPositionResponse.md)
+ - [SetStickerPositionInSetRequest](docs/SetStickerPositionInSetRequest.md)
+ - [SetStickerPositionInSetResponse](docs/SetStickerPositionInSetResponse.md)
+ - [SetStickerSetThumbnailRequest](docs/SetStickerSetThumbnailRequest.md)
+ - [SetStickerSetThumbnailResponse](docs/SetStickerSetThumbnailResponse.md)
+ - [SetStickerSetTitleRequest](docs/SetStickerSetTitleRequest.md)
+ - [SetStickerSetTitleResponse](docs/SetStickerSetTitleResponse.md)
+ - [SetUserEmojiStatusRequest](docs/SetUserEmojiStatusRequest.md)
+ - [SetUserEmojiStatusResponse](docs/SetUserEmojiStatusResponse.md)
+ - [SetWebhookRequest](docs/SetWebhookRequest.md)
+ - [SetWebhookResponse](docs/SetWebhookResponse.md)
  - [SharedUser](docs/SharedUser.md)
  - [ShippingAddress](docs/ShippingAddress.md)
  - [ShippingOption](docs/ShippingOption.md)
@@ -583,9 +708,10 @@ Class | Method | HTTP request | Description
  - [StarTransactions](docs/StarTransactions.md)
  - [Sticker](docs/Sticker.md)
  - [StickerSet](docs/StickerSet.md)
- - [StopMessageLiveLocationPostRequest](docs/StopMessageLiveLocationPostRequest.md)
- - [StopPollPost200Response](docs/StopPollPost200Response.md)
- - [StopPollPostRequest](docs/StopPollPostRequest.md)
+ - [StopMessageLiveLocationRequest](docs/StopMessageLiveLocationRequest.md)
+ - [StopMessageLiveLocationResponse](docs/StopMessageLiveLocationResponse.md)
+ - [StopPollRequest](docs/StopPollRequest.md)
+ - [StopPollResponse](docs/StopPollResponse.md)
  - [Story](docs/Story.md)
  - [StoryArea](docs/StoryArea.md)
  - [StoryAreaPosition](docs/StoryAreaPosition.md)
@@ -606,25 +732,44 @@ Class | Method | HTTP request | Description
  - [TransactionPartnerTelegramAds](docs/TransactionPartnerTelegramAds.md)
  - [TransactionPartnerTelegramApi](docs/TransactionPartnerTelegramApi.md)
  - [TransactionPartnerUser](docs/TransactionPartnerUser.md)
- - [TransferBusinessAccountStarsPostRequest](docs/TransferBusinessAccountStarsPostRequest.md)
- - [TransferGiftPostRequest](docs/TransferGiftPostRequest.md)
- - [UnbanChatMemberPostRequest](docs/UnbanChatMemberPostRequest.md)
+ - [TransferBusinessAccountStarsRequest](docs/TransferBusinessAccountStarsRequest.md)
+ - [TransferBusinessAccountStarsResponse](docs/TransferBusinessAccountStarsResponse.md)
+ - [TransferGiftRequest](docs/TransferGiftRequest.md)
+ - [TransferGiftResponse](docs/TransferGiftResponse.md)
+ - [UnbanChatMemberRequest](docs/UnbanChatMemberRequest.md)
+ - [UnbanChatMemberResponse](docs/UnbanChatMemberResponse.md)
+ - [UnbanChatSenderChatRequest](docs/UnbanChatSenderChatRequest.md)
+ - [UnbanChatSenderChatResponse](docs/UnbanChatSenderChatResponse.md)
+ - [UnhideGeneralForumTopicRequest](docs/UnhideGeneralForumTopicRequest.md)
+ - [UnhideGeneralForumTopicResponse](docs/UnhideGeneralForumTopicResponse.md)
  - [UniqueGift](docs/UniqueGift.md)
  - [UniqueGiftBackdrop](docs/UniqueGiftBackdrop.md)
  - [UniqueGiftBackdropColors](docs/UniqueGiftBackdropColors.md)
  - [UniqueGiftInfo](docs/UniqueGiftInfo.md)
  - [UniqueGiftModel](docs/UniqueGiftModel.md)
  - [UniqueGiftSymbol](docs/UniqueGiftSymbol.md)
- - [UnpinChatMessagePostRequest](docs/UnpinChatMessagePostRequest.md)
+ - [UnpinAllChatMessagesRequest](docs/UnpinAllChatMessagesRequest.md)
+ - [UnpinAllChatMessagesResponse](docs/UnpinAllChatMessagesResponse.md)
+ - [UnpinAllForumTopicMessagesRequest](docs/UnpinAllForumTopicMessagesRequest.md)
+ - [UnpinAllForumTopicMessagesResponse](docs/UnpinAllForumTopicMessagesResponse.md)
+ - [UnpinAllGeneralForumTopicMessagesRequest](docs/UnpinAllGeneralForumTopicMessagesRequest.md)
+ - [UnpinAllGeneralForumTopicMessagesResponse](docs/UnpinAllGeneralForumTopicMessagesResponse.md)
+ - [UnpinChatMessageRequest](docs/UnpinChatMessageRequest.md)
+ - [UnpinChatMessageResponse](docs/UnpinChatMessageResponse.md)
  - [Update](docs/Update.md)
- - [UpgradeGiftPostRequest](docs/UpgradeGiftPostRequest.md)
+ - [UpgradeGiftRequest](docs/UpgradeGiftRequest.md)
+ - [UpgradeGiftResponse](docs/UpgradeGiftResponse.md)
+ - [UploadStickerFileRequest](docs/UploadStickerFileRequest.md)
+ - [UploadStickerFileResponse](docs/UploadStickerFileResponse.md)
  - [User](docs/User.md)
  - [UserChatBoosts](docs/UserChatBoosts.md)
  - [UserProfilePhotos](docs/UserProfilePhotos.md)
  - [UsersShared](docs/UsersShared.md)
  - [Venue](docs/Venue.md)
- - [VerifyChatPostRequest](docs/VerifyChatPostRequest.md)
- - [VerifyUserPostRequest](docs/VerifyUserPostRequest.md)
+ - [VerifyChatRequest](docs/VerifyChatRequest.md)
+ - [VerifyChatResponse](docs/VerifyChatResponse.md)
+ - [VerifyUserRequest](docs/VerifyUserRequest.md)
+ - [VerifyUserResponse](docs/VerifyUserResponse.md)
  - [Video](docs/Video.md)
  - [VideoChatEnded](docs/VideoChatEnded.md)
  - [VideoChatParticipantsInvited](docs/VideoChatParticipantsInvited.md)
