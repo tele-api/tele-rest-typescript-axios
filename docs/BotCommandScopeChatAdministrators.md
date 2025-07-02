@@ -7,7 +7,7 @@ Represents the [scope](https://core.telegram.org/bots/api/#botcommandscope) of b
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** | Scope type, must be *chat\\_administrators* | [default to 'chat_administrators']
-**chat_id** | [**RestrictChatMemberPostRequestChatId**](RestrictChatMemberPostRequestChatId.md) |  | [default to undefined]
+**chat_id** | [**PostRestrictChatMemberRequestChatId**](PostRestrictChatMemberRequestChatId.md) |  | [default to undefined]
 
 ## Example
 
